@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Intro from "@/components/intro";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
