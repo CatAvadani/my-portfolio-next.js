@@ -1,6 +1,6 @@
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import Calendar from "@/public/CalendarImg.png";
+import CruelNature from "@/public/CruelNature.png";
+import PiratesShip from "@/public/PiratesShip.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
@@ -66,21 +66,21 @@ export const projectsData = [
     description:
       '"Pirates of the Caribbean - Cursed Seas" is a basic interactive adventure game implemented in JavaScript. ',
     tags: ["Javascript", "HTML", "CSS"],
-    imageUrl: corpcommentImg,
+    imageUrl: PiratesShip,
   },
   {
     title: "Calendar",
     description:
       "Users can easily create and schedule todos, while a visually appealing interface showcases a todo list on the left and an interactive calendar on the right.",
     tags: ["Javascript"],
-    imageUrl: rmtdevImg,
+    imageUrl: Calendar,
   },
   {
     title: "Cruel Nature",
     description:
       "This is a School project where we did a remake of the classic game Bomber Man. We have used JS.p5 and TypeScript OOP to make this game and it has been a 4 week projekt.",
     tags: ["TypeScript", "p5.js"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: CruelNature,
   },
 ] as const;
 
