@@ -1,5 +1,6 @@
 import Calendar from "@/public/CalendarImg.png";
 import CruelNature from "@/public/CruelNature.png";
+import MyNutritionPlan from "@/public/MyNutritionPlan.png";
 import PiratesShip from "@/public/PiratesShip.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
@@ -61,6 +62,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "My Nutrition Plan",
+    description:
+      '"My Nutrition Plan" is a web application that allows users to search for recipes and manage their own nutrition plans.',
+    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    imageUrl: MyNutritionPlan,
+  },
   {
     title: "Pirates of the Caribbean",
     description:
