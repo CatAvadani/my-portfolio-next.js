@@ -66,7 +66,7 @@ export const projectsData = [
     title: "My Nutrition Plan",
     description:
       '"My Nutrition Plan" is a web application that allows users to search for recipes and manage their own nutrition plans.',
-    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    tags: ["TypeScript", "React", "Tailwind CSS"],
     imageUrl: MyNutritionPlan,
   },
   {
@@ -100,11 +100,16 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Svelte",
   "Git",
   "Tailwind",
   "Figma",
   "UX/UI",
   "Agile Methodologies",
+  "Framer Motion",
   "Kotlin",
   "Android",
+  "Jetpack Compose",
+  "Room Database",
+  "Retrofit Library",
 ] as const;

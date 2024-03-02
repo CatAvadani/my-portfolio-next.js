@@ -1,5 +1,6 @@
 "use client";
 
+import { useActiveSectionContext } from "@/context/active-section.context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -10,6 +11,7 @@ import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -38,24 +40,11 @@ export default function Intro() {
             shadow-xl'
             />
           </motion.div>
-          <motion.span
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-            className='absolute bottom-0 right-0 text-4xl'
-          >
-            👋
-          </motion.span>
         </div>
       </div>
 
       <motion.h1
-        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl'
+        className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -79,28 +68,32 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3,
+          delay: 0.1,
         }}
       >
         <Link
           href='#contact'
           className='group bg-black text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer'
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className=' opacity-70 group-hover:translate-x-1 transition' />
         </Link>
 
         <a
-          className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10'
+          className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
           href='/CV.pdf'
           download
         >
           Download CV{" "}
-          <HiDownload className=' opacity-60 group-hover:translate-y-1 ' />
+          <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
         </a>
 
         <a
-          className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10'
+          className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border borderBlack'
           href='https://www.linkedin.com/in/catalinaava09/'
           target='_blank'
         >
@@ -108,7 +101,7 @@ export default function Intro() {
         </a>
 
         <a
-          className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10'
+          className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border borderBlack'
           href='https://github.com/CatAvadani'
           target='_blank'
         >
