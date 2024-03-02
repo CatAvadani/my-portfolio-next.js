@@ -49,7 +49,7 @@ export default function Header() {
                     layoutId='activeSection'
                     transition={{
                       type: "spring",
-                      styffness: 380,
+                      stiffness: 380,
                       damping: 20,
                     }}
                   ></motion.span>

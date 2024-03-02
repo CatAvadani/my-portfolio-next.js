@@ -66,7 +66,7 @@ export const projectsData = [
     title: "My Nutrition Plan",
     description:
       '"My Nutrition Plan" is a web application that allows users to search for recipes and manage their own nutrition plans.',
-    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    tags: ["TypeScript", "React", "Tailwind CSS"],
     imageUrl: MyNutritionPlan,
   },
   {
