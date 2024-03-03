@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "@/context/theme-context";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import React from "react";
@@ -12,6 +13,7 @@ import SectionHeading from "./section-heading";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
+  const { theme } = useTheme();
 
   return (
     <section id='experience' ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
@@ -23,21 +25,26 @@ export default function Experience() {
             <VerticalTimelineElement
               className='vertical-timeline-element--work'
               contentStyle={{
-                background: "white",
+                background:
+                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
-                contentVisibility: "visible",
+                // contentVisibility: "visible",
               }}
               visible={true}
               contentArrowStyle={{
-                borderRight: "1px solid #f3f4f6",
+                borderRight:
+                  theme === "light"
+                    ? "0.4rem solid #f3f4f6"
+                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background: "white",
+                background:
+                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
               }}
             >
