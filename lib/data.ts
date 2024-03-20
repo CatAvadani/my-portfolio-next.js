@@ -68,20 +68,7 @@ export const projectsData = [
       '"My Nutrition Plan" is a web application that allows users to search for recipes and manage their own nutrition plans.',
     tags: ["TypeScript", "React", "Tailwind CSS"],
     imageUrl: MyNutritionPlan,
-  },
-  {
-    title: "Pirates of the Caribbean",
-    description:
-      '"Pirates of the Caribbean - Cursed Seas" is a basic interactive adventure game implemented in JavaScript. ',
-    tags: ["Javascript", "HTML", "CSS"],
-    imageUrl: PiratesShip,
-  },
-  {
-    title: "Calendar",
-    description:
-      "Users can easily create and schedule todos, while a visually appealing interface showcases a todo list on the left and an interactive calendar on the right.",
-    tags: ["Javascript"],
-    imageUrl: Calendar,
+    url: "https://my-nutrition-plan.vercel.app/",
   },
   {
     title: "Cruel Nature",
@@ -89,6 +76,23 @@ export const projectsData = [
       "This is a School project where we did a remake of the classic game Bomber Man. We have used JS.p5 and TypeScript OOP to make this game and it has been a 4 week projekt.",
     tags: ["TypeScript", "p5.js"],
     imageUrl: CruelNature,
+    url: "https://cruel-nature.vercel.app/",
+  },
+  {
+    title: "Pirates of the Caribbean",
+    description:
+      '"Pirates of the Caribbean - Cursed Seas" is a basic interactive adventure game implemented in JavaScript. ',
+    tags: ["Javascript", "HTML", "CSS"],
+    imageUrl: PiratesShip,
+    url: "https://catavadani.github.io/Pirates-of-the-Caribbean/",
+  },
+  {
+    title: "Calendar",
+    description:
+      "Users can easily create and schedule todos, while a visually appealing interface showcases a todo list on the left and an interactive calendar on the right.",
+    tags: ["Javascript"],
+    imageUrl: Calendar,
+    url: "https://github.com/CatAvadani/Calendar-Project",
   },
 ] as const;
 
