@@ -94,7 +94,7 @@ export const projectsData = [
       'This project focuses on building a webshop using React, NextJS, Typescript, and ChakraUI. Named NEXT DESIGN, the webshop’s aesthetic draws inspiration from the established interior design store, NORDIC NEST. ',
     tags: ['TypeScript', 'Next.js', 'Chakra'],
     imageUrl: NextDesign,
-    url: 'https://github.com/plugga-tech/nextjs-webbshop-ts-chaos',
+    url: 'https://nextjs-webbshop-ts-chaos.vercel.app',
   },
   {
     title: 'Pirates of the Caribbean',
