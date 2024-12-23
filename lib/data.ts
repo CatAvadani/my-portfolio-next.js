@@ -129,5 +129,4 @@ export const skillsData = [
   'Framer Motion',
   'Kotlin',
   'Android',
-  'Jetpack Compose',
 ] as const;
