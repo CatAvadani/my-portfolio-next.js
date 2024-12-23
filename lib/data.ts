@@ -1,13 +1,7 @@
-import Calendar from '@/public/CalendarImg.png';
-import CruelNature from '@/public/CruelNature.png';
-import MyNutritionPlan from '@/public/MyNutritionPlan.png';
-import NetflixRipOff from '@/public/NetflixRipOff.png';
-import NextDesign from '@/public/NextDesign.png';
-import PiratesShip from '@/public/PiratesShip.png';
 import React from 'react';
+import { BsAndroid } from 'react-icons/bs';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
 
 export const links = [
   {
@@ -38,19 +32,27 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: 'Front End Developer',
+    location: 'Nexer Group, Gothenburg',
+    description:
+      'I worked on real-world projects using React Native and Angular, creating responsive layouts, implementing sorting and filtering features, and resolving bugs. I enhanced my problem-solving, collaboration, and technical skills while gaining valuable experience in front-end development.',
+    icon: React.createElement(FaReact),
+    date: 'Sept 2024 - present',
+  },
+  {
     title: 'Senior Casino Associate',
     location: 'Gothenburg, Sweden',
     description:
       'Ensured a positive customer experience, oversaw gaming activities, resolved disputes, managed financial transactions, and ensured compliance with regulatory requirements.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2018 - present',
+    icon: React.createElement(CgWorkAlt),
+    date: '2018 - 2024',
   },
   {
     title: 'Android Developer - Internship',
     location: 'Stendahls, Gothenburg',
     description:
       'Completed a two-month internship focused on Android development, gaining hands-on experience with technologies such as Android Studio, Kotlin, Jetpack Compose, Room Database, Git, and Retrofit Library.',
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(BsAndroid),
     date: 'Okt - Dec 2022',
   },
   {
@@ -58,59 +60,54 @@ export const experiencesData = [
     location: 'USA',
     description:
       "Ensured that casino games were managed in accordance with the company's policies and regulations. Oversaw players and dealers, reviewed cash-to-chip exchanges, resolved conflicts professionally, and handled personnel-related issues, including staff scheduling.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: '2004 - 2017',
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: 'My Nutrition Plan',
-    description:
-      '"My Nutrition Plan" is a web application that allows users to search for recipes and manage their own nutrition plans.',
-    tags: ['TypeScript', 'React', 'Tailwind CSS'],
-    imageUrl: MyNutritionPlan,
-    url: 'https://my-nutrition-plan.vercel.app/',
+    heading: 'Digital Travel Journal',
+    subheading:
+      'An interactive web app for documenting journeys with maps, tracking trips, and creating shareable postcards.',
+    imgSrc: '/DigitalTravelJournal.png',
+    href: 'https://digital-travel-journal-wnb8.vercel.app/',
   },
   {
-    title: 'Cruel Nature',
-    description:
-      'This is a School project where we did a remake of the classic game Bomber Man. We have used JS.p5 and TypeScript OOP to make this game and it has been a 4 week projekt.',
-    tags: ['TypeScript', 'p5.js'],
-    imageUrl: CruelNature,
-    url: 'https://cruel-nature.vercel.app/',
+    heading: 'Next Design',
+    subheading:
+      'The project reflects a clean and elegant aesthetic while showcasing practical skills in front-end development and modern web technologies.',
+    imgSrc: '/NextDesign.png',
+    href: 'https://nextjs-webbshop-ts-chaos.vercel.app',
   },
   {
-    title: 'Netflix Rip Off',
-    description:
-      'The Netflix Rip Off is designed to replicate the core functionalities of a movie platform like Netflix, and is intended to showcase not only our technical skills but also to cultivate an agile development mindset.',
-    tags: ['TypeScript', 'Next.js', 'Chakra'],
-    imageUrl: NetflixRipOff,
-    url: 'https://netflix-rip-off.vercel.app/',
+    heading: 'TV MaZe',
+    subheading:
+      'A React Native app that lets users search for TV shows, view details, and manage favorites using the TV Maze API.',
+    imgSrc: '/TVMaze.png',
+    href: 'https://github.com/CatAvadani/tv-maze-react-native-app',
   },
   {
-    title: 'Next Design',
-    description:
-      'This project focuses on building a webshop using React, NextJS, Typescript, and ChakraUI. Named NEXT DESIGN, the webshop’s aesthetic draws inspiration from the established interior design store, NORDIC NEST. ',
-    tags: ['TypeScript', 'Next.js', 'Chakra'],
-    imageUrl: NextDesign,
-    url: 'https://nextjs-webbshop-ts-chaos.vercel.app',
+    heading: 'My Nutrition Plan',
+    subheading:
+      'An app for exploring and saving recipes, featuring search functionality, API integration, and responsive design.',
+    imgSrc: '/MyNutritionPlan.png',
+    href: 'https://my-nutrition-plan.vercel.app/',
   },
   {
-    title: 'Pirates of the Caribbean',
-    description:
-      '"Pirates of the Caribbean - Cursed Seas" is a basic interactive adventure game implemented in JavaScript. ',
-    tags: ['Javascript', 'HTML', 'CSS'],
-    imageUrl: PiratesShip,
-    url: 'https://catavadani.github.io/Pirates-of-the-Caribbean/',
+    heading: 'FlicK PicK',
+    subheading:
+      'The primary objective of this project was to practice and enhance skills in unit and integration testing within a React application.',
+    imgSrc: '/FlicKPicK.png',
+    href: 'https://flick-pick-unit-and-integration-testing-project.vercel.app/',
   },
+
   {
-    title: 'Calendar',
-    description:
-      'Users can easily create and schedule todos, while a visually appealing interface showcases a todo list on the left and an interactive calendar on the right.',
-    tags: ['Javascript'],
-    imageUrl: Calendar,
-    url: 'https://github.com/CatAvadani/Calendar-Project',
+    heading: 'Avira Design',
+    subheading:
+      'Designed a custom graphical profile and logo with Adobe Illustrator, created responsive wireframes and mockups, and focused on showcasing a functional design.',
+    imgSrc: '/AviraDesign.png',
+    href: 'https://avira-design.vercel.app/',
   },
 ] as const;
 
@@ -121,6 +118,7 @@ export const skillsData = [
   'TypeScript',
   'React',
   'Next.js',
+  'React Native',
   'Node.js',
   'Svelte',
   'Git',
@@ -132,6 +130,4 @@ export const skillsData = [
   'Kotlin',
   'Android',
   'Jetpack Compose',
-  'Room Database',
-  'Retrofit Library',
 ] as const;
