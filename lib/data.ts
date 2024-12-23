@@ -98,7 +98,7 @@ export const projectsData = [
     heading: 'FlicK PicK',
     subheading:
       'The primary objective of this project was to practice and enhance skills in unit and integration testing within a React application.',
-    imgSrc: '/FlicKPicK.png',
+    imgSrc: '/FlickPick.png',
     href: 'https://flick-pick-unit-and-integration-testing-project.vercel.app/',
   },
 
