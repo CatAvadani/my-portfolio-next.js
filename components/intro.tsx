@@ -75,7 +75,7 @@ export default function Intro() {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               {/* Primary buttons */}
-              <div className='flex sm:flex-row gap-4 justify-center'>
+              <div className='flex sm:flex-row gap-2 sm:gap-4 justify-center sm:justify-start'>
                 <Link
                   href='#contact'
                   className='group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70'
@@ -99,7 +99,7 @@ export default function Intro() {
               </div>
 
               {/* Social links */}
-              <div className='flex gap-4 justify-center'>
+              <div className='flex gap-2 sm:gap-4 justify-center sm:justify-start'>
                 <a
                   className='bg-white/90 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-black/10 hover:border-black/20 dark:bg-white/10 dark:text-white/60'
                   href='https://www.linkedin.com/in/catalinaava09/'
