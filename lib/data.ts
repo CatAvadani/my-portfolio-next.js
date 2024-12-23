@@ -32,10 +32,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Front End Developer',
+    title: 'Front End Developer - Internship',
     location: 'Nexer Group, Gothenburg',
     description:
-      'I worked on real-world projects using React Native and Angular, creating responsive layouts, implementing sorting and filtering features, and resolving bugs. I enhanced my problem-solving, collaboration, and technical skills while gaining valuable experience in front-end development.',
+      'I worked on real-world projects using React Native and Angular, creating responsive layouts, implementing sorting and filtering features, and resolving bugs. Moreover, I enhanced my problem-solving, collaboration, and technical skills while gaining valuable experience in front-end development.',
     icon: React.createElement(FaReact),
     date: 'Sept 2024 - present',
   },
