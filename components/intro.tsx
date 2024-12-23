@@ -90,7 +90,7 @@ export default function Intro() {
 
                 <a
                   className='group bg-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 hover:border-black/30 dark:bg-white/10 dark:text-white/60'
-                  href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:1dd9e242-4cd1-46b9-a826-df8f3ebf8238'
+                  href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:4c26f7fe-7c18-4461-9073-2928243e39fd/?promoid=DRCFIIQN&mv=other&mv2=unav&locale=en-US&filetype=application%2Fpdf'
                   download
                 >
                   Download CV{' '}

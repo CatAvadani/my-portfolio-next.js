@@ -1,7 +1,7 @@
 import React from 'react';
+import { BsAndroid } from 'react-icons/bs';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
 
 export const links = [
   {
@@ -32,19 +32,27 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: 'Front End Developer',
+    location: 'Nexer Group, Gothenburg',
+    description:
+      'I worked on real-world projects using React Native and Angular, creating responsive layouts, implementing sorting and filtering features, and resolving bugs. I enhanced my problem-solving, collaboration, and technical skills while gaining valuable experience in front-end development.',
+    icon: React.createElement(FaReact),
+    date: 'Sept 2024 - present',
+  },
+  {
     title: 'Senior Casino Associate',
     location: 'Gothenburg, Sweden',
     description:
       'Ensured a positive customer experience, oversaw gaming activities, resolved disputes, managed financial transactions, and ensured compliance with regulatory requirements.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2018 - present',
+    icon: React.createElement(CgWorkAlt),
+    date: '2018 - 2024',
   },
   {
     title: 'Android Developer - Internship',
     location: 'Stendahls, Gothenburg',
     description:
       'Completed a two-month internship focused on Android development, gaining hands-on experience with technologies such as Android Studio, Kotlin, Jetpack Compose, Room Database, Git, and Retrofit Library.',
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(BsAndroid),
     date: 'Okt - Dec 2022',
   },
   {
@@ -52,7 +60,7 @@ export const experiencesData = [
     location: 'USA',
     description:
       "Ensured that casino games were managed in accordance with the company's policies and regulations. Oversaw players and dealers, reviewed cash-to-chip exchanges, resolved conflicts professionally, and handled personnel-related issues, including staff scheduling.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: '2004 - 2017',
   },
 ] as const;
