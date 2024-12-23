@@ -93,7 +93,7 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className='relative z-10 block text-2xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-600 md:text-4xl'
+          className='relative z-10 block text-2xl font-bold text-slate-500 transition-colors duration-500 group-hover:text-slate-600 md:text-4xl'
         >
           {heading.split('').map((l, i) => (
             <motion.span
@@ -109,7 +109,7 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className='relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-600 max-w-[50%]'>
+        <span className='relative z-10 mt-2 block text-base text-slate-500 transition-colors duration-500 group-hover:text-slate-600 max-w-[50%]'>
           {subheading}
         </span>
       </div>
@@ -145,7 +145,7 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
         transition={{ type: 'spring' }}
         className='relative z-10 p-4'
       >
-        <FiArrowRight className='text-5xl text-neutral-500' />
+        <FiArrowRight className='text-5xl text-slate-500' />
       </motion.div>
     </motion.a>
   );

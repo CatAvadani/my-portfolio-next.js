@@ -2,48 +2,11 @@
 
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
-import { BsStars } from 'react-icons/bs';
-import { FaCode, FaRegCompass } from 'react-icons/fa';
-import { HiOutlineLightBulb } from 'react-icons/hi';
+import { cards } from './cards';
 import SectionHeading from './section-heading';
 
 export default function About() {
   const { ref } = useSectionInView('About');
-
-  const cards = [
-    {
-      title: 'The Journey Begins',
-      icon: <FaRegCompass className='text-2xl text-purple-500' />,
-      content:
-        'Life often takes us on unexpected journeys. My path from being a casino dealer and supervisor on cruise ships to becoming a Front-End developer was anything but conventional.',
-      gradient:
-        'from-purple-100/20 to-pink-100/20 dark:from-purple-900/10 dark:to-pink-900/10',
-    },
-    {
-      title: 'The Transition',
-      icon: <HiOutlineLightBulb className='text-2xl text-yellow-500' />,
-      content:
-        'Driven by a deep-seated curiosity for technology and a desire for change, I enrolled in an Android development course. This first step into mobile app development opened my eyes to the possibilities in tech.',
-      gradient:
-        'from-yellow-100/20 to-orange-100/20 dark:from-yellow-900/10 dark:to-orange-900/10',
-    },
-    {
-      title: 'The Discovery',
-      icon: <FaCode className='text-2xl text-blue-500' />,
-      content:
-        'While Android development was fulfilling, I found my true passion in Front-End development. Learning HTML, CSS, and JavaScript revealed a perfect blend of creativity and technical challenge.',
-      gradient:
-        'from-blue-100/20 to-cyan-100/20 dark:from-blue-900/10 dark:to-cyan-900/10',
-    },
-    {
-      title: 'Present Course',
-      icon: <BsStars className='text-2xl text-emerald-500' />,
-      content:
-        "Today, I'm crafting digital experiences where creativity meets code. Each project is an opportunity to combine my people skills from hospitality with technical expertise.",
-      gradient:
-        'from-emerald-100/20 to-teal-100/20 dark:from-emerald-900/10 dark:to-teal-900/10',
-    },
-  ];
 
   return (
     <section id='about' ref={ref} className='mb-14 scroll-mt-28 px-4'>
