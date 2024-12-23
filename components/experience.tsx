@@ -55,14 +55,17 @@ function TimelineElement({ item, theme, position }: TimelineElementProps) {
     <div ref={ref}>
       <VerticalTimelineElement
         visible={inView}
-        className='vertical-timeline-element--work'
+        className='vertical-timeline-element--work '
         contentStyle={{
           background:
-            theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
+            theme === 'light'
+              ? 'rgba(243,235,255,0.3)'
+              : 'rgba(255, 255, 255, 0.05)',
           boxShadow: 'none',
           border: '1px solid rgba(0, 0, 0, 0.05)',
           textAlign: 'left',
           padding: '1.3rem 2rem',
+          marginBottom: '2rem',
         }}
         contentArrowStyle={{
           borderRight:
@@ -80,7 +83,7 @@ function TimelineElement({ item, theme, position }: TimelineElementProps) {
       >
         <h3 className='font-semibold capitalize'>{item.title}</h3>
         <p className='font-normal !mt-0'>{item.location}</p>
-        <p className='!mt-1 !font-normal text-slate-700 dark:text-white/75'>
+        <p className='!mt-1 !font-normal text-slate-600 dark:text-white/75'>
           {item.description}
         </p>
       </VerticalTimelineElement>

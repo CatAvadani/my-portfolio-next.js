@@ -93,7 +93,7 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className='relative z-10 block text-2xl font-bold text-slate-500 transition-colors duration-500 group-hover:text-slate-600 md:text-4xl'
+          className='relative z-10 block text-xl sm:text-2xl font-bold text-slate-500 transition-colors duration-500 group-hover:text-slate-600 md:text-4xl'
         >
           {heading.split('').map((l, i) => (
             <motion.span
@@ -109,7 +109,7 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className='relative z-10 mt-2 block text-base text-slate-500 transition-colors duration-500 group-hover:text-slate-600 max-w-[50%]'>
+        <span className='relative z-10 mt-2 block text-sm sm:text-base text-slate-500 transition-colors duration-500 group-hover:text-slate-600 max-w-[70%] sm:max-w-[60%]'>
           {subheading}
         </span>
       </div>
