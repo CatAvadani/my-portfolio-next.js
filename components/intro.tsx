@@ -33,7 +33,7 @@ export default function Intro() {
           <div className='max-w-2xl'>
             {/* Small greeting text */}
             <motion.p
-              className='text-gray-500 dark:text-gray-400 mb-4 text-lg'
+              className='text-gray-500 text-center sm:text-start dark:text-gray-400 mb-4 text-lg'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -43,7 +43,7 @@ export default function Intro() {
 
             {/* Main heading */}
             <motion.h1
-              className='text-5xl sm:text-6xl font-extralight mb-6 tracking-tight'
+              className='text-4xl sm:text-6xl text-center sm:text-start font-extralight mb-6 tracking-tight'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -53,7 +53,7 @@ export default function Intro() {
 
             {/* Description */}
             <motion.p
-              className='text-lg text-gray-600 dark:text-gray-300 mb-12 leading-relaxed'
+              className='text-lg text-center sm:text-start text-gray-600 dark:text-gray-300 mb-12 leading-relaxed'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -75,10 +75,10 @@ export default function Intro() {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               {/* Primary buttons */}
-              <div className='flex flex-col sm:flex-row gap-4'>
+              <div className='flex sm:flex-row gap-4 justify-center'>
                 <Link
                   href='#contact'
-                  className='group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900 active:scale-105 transition cursor-pointer dark:bg-gray-800/70'
+                  className='group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70'
                   onClick={() => {
                     setActiveSection('Contact');
                     setTimeOfLastClick(Date.now());
@@ -89,7 +89,7 @@ export default function Intro() {
                 </Link>
 
                 <a
-                  className='group bg-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 hover:border-black/30 dark:bg-white/10 dark:text-white/60'
+                  className='group bg-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition duration-300 cursor-pointer border border-black/10 hover:border-black/30 dark:bg-white/10 dark:text-white/60'
                   href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:4c26f7fe-7c18-4461-9073-2928243e39fd/?promoid=DRCFIIQN&mv=other&mv2=unav&locale=en-US&filetype=application%2Fpdf'
                   download
                 >
@@ -99,9 +99,9 @@ export default function Intro() {
               </div>
 
               {/* Social links */}
-              <div className='flex gap-3'>
+              <div className='flex gap-4 justify-center'>
                 <a
-                  className='bg-white/90 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 hover:border-black/20 dark:bg-white/10 dark:text-white/60'
+                  className='bg-white/90 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-black/10 hover:border-black/20 dark:bg-white/10 dark:text-white/60'
                   href='https://www.linkedin.com/in/catalinaava09/'
                   target='_blank'
                 >
@@ -109,7 +109,7 @@ export default function Intro() {
                 </a>
 
                 <a
-                  className='bg-white/90 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 hover:border-black/20 dark:bg-white/10 dark:text-white/60'
+                  className='bg-white/90 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-black/10 hover:border-black/20 dark:bg-white/10 dark:text-white/60'
                   href='https://github.com/CatAvadani'
                   target='_blank'
                 >
@@ -130,7 +130,7 @@ export default function Intro() {
             ease: [0.4, 0, 0.2, 1],
           }}
         >
-          <div className='relative w-[450px] h-[450px]'>
+          <div className='relative w-[300px] h-[300px] sm:w-[450px] sm:h-[450px]'>
             <Image
               src={require('../public/Catalina3.png')}
               alt='My Image'

@@ -10,7 +10,7 @@ export default function CircularTextDivider() {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center gap-8 pb-20 -mt-20'>
+    <div className='flex flex-col items-center justify-center gap-8 pb-20 sm:-mt-20'>
       <motion.button
         onClick={handleClick}
         className='relative w-48 h-48 group cursor-pointer'
