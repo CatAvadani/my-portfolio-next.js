@@ -46,12 +46,12 @@ export default function About() {
   ];
 
   return (
-    <section id='about' ref={ref} className='mb-28 scroll-mt-28 px-4'>
+    <section id='about' ref={ref} className='mb-14 scroll-mt-28 px-4'>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
-        className='space-y-12 max-w-5xl mx-auto'
+        className='space-y-12 max-w-7xl mx-auto'
       >
         <div className='text-center'>
           <SectionHeading>About Me</SectionHeading>
