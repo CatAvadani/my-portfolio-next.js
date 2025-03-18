@@ -4,9 +4,9 @@ A modern, responsive portfolio website showcasing my projects and professional e
 
 <div align="left">
   <img src="public/Screenshot_1.png" alt="Intro_img" width="300"/>
-    <img src="public/Screenshot_2.png" alt="Interactive Map View" width="300"/>
-      <img src="public/Screenshot_3.png" alt="Interactive Map View" width="300"/>
-     <img src="public/Screenshot_4.png" alt="Interactive Map View" width="300"/>
+    <img src="public/Screenshot_2.png" alt="About_img" width="300"/>
+      <img src="public/Screenshot_3.png" alt="Projects_img" width="300"/>
+     <img src="public/Screenshot_4.png" alt="Experience_img" width="300"/>
 </div>
 
 ## Live Demo
