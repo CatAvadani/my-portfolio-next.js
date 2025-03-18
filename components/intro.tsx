@@ -58,13 +58,9 @@ export default function Intro() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              I love building Web user interfaces & digital products with focus
-              on responsive design, accessibility, performance, and cutting-edge
-              technologies like{" "}
-              <span className="underline decoration-gray-500 underline-offset-4">
-                React (Next.js)
-              </span>
-              .
+              I’m passionate about creating intuitive, accessible, and visually
+              stunning web experiences that make a difference.
+              {/* <span className="font-semibold">React, Next.js</span>. */}
             </motion.p>
 
             {/* Buttons section */}
@@ -78,7 +74,8 @@ export default function Intro() {
               <div className="flex sm:flex-row gap-2 sm:gap-4 justify-center sm:justify-start">
                 <Link
                   href="#contact"
-                  className="group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70"
+                  className="group bg-violet-950/70 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
+                  hover:bg-violet-950/85 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70"
                   onClick={() => {
                     setActiveSection("Contact");
                     setTimeOfLastClick(Date.now());
