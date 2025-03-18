@@ -38,7 +38,7 @@ export default function About() {
               }}
             >
               <motion.div
-                className={`group h-full p-6 rounded-xl bg-gradient-to-br ${card.gradient} backdrop-blur-sm border border-black/5 hover:border-black/10 dark:border-white/10 dark:hover:border-white/20 transition-all duration-300`}
+                className={`group h-full p-6 rounded-xl bg-gradient-to-br ${card.gradient} backdrop-blur-lg border border-white/20 hover:border-white/50 dark:border-white/10 dark:hover:border-white/20 transition-all duration-300`}
                 whileHover={{
                   y: -5,
                   transition: { duration: 0.2 },
