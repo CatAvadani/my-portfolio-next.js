@@ -86,7 +86,7 @@ export default function Intro() {
                 </Link>
 
                 <a
-                  className="group bg-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition duration-300 cursor-pointer border border-black/10 hover:border-black/30 dark:bg-white/10 dark:text-white/60"
+                  className="group bg-white/50 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20  dark:bg-white/10 dark:text-white/60"
                   href="https://acrobat.adobe.com/id/urn%3Aaaid%3Asc%3AEU%3Ad8a415b8-0ddb-4035-a29e-8c26b73e5300/?promoid=HQZ6X2MS&xProduct=&mv=other&mv2=ahome&xProductLocation=&locale=en-US&filetype=application%2Fpdf&viewer%21megaVerb=group-discover"
                   download
                 >
@@ -98,7 +98,7 @@ export default function Intro() {
               {/* Social links */}
               <div className="flex gap-2 sm:gap-4 justify-center sm:justify-start">
                 <a
-                  className="bg-white/90 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-black/10 hover:border-black/20 dark:bg-white/10 dark:text-white/60"
+                  className=" bg-white/50 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20 dark:bg-white/10 dark:text-white/60"
                   href="https://www.linkedin.com/in/catalinaava09/"
                   target="_blank"
                 >
@@ -106,7 +106,7 @@ export default function Intro() {
                 </a>
 
                 <a
-                  className="bg-white/90 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-black/10 hover:border-black/20 dark:bg-white/10 dark:text-white/60"
+                  className=" bg-white/50 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20  dark:bg-white/10 dark:text-white/60"
                   href="https://github.com/CatAvadani"
                   target="_blank"
                 >

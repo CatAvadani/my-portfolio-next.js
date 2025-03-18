@@ -1,10 +1,10 @@
-'use client';
-import { projectsData } from '@/lib/data';
-import { useSectionInView } from '@/lib/hooks';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import React, { useRef } from 'react';
-import { FiArrowRight } from 'react-icons/fi';
-import SectionHeading from './section-heading';
+"use client";
+import { projectsData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import React, { useRef } from "react";
+import { FiArrowRight } from "react-icons/fi";
+import SectionHeading from "./section-heading";
 
 interface MouseEventWithClient extends React.MouseEvent<HTMLAnchorElement> {
   clientX: number;
@@ -19,17 +19,17 @@ interface LinkProps {
 }
 
 export const Projects = () => {
-  const { ref } = useSectionInView('Projects', 0.5);
+  const { ref } = useSectionInView("Projects", 0.5);
   return (
     <section
-      id='projects'
+      id="projects"
       ref={ref}
-      className=' p-4 md:p-8 w-full max-w-7xl scroll-mt-28 mb-28'
+      className=" p-4 md:p-8 w-full max-w-7xl scroll-mt-28 mb-28"
     >
-      <div className='mb-20'>
+      <div className="mb-20">
         <SectionHeading>Projects</SectionHeading>
       </div>
-      <div className='mx-auto'>
+      <div className="mx-auto">
         {projectsData.map((project, index) => (
           <Link
             key={index}
@@ -53,8 +53,8 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
   const mouseXSpring = useSpring(x);
   const mouseYSpring = useSpring(y);
 
-  const top = useTransform(mouseYSpring, [0.5, -0.5], ['40%', '60%']);
-  const left = useTransform(mouseXSpring, [0.5, -0.5], ['60%', '70%']);
+  const top = useTransform(mouseYSpring, [0.5, -0.5], ["40%", "60%"]);
+  const left = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
 
   const handleMouseMove = (e: MouseEventWithClient) => {
     if (!ref.current) return;
@@ -78,9 +78,9 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
       href={href}
       ref={ref}
       onMouseMove={handleMouseMove}
-      initial='initial'
-      whileHover='whileHover'
-      className='group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-300 md:py-8'
+      initial="initial"
+      whileHover="whileHover"
+      className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-300 md:py-8"
     >
       <div>
         <motion.span
@@ -89,27 +89,27 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
             whileHover: { x: -16 },
           }}
           transition={{
-            type: 'spring',
+            type: "spring",
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className='relative z-10 block text-xl sm:text-2xl font-bold text-slate-500 transition-colors duration-500 group-hover:text-slate-600 md:text-4xl'
+          className="relative z-10 block text-xl sm:text-2xl font-bold text-gray-500 transition-colors duration-500 group-hover:text-gray-600 md:text-4xl"
         >
-          {heading.split('').map((l, i) => (
+          {heading.split("").map((l, i) => (
             <motion.span
               variants={{
                 initial: { x: 0 },
                 whileHover: { x: 16 },
               }}
-              transition={{ type: 'spring' }}
-              className='inline-block'
+              transition={{ type: "spring" }}
+              className="inline-block"
               key={i}
             >
               {l}
             </motion.span>
           ))}
         </motion.span>
-        <span className='relative z-10 mt-2 block text-sm sm:text-base text-slate-500 transition-colors duration-500 group-hover:text-slate-600 max-w-[70%] sm:max-w-[60%]'>
+        <span className="relative z-10 mt-2 block text-sm sm:text-base text-gray-500 transition-colors duration-500 group-hover:text-gray-600 max-w-[70%] sm:max-w-[60%]">
           {subheading}
         </span>
       </div>
@@ -118,34 +118,34 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
         style={{
           top,
           left,
-          translateX: '-50%',
-          translateY: '-50%',
+          translateX: "-50%",
+          translateY: "-50%",
         }}
         variants={{
-          initial: { scale: 0, rotate: '-12.5deg' },
-          whileHover: { scale: 1, rotate: '12.5deg' },
+          initial: { scale: 0, rotate: "-12.5deg" },
+          whileHover: { scale: 1, rotate: "12.5deg" },
         }}
-        transition={{ type: 'spring' }}
+        transition={{ type: "spring" }}
         src={imgSrc}
-        className='absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64'
+        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
         alt={`Image representing a link for ${heading}`}
       />
 
       <motion.div
         variants={{
           initial: {
-            x: '25%',
+            x: "25%",
             opacity: 0,
           },
           whileHover: {
-            x: '0%',
+            x: "0%",
             opacity: 1,
           },
         }}
-        transition={{ type: 'spring' }}
-        className='relative z-10 p-4'
+        transition={{ type: "spring" }}
+        className="relative z-10 p-4"
       >
-        <FiArrowRight className='text-5xl text-slate-500' />
+        <FiArrowRight className="text-5xl text-gray-500" />
       </motion.div>
     </motion.a>
   );
