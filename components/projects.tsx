@@ -80,7 +80,7 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-300 md:py-8"
+      className="group relative flex items-center justify-between border-b border-gray-200 py-4 transition-colors duration-500 hover:border-gray-400 md:py-8"
     >
       <div>
         <motion.span
