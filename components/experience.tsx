@@ -20,7 +20,7 @@ interface TimelineElementProps {
     icon: React.ReactNode;
   };
   theme: string;
-  position: "left" | "right";
+  // position: "left" | "right";
 }
 
 export default function Experience() {
@@ -31,13 +31,13 @@ export default function Experience() {
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
 
-      <VerticalTimeline lineColor="" animate={true}>
+      <VerticalTimeline lineColor="" animate={true} layout="1-column">
         {experiencesData.map((item, index) => (
           <TimelineElement
             key={index}
             item={item}
             theme={theme}
-            position={index % 2 === 0 ? "left" : "right"}
+            // position={index % 2 === 0 ? "left" : "right"}
           />
         ))}
       </VerticalTimeline>
@@ -45,7 +45,7 @@ export default function Experience() {
   );
 }
 
-function TimelineElement({ item, theme, position }: TimelineElementProps) {
+function TimelineElement({ item, theme }: TimelineElementProps) {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -62,7 +62,7 @@ function TimelineElement({ item, theme, position }: TimelineElementProps) {
               ? "rgba(243,235,255,0.3)"
               : "rgba(255, 255, 255, 0.05)",
           boxShadow: "none",
-          border: "2px solid rgba(255, 255, 255, 0.80)",
+          // border: "2px solid rgba(255, 255, 255, 0.80)",
           textAlign: "left",
           padding: "1.3rem 2rem",
           marginBottom: "2rem",
@@ -79,7 +79,7 @@ function TimelineElement({ item, theme, position }: TimelineElementProps) {
           background: theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
           fontSize: "1.5rem",
         }}
-        position={position}
+        // position={position}
       >
         <h3 className="font-semibold capitalize">{item.title}</h3>
         <p className="font-normal !mt-0">{item.location}</p>
