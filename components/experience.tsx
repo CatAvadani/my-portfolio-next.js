@@ -59,10 +59,10 @@ function TimelineElement({ item, theme }: TimelineElementProps) {
         contentStyle={{
           background:
             theme === "light"
-              ? "rgba(243,235,255,0.3)"
+              ? "rgba(243,235,255,0.4)"
               : "rgba(255, 255, 255, 0.05)",
           boxShadow: "none",
-          // border: "2px solid rgba(255, 255, 255, 0.80)",
+          // border: "1px solid rgba(255, 255, 255, 0.80)",
           textAlign: "left",
           padding: "1.3rem 2rem",
           marginBottom: "2rem",
@@ -70,7 +70,7 @@ function TimelineElement({ item, theme }: TimelineElementProps) {
         contentArrowStyle={{
           borderRight:
             theme === "light"
-              ? "0.4rem solid #f3f4f6"
+              ? "0.4rem solid #f6f2f9"
               : "0.4rem solid rgba(255, 255, 255, 0.5)",
         }}
         date={item.date}
@@ -83,7 +83,7 @@ function TimelineElement({ item, theme }: TimelineElementProps) {
       >
         <h3 className="font-semibold capitalize">{item.title}</h3>
         <p className="font-normal !mt-0">{item.location}</p>
-        <p className="!mt-1 !font-normal text-slate-600 dark:text-white/75">
+        <p className="!mt-1 !font-normal text-gray-500 dark:text-white/75">
           {item.description}
         </p>
       </VerticalTimelineElement>
