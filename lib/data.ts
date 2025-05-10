@@ -66,49 +66,70 @@ export const experiencesData = [
   },
 ] as const;
 
+// Updated projectsData with additional information for Nexer projects
+
 export const projectsData = [
   {
     heading: "Digital Travel Journal",
     subheading:
-      "An interactive web app for documenting journeys with maps, tracking trips, and creating shareable postcards.",
+      "An interactive app for travel enthusiasts that combines map, API integrations, and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet for its technical innovation and WCAG accessibility standards implementation.",
+    techStack:
+      "Next.js, TypeScript, Zustand, Tailwind CSS, Firebase, Mapbox API",
     imgSrc: "/DigitalTravelJournal.png",
     href: "https://digital-travel-journal-wnb8.vercel.app/",
+    isNexerProject: false,
   },
   {
-    heading: "Next Design",
+    heading: "Nexer Email",
     subheading:
-      "The project reflects a clean and elegant aesthetic while showcasing practical skills in front-end development and modern web technologies.",
-    imgSrc: "/NextDesign.png",
-    href: "https://nextjs-webbshop-ts-chaos.vercel.app",
+      "A professional project developed at Nexer Group for creating and managing responsive email campaigns. Built a complex system from scratch focusing on cross-client compatibility and accessibility.",
+    techStack: "Next.js, TypeScript, Zustand, Scss, Cypress",
+    imgSrc: "/Nexer_Email.png",
+    href: "#",
+    isNexerProject: true,
+    modalDescription:
+      "The Email Builder is a web-based tool that allows marketing teams to create responsive email campaigns. I contributed to developing this complex system from scratch with a focus on ensuring emails render correctly across different clients while maintaining accessibility standards.",
+    highlights: [
+      "Implemented preview system for visualizing email designs across different clients including Gmail and Outlook",
+      "Engineered solutions for compatibility issues in email rendering to ensure consistent appearance",
+      "Developed test-driven approach with Cypress for ensuring stability and preventing regressions",
+      "Created accessible components according to WCAG standards for inclusive user experience",
+    ],
+  },
+  {
+    heading: "Boost App",
+    subheading:
+      "Contributed to a fitness tracking platform at Nexer Group by implementing a complete UI redesign and enhancing functionality. Transformed the user experience through modern design principles while ensuring cross-platform compatibility.",
+    techStack: "React Native, Angular, TypeScript, Context API",
+    imgSrc: "/Boost_App.png",
+    href: "#",
+    isNexerProject: true,
+    modalDescription:
+      "Boost App is a cross-platform fitness tracking application designed to promote health and activity among employees. I worked on redesigning key aspects of the user interface to improve usability and visual appeal, while ensuring seamless functionality across both mobile and web platforms.",
+    highlights: [
+      "Redesigned and implemented the competition section UI in the admin interface according to new Figma specifications",
+      "Created new responsive layouts and interactive components that improved user engagement",
+      "Resolved cross-platform synchronization issues between mobile app and web admin dashboard",
+      "Implemented UI components with a focus on accessibility and visual consistency",
+    ],
   },
   {
     heading: "TV MaZe",
     subheading:
-      "A React Native app that lets users search for TV shows, view details, and manage favorites using the TV Maze API.",
+      "A mobile application developed with React Native that allows users to search for TV shows, view detailed information, and manage favorites. Focuses on performance and user experience in a mobile context.",
+    techStack: "React Native, TypeScript, Firebase, Tailwind CSS",
     imgSrc: "/TVMaze.png",
     href: "https://github.com/CatAvadani/tv-maze-react-native-app",
+    isNexerProject: false,
   },
   {
     heading: "My Nutrition Plan",
     subheading:
-      "An app for exploring and saving recipes, featuring search functionality, API integration, and responsive design.",
+      "A web application for exploring and saving recipes with search and filtering functionality. Demonstrates skills in API integration and responsive design.",
+    techStack: "React, TypeScript, Styled Components, Edamam API",
     imgSrc: "/MyNutritionPlan.png",
     href: "https://my-nutrition-plan.vercel.app/",
-  },
-  {
-    heading: "FlicK PicK",
-    subheading:
-      "The primary objective of this project was to practice and enhance skills in unit and integration testing within a React application.",
-    imgSrc: "/FlickPick.png",
-    href: "https://flick-pick-unit-and-integration-testing-project.vercel.app/",
-  },
-
-  {
-    heading: "Avira Design",
-    subheading:
-      "Designed a custom graphical profile and logo with Adobe Illustrator, created responsive wireframes and mockups, and focused on showcasing a functional design.",
-    imgSrc: "/AviraDesign.png",
-    href: "https://avira-design.vercel.app/",
+    isNexerProject: false,
   },
 ] as const;
 
