@@ -36,5 +36,5 @@ A modern, responsive portfolio website showcasing my projects and professional e
 ## Acknowledgements
 
 - Design inspiration from various sources while adding my personal touch
-- Tutorial foundation with significant customizations to fit my needs
+
 
