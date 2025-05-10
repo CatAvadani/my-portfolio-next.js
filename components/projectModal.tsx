@@ -4,7 +4,19 @@ import React, { useEffect } from "react";
 import { FiX } from "react-icons/fi";
 
 interface ProjectModalProps {
-  project: any;
+  project: {
+    heading: string;
+    subheading: string;
+    techStack: string;
+    imgSrc: string;
+    href: string;
+    github?: string;
+    isNexerProject?: boolean;
+    modalDescription?: string;
+    additionalDescription?: string;
+    highlights?: string[];
+    isMobileApp?: boolean;
+  };
   onClose: () => void;
 }
 

@@ -77,6 +77,7 @@ export const projectsData = [
       "Next.js, TypeScript, Zustand, Tailwind CSS, Firebase, Mapbox API",
     imgSrc: "/DigitalTravelJournal.png",
     href: "https://digital-travel-journal-wnb8.vercel.app/",
+    github: "https://github.com/CatAvadani/digital-travel-journal",
     isNexerProject: false,
   },
   {
@@ -119,8 +120,10 @@ export const projectsData = [
       "A mobile application developed with React Native that allows users to search for TV shows, view detailed information, and manage favorites. Focuses on performance and user experience in a mobile context.",
     techStack: "React Native, TypeScript, Firebase, Tailwind CSS",
     imgSrc: "/TVMaze.png",
+    github: "https://github.com/CatAvadani/tv-maze-react-native-app",
     href: "https://github.com/CatAvadani/tv-maze-react-native-app",
     isNexerProject: false,
+    isMobileApp: true,
   },
   {
     heading: "My Nutrition Plan",
@@ -128,10 +131,11 @@ export const projectsData = [
       "A web application for exploring and saving recipes with search and filtering functionality. Demonstrates skills in API integration and responsive design.",
     techStack: "React, TypeScript, Styled Components, Edamam API",
     imgSrc: "/MyNutritionPlan.png",
+    github: "https:github.com/CatAvadani/my-nutrition-plan",
     href: "https://my-nutrition-plan.vercel.app/",
     isNexerProject: false,
   },
-] as const;
+];
 
 export const skillsData = [
   "HTML",
