@@ -74,7 +74,7 @@ export const Projects = () => {
 
 const TechChip = ({ tech }: { tech: string }) => {
   return (
-    <span className="inline-block rounded-full px-3 py-1 bg-purple-50 text-gray-500 dark:bg-purple-900 dark:text-purple-200 text-sm">
+    <span className="inline-block rounded-full px-3 py-1 bg-purple-100/50 shadow-sm text-gray-500 dark:bg-purple-900 dark:text-purple-200 text-sm">
       {tech}
     </span>
   );

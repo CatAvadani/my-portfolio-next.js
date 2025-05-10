@@ -128,7 +128,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                 .map((tech: string, index: number) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-purple-100 text-gray-500 dark:bg-purple-900 dark:text-purple-200 rounded-full text-sm"
+                    className="px-3 py-1 bg-purple-100 shadow-sm text-gray-500 dark:bg-purple-900 dark:text-purple-200 rounded-full text-sm"
                   >
                     {tech}
                   </span>
