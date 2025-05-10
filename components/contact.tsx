@@ -23,12 +23,16 @@ export default function Contact() {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className=" text-gray-700 -mt-5 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:catalina_ava@yahoo.com">
+
+      <p className="text-lg text-gray-600 dark:text-gray-300">
+        Feel free to reach out via email at{" "}
+        <a
+          href="mailto:catalina_ava@yahoo.com"
+          className="text-violet-800 dark:text-violet-400 hover:underline transition"
+        >
           catalina_ava@yahoo.com
         </a>{" "}
-        or through this form.
+        or send a message using the form below.
       </p>
       <form
         className=" mt-10 flex flex-col dark:text-black "
@@ -42,7 +46,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="px-4 h-14 border border-white/80 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="px-4 h-14 shadow-md border rounded-lg border-white/80 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -50,7 +54,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg border-white/80 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-32 my-3 shadow-md rounded-lg border-white/80 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required

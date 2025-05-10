@@ -74,7 +74,7 @@ export default function Intro() {
               <div className="flex sm:flex-row gap-2 sm:gap-4 justify-center sm:justify-start">
                 <Link
                   href="#contact"
-                  className="group bg-violet-950/70 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 
+                  className="group bg-violet-950/70 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none 
                   hover:bg-violet-950/85 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70"
                   onClick={() => {
                     setActiveSection("Contact");
@@ -86,7 +86,7 @@ export default function Intro() {
                 </Link>
 
                 <a
-                  className="group bg-white/50 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20  dark:bg-white/10 dark:text-white/60"
+                  className="group bg-white/50 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none   active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20  dark:bg-white/10 dark:text-white/60"
                   href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:6a8510f8-001f-4215-a19c-7ffa50f1fe9e"
                   download
                 >

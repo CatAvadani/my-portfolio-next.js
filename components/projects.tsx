@@ -3,7 +3,7 @@ import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import React, { useRef, useState } from "react";
-import { FiArrowRight, FiExternalLink } from "react-icons/fi";
+import { FiArrowRight, FiExternalLink, FiGithub } from "react-icons/fi";
 import ProjectModal from "./projectModal";
 import SectionHeading from "./section-heading";
 
@@ -19,6 +19,7 @@ interface LinkProps {
   subheading: string;
   techStack: string;
   href: string;
+  github?: string;
   isNexerProject?: boolean;
   project?: any;
   onClick?: (e: React.MouseEvent) => void;
@@ -32,6 +33,20 @@ export const Projects = () => {
     if (project.isNexerProject) {
       e.preventDefault();
       setActiveProject(project);
+    } else if (
+      !e.defaultPrevented &&
+      project.href &&
+      !project.techStack.includes("React Native")
+    ) {
+      // For non-Nexer projects with a valid href, open the demo in a new tab
+      window.open(project.href, "_blank", "noopener,noreferrer");
+    } else if (
+      !e.defaultPrevented &&
+      project.github &&
+      project.techStack.includes("React Native")
+    ) {
+      // For React Native projects, open the GitHub repo
+      window.open(project.github, "_blank", "noopener,noreferrer");
     }
   };
 
@@ -57,6 +72,7 @@ export const Projects = () => {
             techStack={project.techStack}
             imgSrc={project.imgSrc}
             href={project.href}
+            github={project.github}
             isNexerProject={project.isNexerProject}
             project={project}
             onClick={(e) => handleProjectClick(e, project)}
@@ -74,7 +90,7 @@ export const Projects = () => {
 
 const TechChip = ({ tech }: { tech: string }) => {
   return (
-    <span className="inline-block rounded-full px-3 py-1 bg-purple-100/50 shadow-sm text-gray-500 dark:bg-purple-900 dark:text-purple-200 text-sm">
+    <span className="inline-block rounded-full px-3 py-1 bg-purple-100/50 shadow-sm text-gray-500 dark:bg-gray-800 dark:text-purple-100 text-sm">
       {tech}
     </span>
   );
@@ -85,6 +101,7 @@ const Link = ({
   imgSrc,
   subheading,
   href,
+  github,
   techStack,
   isNexerProject,
   onClick,
@@ -119,26 +136,30 @@ const Link = ({
 
   const technologies = techStack.split(", ");
 
-  // Use div instead of anchor for Nexer projects
-  const Component = isNexerProject ? motion.div : motion.a;
+  // Handle clicks for live demo links in non-Nexer projects
+  const handleDemoClick = (e: React.MouseEvent) => {
+    e.preventDefault(); // This prevents the card click handler from firing
+    if (!isNexerProject && href) {
+      window.open(href, "_blank", "noopener,noreferrer");
+    }
+  };
 
-  // Set props based on project type
-  const componentProps = isNexerProject
-    ? { onClick }
-    : {
-        href,
-        target: "_blank",
-        rel: "noopener noreferrer", // Security best practice for external links
-      };
+  // Handle clicks for GitHub links
+  const handleGithubClick = (e: React.MouseEvent) => {
+    e.preventDefault(); // This prevents the card click handler from firing
+    if (github) {
+      window.open(github, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
-    <Component
-      {...componentProps}
-      ref={ref as React.Ref<HTMLDivElement & HTMLAnchorElement>}
+    <motion.div
+      ref={ref as React.Ref<HTMLDivElement>}
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
       className="group relative flex items-center justify-between border-b border-gray-200 py-4 transition-colors duration-500 hover:border-gray-400 md:py-8 cursor-pointer"
+      onClick={onClick}
     >
       <div>
         <motion.span
@@ -177,6 +198,44 @@ const Link = ({
             <TechChip key={index} tech={tech} />
           ))}
         </div>
+
+        {/* Project Links */}
+        {!isNexerProject ? (
+          <div className="relative z-10 mt-4 flex space-x-3">
+            {!techStack.includes("React Native") && href && href !== "" && (
+              <button
+                onClick={handleDemoClick}
+                className="flex items-center gap-1 text-sm text-purple-600 hover:text-purple-800 dark:text-purple-300 dark:hover:text-purple-200 transition-colors"
+                aria-label={`Visit live demo for ${heading}`}
+              >
+                <FiExternalLink className="text-lg" />
+                <span>Live Demo</span>
+              </button>
+            )}
+            {github && (
+              <button
+                onClick={handleGithubClick}
+                className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300 transition-colors border border-gray-200 dark:border-gray-700 rounded-full px-2 py-1"
+                aria-label={`View source code for ${heading} on GitHub`}
+              >
+                <FiGithub className="text-lg" />
+                <span>Source Code</span>
+              </button>
+            )}
+            {techStack.includes("React Native") && (
+              <div className="flex items-center gap-1 text-sm text-purple-600 dark:text-gray-400">
+                <span className="italic">Mobile app</span>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="relative z-10 mt-4 flex space-x-3">
+            <span className="text-sm text-purple-600 dark:text-gray-400">
+              Nexer Group Project -{" "}
+              <span className="italic text-gray-600">Click for details</span>
+            </span>
+          </div>
+        )}
       </div>
 
       <motion.img
@@ -210,13 +269,8 @@ const Link = ({
         transition={{ type: "spring" }}
         className="relative z-10 p-4"
       >
-        {/* Use different icon for Nexer vs external projects */}
-        {isNexerProject ? (
-          <FiArrowRight className="text-3xl text-gray-500" />
-        ) : (
-          <FiExternalLink className="text-3xl text-gray-500" />
-        )}
+        <FiArrowRight className="text-3xl text-gray-500" />
       </motion.div>
-    </Component>
+    </motion.div>
   );
 };

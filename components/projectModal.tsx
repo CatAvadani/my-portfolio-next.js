@@ -4,7 +4,19 @@ import React, { useEffect } from "react";
 import { FiX } from "react-icons/fi";
 
 interface ProjectModalProps {
-  project: any;
+  project: {
+    heading: string;
+    subheading: string;
+    techStack: string;
+    imgSrc: string;
+    href: string;
+    github?: string;
+    isNexerProject?: boolean;
+    modalDescription?: string;
+    additionalDescription?: string;
+    highlights?: string[];
+    isMobileApp?: boolean;
+  };
   onClose: () => void;
 }
 
@@ -75,7 +87,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           {/* Company and Role */}
           <div className="mb-6">
             <div className="flex items-center mb-2">
-              <span className="font-medium text-purple-600 dark:text-purple-400">
+              <span className="font-medium text-purple-600 dark:text-purple-300">
                 Nexer Group
               </span>
               <span className="mx-2 text-gray-400">•</span>
@@ -128,7 +140,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                 .map((tech: string, index: number) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-purple-100 shadow-sm text-gray-500 dark:bg-purple-900 dark:text-purple-200 rounded-full text-sm"
+                    className="px-3 py-1 bg-purple-100 shadow-sm text-gray-500 dark:bg-gray-800 dark:text-purple-100 rounded-full text-sm"
                   >
                     {tech}
                   </span>
