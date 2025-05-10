@@ -90,7 +90,7 @@ export const Projects = () => {
 
 const TechChip = ({ tech }: { tech: string }) => {
   return (
-    <span className="inline-block rounded-full px-3 py-1 bg-purple-100/50 shadow-sm text-gray-500 dark:bg-purple-900 dark:text-purple-200 text-sm">
+    <span className="inline-block rounded-full px-3 py-1 bg-purple-100/50 shadow-sm text-gray-500 dark:bg-gray-800 dark:text-purple-100 text-sm">
       {tech}
     </span>
   );
@@ -205,7 +205,7 @@ const Link = ({
             {!techStack.includes("React Native") && href && href !== "" && (
               <button
                 onClick={handleDemoClick}
-                className="flex items-center gap-1 text-sm text-purple-600 hover:text-purple-800 dark:text-purple-400 dark:hover:text-purple-300 transition-colors"
+                className="flex items-center gap-1 text-sm text-purple-600 hover:text-purple-800 dark:text-purple-300 dark:hover:text-purple-200 transition-colors"
                 aria-label={`Visit live demo for ${heading}`}
               >
                 <FiExternalLink className="text-lg" />

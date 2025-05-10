@@ -37,7 +37,7 @@ export const experiencesData = [
     description:
       "Developing a modern email marketing solution at Nexer using Next.js and TypeScript with Zustand for state management. The platform features live template previewing, cross-client email testing (Gmail, Outlook), and seamless API integration. Focused on performance optimization by refining UI architecture and component design. My role extended to enhancing UX patterns across the company's React Native and Angular applications, bringing consistency to the user experience while improving core functionality.",
     icon: React.createElement(FaReact),
-    date: "Sept 2024 - present",
+    date: "Sept 2024 - April 2025",
   },
 
   {
@@ -46,7 +46,7 @@ export const experiencesData = [
     description:
       "Designed and implemented Android app features using Kotlin, Jetpack Compose, and Room Database, focusing on performance and scalability,and collaborating in an Agile environment.",
     icon: React.createElement(BsAndroid),
-    date: "Okt - Dec 2022",
+    date: "Oct 2022 - Dec 2022",
   },
   {
     title: "Senior Casino Associate",
@@ -54,7 +54,7 @@ export const experiencesData = [
     description:
       "Led high-stakes casino operations in a fast-paced environment, handling financial transactions and customer disputes with accuracy and discretion. Developed a keen eye for detail and problem-solving by identifying fraudulent activities and preventing financial losses.",
     icon: React.createElement(CgWorkAlt),
-    date: "2018 - 2024",
+    date: "Oct 2018 -June 2024",
   },
   {
     title: "Casino Supervisor",
@@ -62,7 +62,7 @@ export const experiencesData = [
     description:
       "Ensured that casino games were managed in accordance with the company's policies and regulations. Oversaw players and dealers, reviewed cash-to-chip exchanges, resolved conflicts professionally.Trained and supervised staff, ensuring strict compliance with security protocols and gaming regulations.",
     icon: React.createElement(CgWorkAlt),
-    date: "2004 - 2017",
+    date: " ",
   },
 ] as const;
 
@@ -123,7 +123,6 @@ export const projectsData = [
     github: "https://github.com/CatAvadani/tv-maze-react-native-app",
     href: "https://github.com/CatAvadani/tv-maze-react-native-app",
     isNexerProject: false,
-    isMobileApp: true,
   },
   {
     heading: "My Nutrition Plan",
