@@ -15,6 +15,7 @@ interface LinkProps {
   heading: string;
   imgSrc: string;
   subheading: string;
+  techStack: string;
   href: string;
 }
 
@@ -35,6 +36,7 @@ export const Projects = () => {
             key={index}
             heading={project.heading}
             subheading={project.subheading}
+            techStack={project.techStack}
             imgSrc={project.imgSrc}
             href={project.href}
           />
@@ -44,7 +46,15 @@ export const Projects = () => {
   );
 };
 
-const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
+const TechChip = ({ tech }: { tech: string }) => {
+  return (
+    <span className="inline-block  rounded-full px-3 py-2 text-xs font-semibold text-gray-700 mr-2 mb-2 transition-colors duration-300 hover:bg-purple_200/50 border border-gray-300">
+      {tech}
+    </span>
+  );
+};
+
+const Link = ({ heading, imgSrc, subheading, href, techStack }: LinkProps) => {
   const ref = useRef<HTMLAnchorElement>(null);
 
   const x = useMotionValue(0);
@@ -72,6 +82,9 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
     x.set(xPct);
     y.set(yPct);
   };
+
+  // Split the techStack string into an array of individual technologies
+  const technologies = techStack.split(", ");
 
   return (
     <motion.a
@@ -112,6 +125,13 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
         <span className="relative z-10 mt-2 block text-sm sm:text-base text-gray-500 transition-colors duration-500 group-hover:text-gray-600 max-w-[70%] sm:max-w-[60%]">
           {subheading}
         </span>
+
+        {/* Tech Stack Chips */}
+        <div className="relative z-10 mt-4 flex flex-wrap max-w-[90%] sm:max-w-[80%]">
+          {technologies.map((tech, index) => (
+            <TechChip key={index} tech={tech} />
+          ))}
+        </div>
       </div>
 
       <motion.img

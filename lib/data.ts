@@ -70,45 +70,43 @@ export const projectsData = [
   {
     heading: "Digital Travel Journal",
     subheading:
-      "An interactive web app for documenting journeys with maps, tracking trips, and creating shareable postcards.",
+      "An interactive app for travel enthusiasts that combines map, API integrations, and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet for its technical innovation and WCAG accessibility standards implementation.",
+    techStack:
+      "Next.js, TypeScript, Zustand, Tailwind CSS, Firebase, Mapbox API ",
     imgSrc: "/DigitalTravelJournal.png",
     href: "https://digital-travel-journal-wnb8.vercel.app/",
   },
   {
-    heading: "Next Design",
+    heading: "Nexer Email",
     subheading:
-      "The project reflects a clean and elegant aesthetic while showcasing practical skills in front-end development and modern web technologies.",
-    imgSrc: "/NextDesign.png",
-    href: "https://nextjs-webbshop-ts-chaos.vercel.app",
+      "A professional project developed at Nexer Group for creating and managing responsive email campaigns. Built a complex system from scratch focusing on cross-client compatibility and accessibility.",
+    techStack: "Next.js, TypeScript, Zustand, Scss, Cypress",
+    imgSrc: "/Nexer_Email.png",
+    href: "#",
+  },
+  {
+    heading: "Boost App",
+    subheading:
+      "Contributed to a fitness tracking platform at Nexer Group by implementing a complete UI redesign and enhancing functionality. Transformed the user experience through modern design principles while ensuring cross-platform compatibility.",
+    techStack: "React Native, TypeScript, Context API ",
+    imgSrc: "/Boost_App.png",
+    href: "#",
   },
   {
     heading: "TV MaZe",
     subheading:
-      "A React Native app that lets users search for TV shows, view details, and manage favorites using the TV Maze API.",
+      "A mobile application developed with React Native that allows users to search for TV shows, view detailed information, and manage favorites. Focuses on performance and user experience in a mobile context.",
+    techStack: "React Native, TypeScript, Firebase, Tailwind CSS",
     imgSrc: "/TVMaze.png",
     href: "https://github.com/CatAvadani/tv-maze-react-native-app",
   },
   {
     heading: "My Nutrition Plan",
     subheading:
-      "An app for exploring and saving recipes, featuring search functionality, API integration, and responsive design.",
+      "A web application for exploring and saving recipes with search and filtering functionality. Demonstrates skills in API integration and responsive design.",
+    techStack: "React, TypeScript, Styled Components,  Edamam API",
     imgSrc: "/MyNutritionPlan.png",
     href: "https://my-nutrition-plan.vercel.app/",
-  },
-  {
-    heading: "FlicK PicK",
-    subheading:
-      "The primary objective of this project was to practice and enhance skills in unit and integration testing within a React application.",
-    imgSrc: "/FlickPick.png",
-    href: "https://flick-pick-unit-and-integration-testing-project.vercel.app/",
-  },
-
-  {
-    heading: "Avira Design",
-    subheading:
-      "Designed a custom graphical profile and logo with Adobe Illustrator, created responsive wireframes and mockups, and focused on showcasing a functional design.",
-    imgSrc: "/AviraDesign.png",
-    href: "https://avira-design.vercel.app/",
   },
 ] as const;
 
