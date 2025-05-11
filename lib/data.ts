@@ -44,7 +44,7 @@ export const experiencesData = [
     title: "Android Developer - Internship",
     location: "Stendahls, Gothenburg",
     description:
-      "Designed and implemented user interfaces with Jetpack Compose and built data management solutions using Room Database. Followed MVVM architecture and implemented API integrations to connect mobile clients with backend services. Collaborated in an agile environment, participated in code reviews and optimized application performance through efficient memory management.",
+      "Designed and implemented Android app features using Kotlin, Jetpack Compose, and built data management solutions using Room Database. Followed MVVM architecture and implemented API integrations to connect mobile clients with backend services. Collaborated in an agile environment, participated in code reviews and optimized application performance through efficient memory management.",
     icon: React.createElement(DiAndroid),
     date: "Oct 2022 - Dec 2022",
   },
