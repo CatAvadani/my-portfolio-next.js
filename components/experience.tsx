@@ -21,6 +21,7 @@ export default function Experience() {
             item={item}
             index={index}
             containerRef={containerRef}
+            isLast={index === experiencesData.length - 1}
           />
         ))}
       </div>
@@ -32,6 +33,7 @@ function TimelineItem({
   item,
   index,
   containerRef,
+  isLast,
 }: {
   item: {
     icon: React.ReactNode;
@@ -43,6 +45,7 @@ function TimelineItem({
   };
   index: number;
   containerRef: React.RefObject<HTMLDivElement>;
+  isLast: boolean;
 }) {
   const { theme } = useTheme();
   const ref = useRef(null);
@@ -53,6 +56,18 @@ function TimelineItem({
     offset: ["start end", "end end"],
   });
 
+  // Calculate line heights based on content length
+  const descriptionLength = item.description.length;
+  // Adjust the height based on the content length - longer text gets longer line
+  const getLineHeight = () => {
+    if (isLast) return "h-24"; // Last item gets shorter line
+
+    // Calculate dynamic height based on description length
+    if (descriptionLength > 500) return "h-[400px]";
+    if (descriptionLength > 300) return "h-[300px]";
+    return "h-[250px]"; // Default line height
+  };
+
   return (
     <motion.div
       ref={ref}
@@ -62,32 +77,30 @@ function TimelineItem({
       viewport={{ once: true }}
       className="mb-12 last:mb-0"
     >
-      <div className="flex items-start px-10 mx-auto max-w-5xl">
+      <div className="flex items-start px-4 sm:px-10 mx-auto max-w-5xl">
         {/* Left side - Icon and line */}
-        <div className="relative mt-2 mr-4 sm:mr-6 lg:mr-20 flex flex-col items-center">
-          {/* Timeline track */}
+        <div className="relative mr-4 sm:mr-6 lg:mr-12 flex flex-col items-center">
+          {/* Timeline track - Fixed with better heights */}
           <div
-            className={`absolute h-full w-[1px] ${
-              index === experiencesData.length - 1 ? "h-[200px]" : "h-[80px]"
-            } ${
+            className={`absolute w-[1px] ${getLineHeight()} ${
               theme === "light"
-                ? "bg-gradient-to-b from-purple-400 to-purple-100"
-                : "bg-gradient-to-b from-purple-600 to-purple-900/20"
-            } top-10 left-1/2 transform -translate-x-1/2`}
+                ? "bg-gradient-to-b from-purple-400 via-blue-100 to-blue-100"
+                : "bg-gradient-to-b from-purple-400 via-purple-300 to-blue-900/10"
+            } top-8 left-1/2 transform -translate-x-1/2`}
           />
 
-          {/* Icon container */}
-          <motion.div
-            style={{ scale: scrollYProgress, opacity: scrollYProgress }}
+          {/* Icon container with improved visibility */}
+          <div
+            className={`relative z-10 flex items-center justify-center w-8 h-8 `}
           >
             <span
               className={`text-lg ${
-                theme === "light" ? "text-purple-500" : "text-purple-300"
+                theme === "light" ? "text-purple-600" : "text-purple-300"
               }`}
             >
               {item.icon}
             </span>
-          </motion.div>
+          </div>
         </div>
 
         {/* Right side - Content */}
@@ -102,7 +115,7 @@ function TimelineItem({
             <h3 className="text-xl font-bold text-gray-900 dark:text-white">
               {item.title}
             </h3>
-            <span className="text-sm font-medium text-purple-600 dark:text-purple-300">
+            <span className="text-sm font-medium text-purple-600 dark:text-purple-300 mt-1 sm:mt-0">
               {item.date}
             </span>
           </div>
@@ -118,7 +131,7 @@ function TimelineItem({
                 : "bg-purple-900/10 backdrop-blur-sm"
             }`}
           >
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               {item.description}
             </p>
 
