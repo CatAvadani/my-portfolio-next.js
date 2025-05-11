@@ -158,7 +158,7 @@ const Link = ({
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b border-gray-200 py-4 transition-colors duration-500 hover:border-gray-400 md:py-8 cursor-pointer"
+      className="group relative flex items-center justify-between lg:gap-32 border-b border-gray-200 py-4 transition-colors duration-500 hover:border-gray-400 md:py-8 cursor-pointer"
       onClick={onClick}
     >
       <div>
