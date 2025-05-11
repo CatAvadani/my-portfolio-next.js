@@ -1,6 +1,6 @@
 import React from "react";
-import { BsAndroid } from "react-icons/bs";
-import { CgWorkAlt } from "react-icons/cg";
+import { BsBriefcase } from "react-icons/bs";
+import { DiAndroid } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 
 export const links = [
@@ -35,7 +35,7 @@ export const experiencesData = [
     title: "Front End Developer - Internship",
     location: "Nexer Group, Gothenburg",
     description:
-      "Developing a modern email marketing solution at Nexer using Next.js and TypeScript with Zustand for state management. The platform features live template previewing, cross-client email testing (Gmail, Outlook), and seamless API integration. Focused on performance optimization by refining UI architecture and component design. My role extended to enhancing UX patterns across the company's React Native and Angular applications, bringing consistency to the user experience while improving core functionality.",
+      "At Nexer, I contributed to two key projects: Nexer Email, an email builder platform and Boost App, a cross-platform fitness tracker. I built accessible and responsive UIs using Next.js, React Native, Angular, TypeScript, Zustand, and Tailwind CSS. My work included implementing dynamic layouts, syncing data across frontend and backend, optimizing loading performance, and enhancing user experience. I also developed features for sending and previewing test emails with Nodemailer, built logic for layout restrictions, and wrote Cypress end-to-end tests to ensure stability. Throughout, I collaborated in an agile team and worked actively with Git and Azure DevOps.",
     icon: React.createElement(FaReact),
     date: "Sept 2024 - April 2025",
   },
@@ -45,7 +45,7 @@ export const experiencesData = [
     location: "Stendahls, Gothenburg",
     description:
       "Designed and implemented Android app features using Kotlin, Jetpack Compose, and Room Database, focusing on performance and scalability,and collaborating in an Agile environment.",
-    icon: React.createElement(BsAndroid),
+    icon: React.createElement(DiAndroid),
     date: "Oct 2022 - Dec 2022",
   },
   {
@@ -53,7 +53,7 @@ export const experiencesData = [
     location: "Gothenburg, Sweden",
     description:
       "Led high-stakes casino operations in a fast-paced environment, handling financial transactions and customer disputes with accuracy and discretion. Developed a keen eye for detail and problem-solving by identifying fraudulent activities and preventing financial losses.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(BsBriefcase),
     date: "Oct 2018 -June 2024",
   },
   {
@@ -61,7 +61,7 @@ export const experiencesData = [
     location: "USA",
     description:
       "Ensured that casino games were managed in accordance with the company's policies and regulations. Oversaw players and dealers, reviewed cash-to-chip exchanges, resolved conflicts professionally.Trained and supervised staff, ensuring strict compliance with security protocols and gaming regulations.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(BsBriefcase),
     date: " ",
   },
 ] as const;

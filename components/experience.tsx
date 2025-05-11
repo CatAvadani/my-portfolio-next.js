@@ -62,9 +62,9 @@ function TimelineItem({
       viewport={{ once: true }}
       className="mb-12 last:mb-0"
     >
-      <div className="flex items-start px-10 mx-auto">
+      <div className="flex items-start px-10 mx-auto max-w-5xl">
         {/* Left side - Icon and line */}
-        <div className="relative mr-4 sm:mr-6 flex flex-col items-center">
+        <div className="relative mt-2 mr-4 sm:mr-6 lg:mr-20 flex flex-col items-center">
           {/* Timeline track */}
           <div
             className={`absolute h-full w-[1px] ${
