@@ -43,5 +43,42 @@
         "content": "Today, I'm crafting digital experiences where creativity meets code. Each project is an opportunity to combine my people skills from hospitality with technical expertise."
       }
     ]
+  },
+  "Projects": {
+    "title": "Projects",
+    "DigitalTravelJournal": {
+      "heading": "Digital Travel Journal",
+      "subheading": "An interactive app for travel enthusiasts that combines map, API integrations, and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet for its technical innovation and WCAG accessibility standards implementation."
+    },
+    "NexerEmail": {
+      "heading": "Nexer Email",
+      "subheading": "A professional project developed at Nexer Group for creating and managing responsive email campaigns. Built a complex system from scratch focusing on cross-client compatibility and accessibility.",
+      "modalDescription": "The Email Builder is a web-based tool that allows marketing teams to create responsive email campaigns. I contributed to developing this complex system from scratch with a focus on ensuring emails render correctly across different clients while maintaining accessibility standards.",
+      "highlights": [
+        "Implemented preview system for visualizing email designs across different clients including Gmail and Outlook",
+        "Engineered solutions for compatibility issues in email rendering to ensure consistent appearance",
+        "Developed test-driven approach with Cypress for ensuring stability and preventing regressions",
+        "Created accessible components according to WCAG standards for inclusive user experience"
+      ]
+    },
+    "BoostApp": {
+      "heading": "Boost App",
+      "subheading": "Contributed to a fitness tracking platform at Nexer Group by implementing a complete UI redesign and enhancing functionality. Transformed the user experience through modern design principles while ensuring cross-platform compatibility.",
+      "modalDescription": "Boost App is a cross-platform fitness tracking application designed to promote health and activity among employees. I worked on redesigning key aspects of the user interface to improve usability and visual appeal, while ensuring seamless functionality across both mobile and web platforms.",
+      "highlights": [
+        "Redesigned and implemented the competition section UI in the admin interface according to new Figma specifications",
+        "Created new responsive layouts and interactive components that improved user engagement",
+        "Resolved cross-platform synchronization issues between mobile app and web admin dashboard",
+        "Implemented UI components with a focus on accessibility and visual consistency"
+      ]
+    },
+    "TVMaze": {
+      "heading": "TV MaZe",
+      "subheading": "A mobile application developed with React Native that allows users to search for TV shows, view detailed information, and manage favorites. Focuses on performance and user experience in a mobile context."
+    },
+    "MyNutritionPlan": {
+      "heading": "My Nutrition Plan",
+      "subheading": "A web application for exploring and saving recipes with search and filtering functionality. Demonstrates skills in API integration and responsive design."
+    }
   }
 }

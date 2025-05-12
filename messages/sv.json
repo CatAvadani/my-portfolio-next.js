@@ -42,5 +42,42 @@
         "content": "Idag skapar jag digitala upplevelser där kreativitet möter kod. Varje projekt är en chans att kombinera mina människokunskaper från hotellbranschen med teknisk expertis."
       }
     ]
+  },
+  "Projects": {
+    "title": "Projekt",
+    "DigitalTravelJournal": {
+      "heading": "Digital Travel Journal",
+      "subheading": "En interaktiv app för reseentusiaster som kombinerar karta, API-integrationer och anpassningsbara vykort. Utsågs till 'Bästa slutprojektet' på Medieinstitutet för teknisk innovation och WCAG-standarder för tillgänglighet."
+    },
+    "NexerEmail": {
+      "heading": "Nexer Email",
+      "subheading": "Ett professionellt projekt utvecklat på Nexer Group för att skapa och hantera responsiva e-postkampanjer. Byggt från grunden med fokus på kompatibilitet och tillgänglighet.",
+      "modalDescription": "Email Builder är ett webbaserat verktyg som gör det möjligt för marknadsföringsteam att skapa responsiva e-postkampanjer. Jag var med och utvecklade detta komplexa system från grunden med fokus på att e-postmeddelanden ska återges korrekt i olika e-postklienter och följa tillgänglighetsstandarder.",
+      "highlights": [
+        "Implementerade ett förhandsgranskningssystem för att visualisera e-postdesign i olika klienter, inklusive Gmail och Outlook",
+        "Utvecklade lösningar för kompatibilitetsproblem i e-postrendering för att säkerställa ett konsekvent utseende",
+        "Använde ett testdrivet arbetssätt med Cypress för att garantera stabilitet och undvika regressionsfel",
+        "Byggde tillgängliga komponenter enligt WCAG-standarder för en inkluderande användarupplevelse"
+      ]
+    },
+    "BoostApp": {
+      "heading": "Boost App",
+      "subheading": "Bidrog till en plattformsoberoende träningsapp på Nexer Group genom att implementera en komplett UI-omdesign och förbättra funktionalitet. Förbättrade användarupplevelsen genom moderna designprinciper och kompatibilitet över flera plattformar.",
+      "modalDescription": "Boost App är en plattformsoberoende träningsapp som syftar till att främja hälsa och aktivitet bland anställda. Jag arbetade med att omdesigna viktiga delar av användargränssnittet för att förbättra användbarhet och utseende, samtidigt som funktionaliteten säkerställdes på både mobil och webb.",
+      "highlights": [
+        "Redesignade och implementerade UI:t för tävlingssektionen i adminpanelen enligt nya Figma-specifikationer",
+        "Skapade nya responsiva layouter och interaktiva komponenter som ökade användarengagemanget",
+        "Löste synkroniseringsproblem mellan mobilappen och webbens adminpanel",
+        "Implementerade UI-komponenter med fokus på tillgänglighet och visuell konsekvens"
+      ]
+    },
+    "TVMaze": {
+      "heading": "TV MaZe",
+      "subheading": "En mobilapplikation utvecklad med React Native som låter användare söka efter TV-serier, se detaljerad information och hantera favoriter. Fokus på prestanda och användarupplevelse i mobil kontext."
+    },
+    "MyNutritionPlan": {
+      "heading": "My Nutrition Plan",
+      "subheading": "En webbapplikation för att utforska och spara recept med sök- och filtreringsfunktionalitet. Visar upp färdigheter i API-integration och responsiv design."
+    }
   }
 }
