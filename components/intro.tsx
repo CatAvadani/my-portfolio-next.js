@@ -58,9 +58,10 @@ export default function Intro() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              I’m passionate about creating intuitive, accessible, and visually
-              stunning web experiences that make a difference.
-              {/* <span className="font-semibold">React, Next.js</span>. */}
+              I used to think frontend was about making things look good. Then I
+              learned it’s about making things feel right. Now, I craft
+              interfaces that listen and adapt to users, stories that stick, and
+              code that welcomes everyone in.
             </motion.p>
 
             {/* Buttons section */}
