@@ -2,11 +2,16 @@
 
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import { cards } from "./cards";
+import { useTranslations } from "next-intl";
 import SectionHeading from "./section-heading";
 
 export default function About() {
   const { ref } = useSectionInView("about");
+  const t = useTranslations("About");
+  const t1 = useTranslations("Journey");
+
+  // Rebuild the cards array from translations
+  const cards = t1.raw("cards") as Array<{ title: string; content: string }>;
 
   return (
     <section id="about" ref={ref} className="mb-14 scroll-mt-28 px-4">
@@ -17,10 +22,9 @@ export default function About() {
         className="space-y-12 max-w-7xl mx-auto"
       >
         <div className="text-center">
-          <SectionHeading>About Me</SectionHeading>
+          <SectionHeading>{t("title")}</SectionHeading>
           <p className="mt-4 text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
-            Let me take you through my journey of transformation — from
-            navigating the seas to navigating the web.
+            {t("description")}
           </p>
         </div>
 
@@ -38,7 +42,7 @@ export default function About() {
               }}
             >
               <motion.div
-                className={`group h-full p-6 rounded-xl bg-gradient-to-br ${card.gradient} backdrop-blur-lg border border-white/20 hover:border-white/50 dark:border-white/10 dark:hover:border-white/20 transition-all duration-300`}
+                className={`group h-full p-6 rounded-xl bg-gradient-to-br from-purple-300/10 to-pink-100/20 dark:from-purple-900/10 dark:to-pink-900/10 backdrop-blur-lg border border-white/20 hover:border-white/50 dark:border-white/10 dark:hover:border-white/20 transition-all duration-300`}
                 whileHover={{
                   y: -5,
                   transition: { duration: 0.2 },
@@ -63,11 +67,7 @@ export default function About() {
           transition={{ delay: 0.8 }}
           className="text-center text-gray-600 dark:text-gray-300 text-base max-w-2xl mx-auto"
         >
-          <p>
-            While my journey may have started on cruise ships, today I'm
-            embarking on new adventures in web development — where each project
-            is an opportunity to create something meaningful and impactful.
-          </p>
+          <p>{t("text")}</p>
         </motion.div>
       </motion.div>
     </section>

@@ -13,5 +13,34 @@
     "skills": "Färdigheter",
     "experience": "Erfarenhet",
     "contact": "Kontakt"
+  },
+  "Divider": {
+    "exploreMyStory": "UTFORSKA MIN BERÄTTELSE",
+    "readMoreAboutMe": "LÄS MER OM MIG"
+  },
+  "About": {
+    "title": "Om mig",
+    "description": "Låt mig ta dig med på min resa av förändring – från att navigera på haven till att navigera på webben.",
+    "text": "Även om min resa började på kryssningsfartyg, ger jag mig idag ut på nya äventyr inom webbutveckling – där varje projekt är en möjlighet att skapa något meningsfullt och med verklig påverkan."
+  },
+  "Journey": {
+    "cards": [
+      {
+        "title": "Resan Börjar",
+        "content": "Livet tar oss ofta på oväntade resor. Min väg från att vara casinodealer och arbetsledare på kryssningsfartyg till att bli frontendutvecklare var allt annat än konventionell."
+      },
+      {
+        "title": "Övergången",
+        "content": "Drivkraften bakom min förändring var en stark nyfikenhet på teknik och en längtan efter något nytt. Jag anmälde mig till en kurs i Androidutveckling – mitt första steg in i appvärlden som öppnade mina ögon för teknikens möjligheter."
+      },
+      {
+        "title": "Upptäckten",
+        "content": "Även om Androidutveckling var givande, fann jag min verkliga passion inom frontend. Att lära mig HTML, CSS och JavaScript visade sig vara den perfekta kombinationen av kreativitet och teknisk utmaning."
+      },
+      {
+        "title": "Dagens Riktning",
+        "content": "Idag skapar jag digitala upplevelser där kreativitet möter kod. Varje projekt är en chans att kombinera mina människokunskaper från hotellbranschen med teknisk expertis."
+      }
+    ]
   }
 }
