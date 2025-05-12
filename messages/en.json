@@ -1,0 +1,9 @@
+{
+  "Home": {
+    "greeting": "Hi, I'm Catalina.",
+    "title": "Front End Developer",
+    "description": "I used to think frontend was about making things look good. Then I learned it’s about making things feel right. Now, I craft  interfaces that listen and adapt to users, stories that stick, and code that welcomes everyone in.",
+    "getInTouch": "Get in touch",
+    "downloadCV": "Download CV"
+  }
+}
