@@ -78,6 +78,14 @@
     "MyNutritionPlan": {
       "heading": "My Nutrition Plan",
       "subheading": "En webbapplikation för att utforska och spara recept med sök- och filtreringsfunktionalitet. Visar upp färdigheter i API-integration och responsiv design."
+    },
+    "modal": {
+      "title": "Frontendutvecklare Praktik",
+      "projectOverview": "Projektöversikt",
+      "technologies": "Tekniker",
+      "myContribution": "Mitt bidrag",
+      "close": "Stäng",
+      "confidentialNotice": "Detta projekt genomfördes under min praktik på Nexer Group. På grund av sekretessavtal kan källkod och detaljerade skärmdumpar inte delas offentligt. Jag diskuterar gärna tekniska detaljer vidare i en intervjusituation."
     }
   }
 }

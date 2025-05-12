@@ -79,6 +79,14 @@
     "MyNutritionPlan": {
       "heading": "My Nutrition Plan",
       "subheading": "A web application for exploring and saving recipes with search and filtering functionality. Demonstrates skills in API integration and responsive design."
+    },
+    "modal": {
+      "title": "Front End Developer Internship",
+      "projectOverview": "Project Overview",
+      "technologies": "Technologies",
+      "myContribution": "My Contribution",
+      "close": "Close",
+      "confidentialNotice": "This project was completed during my internship at Nexer Group. Due to confidentiality agreements, source code and detailed screenshots cannot be shared publicly. I'm happy to discuss the technical details further in an interview setting."
     }
   }
 }

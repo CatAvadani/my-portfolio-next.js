@@ -1,10 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import React, { useEffect } from "react";
 import { FiX } from "react-icons/fi";
 
 interface ProjectModalProps {
   project: {
+    id: string;
     heading: string;
     subheading: string;
     techStack: string;
@@ -21,6 +23,14 @@ interface ProjectModalProps {
 }
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
+  const t = useTranslations("Projects");
+  const translation = t.raw(project.id) as {
+    heading: string;
+    subheading: string;
+    modalDescription?: string;
+    highlights?: string[];
+  };
+
   const handleModalClick = (e: React.MouseEvent) => {
     e.stopPropagation();
   };
@@ -72,7 +82,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         {/* Header */}
         <div className="flex justify-between items-center p-6 border-b border-gray-200 dark:border-gray-800">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
-            {project.heading}
+            {translation.heading}
           </h2>
           <button
             onClick={onClose}
@@ -92,7 +102,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
               </span>
               <span className="mx-2 text-gray-400">•</span>
               <span className="text-gray-600 dark:text-gray-300">
-                Frontend Developer Intern
+                {t("modal.title")}
               </span>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -103,10 +113,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           {/* Project Description */}
           <div className="mb-6">
             <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-              Project Overview
+              {t("modal.projectOverview")}
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              {project.modalDescription || project.subheading}
+              {translation.modalDescription || translation.subheading}
             </p>
             {project.additionalDescription && (
               <p className="text-gray-700 dark:text-gray-300">
@@ -116,15 +126,17 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           </div>
 
           {/* My Contribution */}
-          {project.highlights && (
+          {translation.highlights && (
             <div className="mb-6">
               <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-                My Contribution
+                {t("modal.myContribution")}
               </h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
-                {project.highlights.map((highlight: string, index: number) => (
-                  <li key={index}>{highlight}</li>
-                ))}
+                {translation.highlights.map(
+                  (highlight: string, index: number) => (
+                    <li key={index}>{highlight}</li>
+                  )
+                )}
               </ul>
             </div>
           )}
@@ -132,7 +144,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           {/* Technologies */}
           <div className="mb-6">
             <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
-              Technologies
+              {t("modal.technologies")}
             </h3>
             <div className="flex flex-wrap gap-2">
               {project.techStack
@@ -151,10 +163,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           {/* Confidentiality Notice */}
           <div className="mt-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
             <p className="text-sm text-gray-600 dark:text-gray-300 italic">
-              This project was completed during my internship at Nexer Group.
-              Due to confidentiality agreements, source code and detailed
-              screenshots cannot be shared publicly. I'm happy to discuss the
-              technical details further in an interview setting.
+              {t("modal.confidentialNotice")}
             </p>
           </div>
         </div>
@@ -165,7 +174,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             onClick={onClose}
             className="px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-md transition-colors text-gray-800 dark:text-gray-200"
           >
-            Close
+            {t("modal.close")}
           </button>
         </div>
       </motion.div>
