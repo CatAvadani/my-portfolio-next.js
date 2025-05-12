@@ -3,6 +3,7 @@
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SectionHeading from "./section-heading";
 
 const fadeInAnimationVariants = {
@@ -21,6 +22,7 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   const { ref } = useSectionInView("skills");
+  const t = useTranslations("Skills");
 
   return (
     <section
@@ -30,7 +32,7 @@ export default function Skills() {
      scroll-mt-28 text-center sm:mb-40
     "
     >
-      <SectionHeading>My Skills</SectionHeading>
+      <SectionHeading>{t("title")}</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-sm  text-gray-800 max-w-3xl">
         {skillsData.map((skill, index) => (
           <motion.li

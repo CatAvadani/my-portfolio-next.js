@@ -88,5 +88,37 @@
       "close": "Close",
       "confidentialNotice": "This project was completed during my internship at Nexer Group. Due to confidentiality agreements, source code and detailed screenshots cannot be shared publicly. I'm happy to discuss the technical details further in an interview setting."
     }
+  },
+  "Skills": {
+    "title": "My Skills"
+  },
+  "Experience": {
+    "title": "My Experience",
+    "entries": [
+      {
+        "title": "Front End Developer - Internship",
+        "location": "Nexer Group, Gothenburg",
+        "description": "At Nexer, I contributed to two key projects: Nexer Email, an email builder platform and Boost App, a cross-platform fitness tracker. I built accessible and responsive UIs using Next.js, React Native, Angular, TypeScript, Zustand, and Tailwind CSS. My work included implementing dynamic layouts, syncing data across frontend and backend, optimizing loading performance, and enhancing user experience. I also developed features for sending and previewing test emails with Nodemailer, built logic for layout restrictions, and wrote Cypress end-to-end tests to ensure stability. Throughout, I collaborated in an agile team and worked actively with Git and Azure DevOps.",
+        "date": "Sept 2024 - April 2025"
+      },
+      {
+        "title": "Android Developer - Internship",
+        "location": "Stendahls, Gothenburg",
+        "description": "Designed and implemented Android app features using Kotlin, Jetpack Compose, and built data management solutions using Room Database. Followed MVVM architecture and implemented API integrations to connect mobile clients with backend services. Collaborated in an agile environment, participated in code reviews and optimized application performance through efficient memory management.",
+        "date": "Oct 2022 - Dec 2022"
+      },
+      {
+        "title": "Senior Casino Associate",
+        "location": "Gothenburg, Sweden",
+        "description": "Led high-stakes casino operations in a fast-paced environment, handling financial transactions and customer disputes with accuracy and discretion. Developed a keen eye for detail and problem-solving by identifying fraudulent activities and preventing financial losses.",
+        "date": "Oct 2018 -June 2024"
+      },
+      {
+        "title": "Casino Supervisor",
+        "location": "USA",
+        "description": "Ensured that casino games were managed in accordance with the company's policies and regulations. Oversaw players and dealers, reviewed cash-to-chip exchanges, resolved conflicts professionally.Trained and supervised staff, ensuring strict compliance with security protocols and gaming regulations.",
+        "date": ""
+      }
+    ]
   }
 }

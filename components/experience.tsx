@@ -3,6 +3,7 @@ import { useTheme } from "@/context/theme-context";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion, useScroll } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useRef } from "react";
 import SectionHeading from "./section-heading";
 
@@ -10,18 +11,26 @@ export default function Experience() {
   const { ref } = useSectionInView("experience");
   const { theme } = useTheme();
   const containerRef = useRef(null);
+  const t = useTranslations("Experience");
+
+  const translations = t.raw("entries") as {
+    title: string;
+    location: string;
+    description: string;
+    date: string;
+  }[];
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{t("title")}</SectionHeading>
       <div ref={containerRef} className="relative mt-12 max-w-7xl mx-auto">
-        {experiencesData.map((item, index) => (
+        {translations.map((translation, index) => (
           <TimelineItem
             key={index}
-            item={item}
+            item={{ ...translation, icon: experiencesData[index].icon }}
             index={index}
             containerRef={containerRef}
-            isLast={index === experiencesData.length - 1}
+            isLast={index === translations.length - 1}
           />
         ))}
       </div>
@@ -56,16 +65,13 @@ function TimelineItem({
     offset: ["start end", "end end"],
   });
 
-  // Calculate line heights based on content length
-  const descriptionLength = item.description.length;
-  // Adjust the height based on the content length - longer text gets longer line
-  const getLineHeight = () => {
-    if (isLast) return "h-24"; // Last item gets shorter line
+  const descriptionLength = item.description?.length || 0;
 
-    // Calculate dynamic height based on description length
+  const getLineHeight = () => {
+    if (isLast) return "h-24";
     if (descriptionLength > 500) return "h-[400px]";
     if (descriptionLength > 300) return "h-[300px]";
-    return "h-[250px]"; // Default line height
+    return "h-[250px]";
   };
 
   return (
@@ -78,9 +84,7 @@ function TimelineItem({
       className="mb-12 last:mb-0"
     >
       <div className="flex items-start px-4 sm:px-10 mx-auto max-w-5xl">
-        {/* Left side - Icon and line */}
         <div className="relative mr-4 sm:mr-6 lg:mr-12 flex flex-col items-center">
-          {/* Timeline track - Fixed with better heights */}
           <div
             className={`absolute w-[1px] ${getLineHeight()} ${
               theme === "light"
@@ -88,11 +92,7 @@ function TimelineItem({
                 : "bg-gradient-to-b from-purple-400 via-purple-300 to-blue-900/10"
             } top-8 left-1/2 transform -translate-x-1/2`}
           />
-
-          {/* Icon container with improved visibility */}
-          <div
-            className={`relative z-10 flex items-center justify-center w-8 h-8 `}
-          >
+          <div className="relative z-10 flex items-center justify-center w-8 h-8 ">
             <span
               className={`text-lg ${
                 theme === "light" ? "text-purple-600" : "text-purple-300"
@@ -103,7 +103,6 @@ function TimelineItem({
           </div>
         </div>
 
-        {/* Right side - Content */}
         <motion.div
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -119,11 +118,9 @@ function TimelineItem({
               {item.date}
             </span>
           </div>
-
           <p className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-3">
             {item.location}
           </p>
-
           <div
             className={`p-4 rounded-xl shadow-sm ${
               theme === "light"
@@ -134,7 +131,6 @@ function TimelineItem({
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               {item.description}
             </p>
-
             {item.skills && (
               <div className="mt-3 flex flex-wrap gap-2">
                 {item.skills.map((skill: string, skillIndex: number) => (

@@ -87,5 +87,38 @@
       "close": "Stäng",
       "confidentialNotice": "Detta projekt genomfördes under min praktik på Nexer Group. På grund av sekretessavtal kan källkod och detaljerade skärmdumpar inte delas offentligt. Jag diskuterar gärna tekniska detaljer vidare i en intervjusituation."
     }
+  },
+  "Skills": {
+    "title": "Mina färdigheter"
+  },
+
+  "Experience": {
+    "title": "Min erfarenhet",
+    "entries": [
+      {
+        "title": "Frontendutvecklare - Praktik",
+        "location": "Nexer Group, Göteborg",
+        "description": "På Nexer bidrog jag till två nyckelprojekt: Nexer Email, en plattform för e-postmallar, och Boost App, en plattformsoberoende träningsapp. Jag byggde tillgängliga och responsiva användargränssnitt med Next.js, React Native, Angular, TypeScript, Zustand och Tailwind CSS. Jag implementerade dynamiska layouter, synkroniserade data mellan frontend och backend, optimerade laddningsprestanda och förbättrade användarupplevelsen. Jag utvecklade även funktioner för att skicka och förhandsgranska testmail med Nodemailer, byggde logik för layoutbegränsningar och skrev end-to-end-tester med Cypress. Jag arbetade i ett agilt team med Git och Azure DevOps.",
+        "date": "Sept 2024 - April 2025"
+      },
+      {
+        "title": "Androidutvecklare - Praktik",
+        "location": "Stendahls, Göteborg",
+        "description": "Designade och implementerade funktioner i Android-appar med Kotlin, Jetpack Compose och hanterade data med Room Database. Följde MVVM-arkitektur och implementerade API-integrationer för att koppla klienten till backend. Samarbetade i ett agilt team, deltog i kodgranskningar och optimerade appens prestanda.",
+        "date": "Okt 2022 - Dec 2022"
+      },
+      {
+        "title": "Senior Casino Associate",
+        "location": "Göteborg, Sverige",
+        "description": "Ledde casinodrift i högt tempo, hanterade finansiella transaktioner och kundtvister med noggrannhet. Utvecklade ett skarpt öga för detaljer och problemlösning genom att identifiera bedrägerier och förebygga förluster.",
+        "date": "Okt 2018 - Juni 2024"
+      },
+      {
+        "title": "Casino Supervisor",
+        "location": "USA",
+        "description": "Säkerställde att casinospel följde företagets policy och regler. Övervakade spelare och dealers, granskade växlingar, löste konflikter och utbildade personal med fokus på säkerhet och efterlevnad.",
+        "date": ""
+      }
+    ]
   }
 }
