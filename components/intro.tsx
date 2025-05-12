@@ -11,7 +11,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const t = useTranslations("Home");
 
@@ -77,7 +77,7 @@ export default function Intro() {
                   className="group bg-violet-950/70 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none 
                   hover:bg-violet-950/85 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70"
                   onClick={() => {
-                    setActiveSection("Contact");
+                    setActiveSection("contact");
                     setTimeOfLastClick(Date.now());
                   }}
                 >

@@ -5,5 +5,13 @@
     "description": "Jag brukade tro att frontend handlade om att få saker att se bra ut. Sen insåg jag att det handlar om att få det att kännas rätt. Nu skapar jag gränssnitt som lyssnar och anpassar sig till användaren, berättelser som fastnar och kod som välkomnar alla.",
     "getInTouch": "Kontakta mig",
     "downloadCV": "Ladda ner CV"
+  },
+  "Navigation": {
+    "home": "Hem",
+    "about": "Om mig",
+    "projects": "Projekt",
+    "skills": "Färdigheter",
+    "experience": "Erfarenhet",
+    "contact": "Kontakt"
   }
 }

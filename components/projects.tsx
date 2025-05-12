@@ -26,7 +26,7 @@ interface LinkProps {
 }
 
 export const Projects = () => {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("projects", 0.5);
   const [activeProject, setActiveProject] = useState<any | null>(null);
 
   const handleProjectClick = (e: React.MouseEvent, project: any) => {

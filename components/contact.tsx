@@ -8,7 +8,7 @@ import SectionHeading from "./section-heading";
 import SubmitBtn from "./submit-btn";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("contact");
 
   return (
     <motion.section

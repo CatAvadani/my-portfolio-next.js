@@ -6,7 +6,7 @@ import { cards } from "./cards";
 import SectionHeading from "./section-heading";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("about");
 
   return (
     <section id="about" ref={ref} className="mb-14 scroll-mt-28 px-4">
