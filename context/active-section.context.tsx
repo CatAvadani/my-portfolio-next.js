@@ -25,7 +25,7 @@ export const ActiveSectionContext =
 export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
-  const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const [activeSection, setActiveSection] = useState<SectionName>("home");
   const [timeOfLastClick, setTimeOfLastClick] = useState(0); // We need to keep track of the time of the last click to prevent the active section from changing when the user scrolls and the section is in view. We'll use this value to compare the time of the last click with the current time and only update the active section if the difference is greater than 1000ms.
   return (
     <ActiveSectionContext.Provider
