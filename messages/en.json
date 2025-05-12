@@ -120,5 +120,14 @@
         "date": ""
       }
     ]
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "paragraph1": "Feel free to reach out via email at",
+    "paragraph2": "or send a message using the form below.",
+    "placeholderEmail": "Your email",
+    "placeholderMessage": "Your message",
+    "success": "Email sent successfully!",
+    "submit": "Send Message"
   }
 }

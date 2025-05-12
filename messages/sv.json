@@ -120,5 +120,14 @@
         "date": ""
       }
     ]
+  },
+  "Contact": {
+    "title": "Kontakta mig",
+    "paragraph1": "Du är välkommen att höra av dig via e-post på ",
+    "paragraph2": "eller skicka ett meddelande via formuläret nedan",
+    "placeholderEmail": "Din e-postadress",
+    "placeholderMessage": "Ditt meddelande",
+    "success": "E-postmeddelandet skickades!",
+    "submit": "Skicka meddelande"
   }
 }
