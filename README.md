@@ -17,6 +17,7 @@ A modern, responsive portfolio website showcasing my projects and professional e
 
 - Modern UI with responsive design for all device sizes
 - Dark/Light mode theme toggle with system preference detection
+- Language switcher (English / Swedish) with instant content update
 - Animated page transitions and UI interactions
 - Server-side rendering for improved performance and SEO
 - Contact form with email delivery through Resend API
@@ -31,6 +32,7 @@ A modern, responsive portfolio website showcasing my projects and professional e
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
 - **Email**: React Email & Resend
+- **i18n**: next-intl
 - **Deployment**: Vercel
 
 ## Acknowledgements
