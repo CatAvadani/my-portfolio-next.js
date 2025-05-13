@@ -35,8 +35,6 @@ A modern, responsive portfolio website showcasing my projects and professional e
 - **i18n**: next-intl
 - **Deployment**: Vercel
 
-## Acknowledgements
 
-- Design inspiration from various sources while adding my personal touch
 
 
