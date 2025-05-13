@@ -16,12 +16,10 @@ export default function Intro() {
   const t = useTranslations("Home");
   const locale = useLocale();
 
-  // const cvUrl =
-  //   locale === "en"
-  //     ? "https://acrobat.adobe.com/id/urn:aaid:sc:EU:6a8510f8-001f-4215-a19c-7ffa50f1fe9e"
-  //     : "https://acrobat.adobe.com/id/urn:aaid:sc:EU:da9d6ebd-36d7-4d13-967b-2f6b9bde9723";
-
-  const cvUrl = locale === "en" ? "/cvPdf/cv_en.pdf" : "/cvPdf/cv_sv.pdf";
+  const cvUrl =
+    locale === "en"
+      ? "/cvPdf/Catalina_Avadani_CV_EN.pdf"
+      : "/cvPdf/Catalina_Avadani_CV_SV.pdf";
 
   return (
     <section
