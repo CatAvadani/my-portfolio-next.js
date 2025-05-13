@@ -3,7 +3,7 @@
 import { useActiveSectionContext } from "@/context/active-section.context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
@@ -14,6 +14,14 @@ export default function Intro() {
   const { ref } = useSectionInView("home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const t = useTranslations("Home");
+  const locale = useLocale();
+
+  // const cvUrl =
+  //   locale === "en"
+  //     ? "https://acrobat.adobe.com/id/urn:aaid:sc:EU:6a8510f8-001f-4215-a19c-7ffa50f1fe9e"
+  //     : "https://acrobat.adobe.com/id/urn:aaid:sc:EU:da9d6ebd-36d7-4d13-967b-2f6b9bde9723";
+
+  const cvUrl = locale === "en" ? "/cvPdf/cv_en.pdf" : "/cvPdf/cv_sv.pdf";
 
   return (
     <section
@@ -87,7 +95,7 @@ export default function Intro() {
 
                 <a
                   className="group bg-white/50 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none   active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20  dark:bg-white/10 dark:text-white/60"
-                  href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:6a8510f8-001f-4215-a19c-7ffa50f1fe9e"
+                  href={cvUrl}
                   download
                 >
                   {t("downloadCV")}
@@ -99,8 +107,8 @@ export default function Intro() {
               <div className="flex gap-2 sm:gap-4 justify-center sm:justify-start">
                 <a
                   className=" bg-white/50 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20 dark:bg-white/10 dark:text-white/60"
-                  href="https://www.linkedin.com/in/catalinaava09/"
-                  target="_blank"
+                  href={cvUrl}
+                  download
                 >
                   <FaLinkedinIn size={20} />
                 </a>
