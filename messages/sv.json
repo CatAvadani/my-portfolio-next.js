@@ -1,0 +1,133 @@
+{
+  "Home": {
+    "greeting": "Hej, jag heter Catalina.",
+    "title": "Frontendutvecklare",
+    "description": "Jag brukade tro att frontend handlade om att få saker att se bra ut. Sen insåg jag att det handlar om att få det att kännas rätt. Nu skapar jag gränssnitt som lyssnar och anpassar sig till användaren, berättelser som fastnar och kod som välkomnar alla.",
+    "getInTouch": "Kontakta mig",
+    "downloadCV": "Ladda ner CV"
+  },
+  "Navigation": {
+    "home": "Hem",
+    "about": "Om mig",
+    "projects": "Projekt",
+    "skills": "Färdigheter",
+    "experience": "Erfarenhet",
+    "contact": "Kontakt"
+  },
+  "Divider": {
+    "exploreMyStory": "UTFORSKA MIN BERÄTTELSE",
+    "readMoreAboutMe": "LÄS MER OM MIG"
+  },
+  "About": {
+    "title": "Om mig",
+    "description": "Låt mig ta dig med på min resa av förändring – från att navigera på haven till att navigera på webben.",
+    "text": "Även om min resa började på kryssningsfartyg, ger jag mig idag ut på nya äventyr inom webbutveckling – där varje projekt är en möjlighet att skapa något meningsfullt och med verklig påverkan."
+  },
+  "Journey": {
+    "cards": [
+      {
+        "title": "Resan Börjar",
+        "content": "Livet tar oss ofta på oväntade resor. Min väg från att vara casinodealer och arbetsledare på kryssningsfartyg till att bli frontendutvecklare var allt annat än konventionell."
+      },
+      {
+        "title": "Övergången",
+        "content": "Drivkraften bakom min förändring var en stark nyfikenhet på teknik och en längtan efter något nytt. Jag anmälde mig till en kurs i Androidutveckling – mitt första steg in i appvärlden som öppnade mina ögon för teknikens möjligheter."
+      },
+      {
+        "title": "Upptäckten",
+        "content": "Även om Androidutveckling var givande, fann jag min verkliga passion inom frontend. Att lära mig HTML, CSS och JavaScript visade sig vara den perfekta kombinationen av kreativitet och teknisk utmaning."
+      },
+      {
+        "title": "Dagens Riktning",
+        "content": "Idag skapar jag digitala upplevelser där kreativitet möter kod. Varje projekt är en chans att kombinera mina människokunskaper från hotellbranschen med teknisk expertis."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Projekt",
+    "DigitalTravelJournal": {
+      "heading": "Digital Travel Journal",
+      "subheading": "En interaktiv app för reseentusiaster som kombinerar karta, API-integrationer och anpassningsbara vykort. Utsågs till 'Bästa slutprojektet' på Medieinstitutet för teknisk innovation och WCAG-standarder för tillgänglighet."
+    },
+    "NexerEmail": {
+      "heading": "Nexer Email",
+      "subheading": "Ett professionellt projekt utvecklat på Nexer Group för att skapa och hantera responsiva e-postkampanjer. Byggt från grunden med fokus på kompatibilitet och tillgänglighet.",
+      "modalDescription": "Email Builder är ett webbaserat verktyg som gör det möjligt för marknadsföringsteam att skapa responsiva e-postkampanjer. Jag var med och utvecklade detta komplexa system från grunden med fokus på att e-postmeddelanden ska återges korrekt i olika e-postklienter och följa tillgänglighetsstandarder.",
+      "highlights": [
+        "Implementerade ett förhandsgranskningssystem för att visualisera e-postdesign i olika klienter, inklusive Gmail och Outlook",
+        "Utvecklade lösningar för kompatibilitetsproblem i e-postrendering för att säkerställa ett konsekvent utseende",
+        "Använde ett testdrivet arbetssätt med Cypress för att garantera stabilitet och undvika regressionsfel",
+        "Byggde tillgängliga komponenter enligt WCAG-standarder för en inkluderande användarupplevelse"
+      ]
+    },
+    "BoostApp": {
+      "heading": "Boost App",
+      "subheading": "Bidrog till en plattformsoberoende träningsapp på Nexer Group genom att implementera en komplett UI-omdesign och förbättra funktionalitet. Förbättrade användarupplevelsen genom moderna designprinciper och kompatibilitet över flera plattformar.",
+      "modalDescription": "Boost App är en plattformsoberoende träningsapp som syftar till att främja hälsa och aktivitet bland anställda. Jag arbetade med att omdesigna viktiga delar av användargränssnittet för att förbättra användbarhet och utseende, samtidigt som funktionaliteten säkerställdes på både mobil och webb.",
+      "highlights": [
+        "Redesignade och implementerade UI:t för tävlingssektionen i adminpanelen enligt nya Figma-specifikationer",
+        "Skapade nya responsiva layouter och interaktiva komponenter som ökade användarengagemanget",
+        "Löste synkroniseringsproblem mellan mobilappen och webbens adminpanel",
+        "Implementerade UI-komponenter med fokus på tillgänglighet och visuell konsekvens"
+      ]
+    },
+    "TVMaze": {
+      "heading": "TV MaZe",
+      "subheading": "En mobilapplikation utvecklad med React Native som låter användare söka efter TV-serier, se detaljerad information och hantera favoriter. Fokus på prestanda och användarupplevelse i mobil kontext."
+    },
+    "MyNutritionPlan": {
+      "heading": "My Nutrition Plan",
+      "subheading": "En webbapplikation för att utforska och spara recept med sök- och filtreringsfunktionalitet. Visar upp färdigheter i API-integration och responsiv design."
+    },
+    "modal": {
+      "title": "Frontendutvecklare Praktik",
+      "projectOverview": "Projektöversikt",
+      "technologies": "Tekniker",
+      "myContribution": "Mitt bidrag",
+      "close": "Stäng",
+      "confidentialNotice": "Detta projekt genomfördes under min praktik på Nexer Group. På grund av sekretessavtal kan källkod och detaljerade skärmdumpar inte delas offentligt. Jag diskuterar gärna tekniska detaljer vidare i en intervjusituation."
+    }
+  },
+  "Skills": {
+    "title": "Mina färdigheter"
+  },
+
+  "Experience": {
+    "title": "Min erfarenhet",
+    "entries": [
+      {
+        "title": "Frontendutvecklare - Praktik",
+        "location": "Nexer Group, Göteborg",
+        "description": "På Nexer bidrog jag till två nyckelprojekt: Nexer Email, en plattform för e-postmallar, och Boost App, en plattformsoberoende träningsapp. Jag byggde tillgängliga och responsiva användargränssnitt med Next.js, React Native, Angular, TypeScript, Zustand och Tailwind CSS. Jag implementerade dynamiska layouter, synkroniserade data mellan frontend och backend, optimerade laddningsprestanda och förbättrade användarupplevelsen. Jag utvecklade även funktioner för att skicka och förhandsgranska testmail med Nodemailer, byggde logik för layoutbegränsningar och skrev end-to-end-tester med Cypress. Jag arbetade i ett agilt team med Git och Azure DevOps.",
+        "date": "Sept 2024 - April 2025"
+      },
+      {
+        "title": "Androidutvecklare - Praktik",
+        "location": "Stendahls, Göteborg",
+        "description": "Designade och implementerade funktioner i Android-appar med Kotlin, Jetpack Compose och hanterade data med Room Database. Följde MVVM-arkitektur och implementerade API-integrationer för att koppla klienten till backend. Samarbetade i ett agilt team, deltog i kodgranskningar och optimerade appens prestanda.",
+        "date": "Okt 2022 - Dec 2022"
+      },
+      {
+        "title": "Senior Casino Associate",
+        "location": "Göteborg, Sverige",
+        "description": "Ledde casinodrift i högt tempo, hanterade finansiella transaktioner och kundtvister med noggrannhet. Utvecklade ett skarpt öga för detaljer och problemlösning genom att identifiera bedrägerier och förebygga förluster.",
+        "date": "Okt 2018 - Juni 2024"
+      },
+      {
+        "title": "Casino Supervisor",
+        "location": "USA",
+        "description": "Säkerställde att casinospel följde företagets policy och regler. Övervakade spelare och dealers, granskade växlingar, löste konflikter och utbildade personal med fokus på säkerhet och efterlevnad.",
+        "date": ""
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Kontakta mig",
+    "paragraph1": "Du är välkommen att höra av dig via e-post på ",
+    "paragraph2": "eller skicka ett meddelande via formuläret nedan",
+    "placeholderEmail": "Din e-postadress",
+    "placeholderMessage": "Ditt meddelande",
+    "success": "E-postmeddelandet skickades!",
+    "submit": "Skicka meddelande"
+  }
+}

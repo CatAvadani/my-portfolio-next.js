@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function CircularTextDivider() {
   const handleClick = () => {
@@ -8,6 +9,8 @@ export default function CircularTextDivider() {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const t = useTranslations("Divider");
 
   return (
     <div className="flex flex-col items-center justify-center gap-8 pb-20 sm:-mt-20">
@@ -38,7 +41,7 @@ export default function CircularTextDivider() {
 
             <text className="text-[6px] font-medium fill-current tracking-[0.25em]">
               <textPath href="#textPath" className="uppercase">
-                EXPLORE MY STORY **** READ MORE ABOUT ME ****
+                {t("exploreMyStory")} **** {t("readMoreAboutMe")} ****
               </textPath>
             </text>
           </svg>

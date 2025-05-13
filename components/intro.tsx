@@ -3,6 +3,7 @@
 import { useActiveSectionContext } from "@/context/active-section.context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
@@ -10,8 +11,9 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const t = useTranslations("Home");
 
   return (
     <section
@@ -38,7 +40,7 @@ export default function Intro() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Hi, I am Catalina.
+              {t("greeting")}
             </motion.p>
 
             {/* Main heading */}
@@ -48,7 +50,7 @@ export default function Intro() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Front End Developer
+              {t("title")}
             </motion.h1>
 
             {/* Description */}
@@ -58,10 +60,7 @@ export default function Intro() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              I used to think frontend was about making things look good. Then I
-              learned it’s about making things feel right. Now, I craft
-              interfaces that listen and adapt to users, stories that stick, and
-              code that welcomes everyone in.
+              {t("description")}
             </motion.p>
 
             {/* Buttons section */}
@@ -78,11 +77,11 @@ export default function Intro() {
                   className="group bg-violet-950/70 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none 
                   hover:bg-violet-950/85 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70"
                   onClick={() => {
-                    setActiveSection("Contact");
+                    setActiveSection("contact");
                     setTimeOfLastClick(Date.now());
                   }}
                 >
-                  Get in Touch{" "}
+                  {t("getInTouch")}
                   <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
 
@@ -91,7 +90,7 @@ export default function Intro() {
                   href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:6a8510f8-001f-4215-a19c-7ffa50f1fe9e"
                   download
                 >
-                  Download CV{" "}
+                  {t("downloadCV")}
                   <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
               </div>

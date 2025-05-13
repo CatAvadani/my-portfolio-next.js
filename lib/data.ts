@@ -5,27 +5,27 @@ import { FaReact } from "react-icons/fa";
 
 export const links = [
   {
-    name: "Home",
+    name: "home",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "about",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "projects",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "skills",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "experience",
     hash: "#experience",
   },
   {
-    name: "Contact",
+    name: "contact",
     hash: "#contact",
   },
 ] as const;
@@ -66,72 +66,52 @@ export const experiencesData = [
   },
 ] as const;
 
-// Updated projectsData with additional information for Nexer projects
-
-export const projectsData = [
+export type Project = {
+  id: string;
+  imgSrc: string;
+  href: string;
+  techStack: string;
+  github?: string;
+  isNexerProject?: boolean;
+};
+export const projectsData: Project[] = [
   {
-    heading: "Digital Travel Journal",
-    subheading:
-      "An interactive app for travel enthusiasts that combines map, API integrations, and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet for its technical innovation and WCAG accessibility standards implementation.",
-    techStack:
-      "Next.js, TypeScript, Zustand, Tailwind CSS, Firebase, Mapbox API",
+    id: "DigitalTravelJournal",
     imgSrc: "/DigitalTravelJournal.png",
     href: "https://digital-travel-journal-wnb8.vercel.app/",
     github: "https://github.com/CatAvadani/digital-travel-journal",
+    techStack:
+      "Next.js, TypeScript, Zustand, Tailwind CSS, Firebase, Mapbox API",
     isNexerProject: false,
   },
   {
-    heading: "Nexer Email",
-    subheading:
-      "A professional project developed at Nexer Group for creating and managing responsive email campaigns. Built a complex system from scratch focusing on cross-client compatibility and accessibility.",
-    techStack: "Next.js, TypeScript, Zustand, Scss, Cypress",
+    id: "NexerEmail",
     imgSrc: "/Nexer_Email.png",
     href: "#",
+    techStack: "Next.js, TypeScript, Zustand, Scss, Cypress",
     isNexerProject: true,
-    modalDescription:
-      "The Email Builder is a web-based tool that allows marketing teams to create responsive email campaigns. I contributed to developing this complex system from scratch with a focus on ensuring emails render correctly across different clients while maintaining accessibility standards.",
-    highlights: [
-      "Implemented preview system for visualizing email designs across different clients including Gmail and Outlook",
-      "Engineered solutions for compatibility issues in email rendering to ensure consistent appearance",
-      "Developed test-driven approach with Cypress for ensuring stability and preventing regressions",
-      "Created accessible components according to WCAG standards for inclusive user experience",
-    ],
   },
   {
-    heading: "Boost App",
-    subheading:
-      "Contributed to a fitness tracking platform at Nexer Group by implementing a complete UI redesign and enhancing functionality. Transformed the user experience through modern design principles while ensuring cross-platform compatibility.",
-    techStack: "React Native, Angular, TypeScript, Context API",
+    id: "BoostApp",
     imgSrc: "/Boost_App.png",
     href: "#",
+    techStack: "React Native, Angular, TypeScript, Context API",
     isNexerProject: true,
-    modalDescription:
-      "Boost App is a cross-platform fitness tracking application designed to promote health and activity among employees. I worked on redesigning key aspects of the user interface to improve usability and visual appeal, while ensuring seamless functionality across both mobile and web platforms.",
-    highlights: [
-      "Redesigned and implemented the competition section UI in the admin interface according to new Figma specifications",
-      "Created new responsive layouts and interactive components that improved user engagement",
-      "Resolved cross-platform synchronization issues between mobile app and web admin dashboard",
-      "Implemented UI components with a focus on accessibility and visual consistency",
-    ],
   },
   {
-    heading: "TV MaZe",
-    subheading:
-      "A mobile application developed with React Native that allows users to search for TV shows, view detailed information, and manage favorites. Focuses on performance and user experience in a mobile context.",
-    techStack: "React Native, TypeScript, Firebase, Tailwind CSS",
+    id: "TVMaze",
     imgSrc: "/TVMaze.png",
-    github: "https://github.com/CatAvadani/tv-maze-react-native-app",
     href: "https://github.com/CatAvadani/tv-maze-react-native-app",
+    github: "https://github.com/CatAvadani/tv-maze-react-native-app",
+    techStack: "React Native, TypeScript, Firebase, Tailwind CSS",
     isNexerProject: false,
   },
   {
-    heading: "My Nutrition Plan",
-    subheading:
-      "A web application for exploring and saving recipes with search and filtering functionality. Demonstrates skills in API integration and responsive design.",
-    techStack: "React, TypeScript, Styled Components, Edamam API",
+    id: "MyNutritionPlan",
     imgSrc: "/MyNutritionPlan.png",
-    github: "https:github.com/CatAvadani/my-nutrition-plan",
     href: "https://my-nutrition-plan.vercel.app/",
+    github: "https://github.com/CatAvadani/my-nutrition-plan",
+    techStack: "React, TypeScript, Styled Components, Edamam API",
     isNexerProject: false,
   },
 ];

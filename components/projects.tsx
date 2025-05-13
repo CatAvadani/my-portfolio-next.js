@@ -2,6 +2,7 @@
 import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useTranslations } from "next-intl";
 import React, { useRef, useState } from "react";
 import { FiArrowRight, FiExternalLink, FiGithub } from "react-icons/fi";
 import ProjectModal from "./projectModal";
@@ -26,8 +27,9 @@ interface LinkProps {
 }
 
 export const Projects = () => {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("projects", 0.5);
   const [activeProject, setActiveProject] = useState<any | null>(null);
+  const t = useTranslations("Projects");
 
   const handleProjectClick = (e: React.MouseEvent, project: any) => {
     if (project.isNexerProject) {
@@ -38,14 +40,12 @@ export const Projects = () => {
       project.href &&
       !project.techStack.includes("React Native")
     ) {
-      // For non-Nexer projects with a valid href, open the demo in a new tab
       window.open(project.href, "_blank", "noopener,noreferrer");
     } else if (
       !e.defaultPrevented &&
       project.github &&
       project.techStack.includes("React Native")
     ) {
-      // For React Native projects, open the GitHub repo
       window.open(project.github, "_blank", "noopener,noreferrer");
     }
   };
@@ -61,26 +61,36 @@ export const Projects = () => {
       className="p-4 md:p-8 w-full max-w-7xl scroll-mt-28 mb-28"
     >
       <div className="mb-20">
-        <SectionHeading>Projects</SectionHeading>
+        <SectionHeading>{t("title") || "Projects"}</SectionHeading>
       </div>
       <div className="mx-auto">
-        {projectsData.map((project, index) => (
-          <Link
-            key={index}
-            heading={project.heading}
-            subheading={project.subheading}
-            techStack={project.techStack}
-            imgSrc={project.imgSrc}
-            href={project.href}
-            github={project.github}
-            isNexerProject={project.isNexerProject}
-            project={project}
-            onClick={(e) => handleProjectClick(e, project)}
-          />
-        ))}
+        {projectsData.map((project, index) => {
+          const translation = t.raw(project.id) as {
+            heading: string;
+            subheading: string;
+            modalDescription?: string;
+            highlights?: string[];
+          };
+
+          return (
+            <Link
+              key={index}
+              heading={translation.heading}
+              subheading={translation.subheading}
+              techStack={project.techStack}
+              imgSrc={project.imgSrc}
+              href={project.href}
+              github={project.github}
+              isNexerProject={project.isNexerProject}
+              project={{ ...project, ...translation }}
+              onClick={(e) =>
+                handleProjectClick(e, { ...project, ...translation })
+              }
+            />
+          );
+        })}
       </div>
 
-      {/* Modal */}
       {activeProject && (
         <ProjectModal project={activeProject} onClose={closeModal} />
       )}
