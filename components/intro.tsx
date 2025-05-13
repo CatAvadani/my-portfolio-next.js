@@ -105,8 +105,8 @@ export default function Intro() {
               <div className="flex gap-2 sm:gap-4 justify-center sm:justify-start">
                 <a
                   className=" bg-white/50 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20 dark:bg-white/10 dark:text-white/60"
-                  href={cvUrl}
-                  download
+                  href="https://www.linkedin.com/in/catalinaava09/"
+                  target="_blank"
                 >
                   <FaLinkedinIn size={20} />
                 </a>
