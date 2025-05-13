@@ -2,12 +2,10 @@
 
 A modern, responsive portfolio website showcasing my projects and professional experience as a frontend developer.
 
-<div align="left">
-  <img src="public/Screenshot_1.png" alt="Intro_img" width="300"/>
-    <img src="public/Screenshot_2.png" alt="About_img" width="300"/>
-      <img src="public/Screenshot_3.png" alt="Projects_img" width="300"/>
-     <img src="public/Screenshot_4.png" alt="Experience_img" width="300"/>
-</div>
+
+  <img src="public/Portfolio_img.png" alt="Intro_img" width="700"/>
+
+
 
 ## Live Demo
 
