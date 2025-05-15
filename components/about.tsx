@@ -28,47 +28,72 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {cards.map((card, index) => (
-            <motion.div
-              key={card.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                delay: 0.2 * index,
-                duration: 0.5,
-                ease: "easeOut",
-              }}
+        {/* Horizontal journey flow */}
+        <div className="relative pt-4">
+          {/* Horizontal connecting path */}
+          <div className="absolute top-[68px] md:top-[260px] left-0 right-0 z-0 hidden md:block">
+            <svg
+              className="w-full h-2"
+              viewBox="0 0 1200 10"
+              preserveAspectRatio="none"
             >
+              <path
+                d="M0,5 C200,15 400,0 600,5 C800,10 1000,0 1200,5"
+                stroke="#d8b4fe"
+                strokeOpacity="0.7"
+                strokeWidth="5"
+                strokeDasharray="4 2"
+                fill="none"
+              />
+            </svg>
+          </div>
+
+          {/* Cards container */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4  relative z-10">
+            {cards.map((card, index) => (
               <motion.div
-                className={`group h-full p-6 rounded-xl bg-gradient-to-br from-purple-300/10 to-pink-100/20 dark:from-purple-900/10 dark:to-pink-900/10 backdrop-blur-lg border border-white/20 hover:border-white/50 dark:border-white/10 dark:hover:border-white/20 transition-all duration-300`}
-                whileHover={{
-                  y: -5,
-                  transition: { duration: 0.2 },
+                key={card.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  delay: 0.15 * index,
+                  duration: 0.5,
+                  ease: "easeOut",
                 }}
+                className="flex-1"
               >
-                <div className="flex items-center gap-4 mb-3">
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-white/90">
+                {/* Card with refined neomorphic effect */}
+                <motion.div
+                  className={`
+                    group h-full p-7 rounded-xl relative overflow-hidden
+                    bg-white dark:bg-gray-800
+                    shadow-[5px_5px_10px_rgba(0,0,0,0.08),-5px_-5px_10px_rgba(255,255,255,0.9)]
+                    dark:shadow-[8px_8px_16px_rgba(0,0,0,0.3),-8px_-8px_16px_rgba(255,255,255,0.05)]
+                    hover:shadow-[inset_6px_6px_12px_rgba(0,0,0,0.05),inset_-6px_-6px_12px_rgba(255,255,255,0.9)]
+                    dark:hover:shadow-[inset_6px_6px_12px_rgba(0,0,0,0.2),inset_-6px_-6px_12px_rgba(255,255,255,0.05)]
+                    border border-gray-100 dark:border-gray-700
+                    transition-all duration-300 ease-out
+                  `}
+                  whileHover={{
+                    scale: 0.98,
+                    transition: { duration: 0.3 },
+                  }}
+                >
+                  <h3 className="text-xl font-medium text-gray-900 dark:text-white/90 mb-3">
                     {card.title}
                   </h3>
-                </div>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                  {card.content}
-                </p>
-              </motion.div>
-            </motion.div>
-          ))}
-        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="text-center text-gray-600 dark:text-gray-300 text-base max-w-2xl mx-auto"
-        >
-          <p>{t("text")}</p>
-        </motion.div>
+                  <div className="w-12 h-0.5 bg-purple-300/20 dark:bg-purple-400/20 rounded-full mb-4"></div>
+
+                  <p className="text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+                    {card.content}
+                  </p>
+                </motion.div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </motion.div>
     </section>
   );
