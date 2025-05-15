@@ -92,7 +92,13 @@ function TimelineItem({
                 : "bg-gradient-to-b from-purple-400 via-purple-300 to-blue-900/10"
             } top-8 left-1/2 transform -translate-x-1/2`}
           />
-          <div className="relative z-10 flex items-center justify-center w-8 h-8 ">
+          <div
+            className={`relative z-10 flex items-center justify-center w-10 h-10 rounded-full 
+                ${theme === "light" ? "bg-white/90 " : "bg-gray-800 "} 
+                border ${
+                  theme === "light" ? "border-white" : "border-gray-800"
+                }`}
+          >
             <span
               className={`text-lg ${
                 theme === "light" ? "text-purple-600" : "text-purple-300"
@@ -122,24 +128,22 @@ function TimelineItem({
             {item.location}
           </p>
           <div
-            className={`p-4 rounded-xl shadow-sm ${
-              theme === "light"
-                ? "bg-purple-50/50 backdrop-blur-sm"
-                : "bg-purple-900/10 backdrop-blur-sm"
-            }`}
+            className={`p-5 rounded-xl relative
+              bg-white/70 shadow-sm dark:bg-gray-800 border border-gray-100 dark:border-gray-700
+            `}
           >
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               {item.description}
             </p>
             {item.skills && (
-              <div className="mt-3 flex flex-wrap gap-2">
+              <div className="mt-4 flex flex-wrap gap-2">
                 {item.skills.map((skill: string, skillIndex: number) => (
                   <span
                     key={skillIndex}
                     className={`text-xs px-2 py-1 rounded-full ${
                       theme === "light"
-                        ? "bg-white/80 text-purple-700"
-                        : "bg-gray-800/80 text-purple-300"
+                        ? "bg-purple-50 text-purple-700"
+                        : "bg-gray-800 text-purple-300"
                     } border ${
                       theme === "light"
                         ? "border-purple-200"
