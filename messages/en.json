@@ -50,6 +50,10 @@
       "heading": "Digital Travel Journal",
       "subheading": "An interactive app for travel enthusiasts that combines map, API integrations, and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet for its technical innovation and WCAG accessibility standards implementation."
     },
+    "Ako & Co": {
+      "heading": "Ako & Co",
+      "subheading": "A modern e-commerce website for a fictional fashion brand. The app includes product browsing, advanced filtering, cart functionality, authentication with NextAuth, and integrated PayPal and Stripe payments. Built with a full-stack setup using PostgreSQL and Prisma, and includes admin tools for order management, user profiles, and automated email receipts via Resend."
+    },
     "NexerEmail": {
       "heading": "Nexer Email",
       "subheading": "A professional project developed at Nexer Group for creating and managing responsive email campaigns. Built a complex system from scratch focusing on cross-client compatibility and accessibility.",
@@ -75,10 +79,6 @@
     "TVMaze": {
       "heading": "TV MaZe",
       "subheading": "A mobile application developed with React Native that allows users to search for TV shows, view detailed information, and manage favorites. Focuses on performance and user experience in a mobile context."
-    },
-    "MyNutritionPlan": {
-      "heading": "My Nutrition Plan",
-      "subheading": "A web application for exploring and saving recipes with search and filtering functionality. Demonstrates skills in API integration and responsive design."
     },
     "modal": {
       "title": "Front End Developer Internship",
