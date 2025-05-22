@@ -85,6 +85,14 @@ export const projectsData: Project[] = [
     isNexerProject: false,
   },
   {
+    id: "Ako & Co",
+    imgSrc: "/Ako_img.png",
+    href: "https://akostore-drab.vercel.app/",
+    github: "https://github.com/CatAvadani/akostore.git",
+    techStack: "Next.js, TypeScript, PostgreSQL, NextAuth, Stripe, PayPal",
+    isNexerProject: false,
+  },
+  {
     id: "NexerEmail",
     imgSrc: "/Nexer_Email.png",
     href: "#",
@@ -104,14 +112,6 @@ export const projectsData: Project[] = [
     href: "https://github.com/CatAvadani/tv-maze-react-native-app",
     github: "https://github.com/CatAvadani/tv-maze-react-native-app",
     techStack: "React Native, TypeScript, Firebase, Tailwind CSS",
-    isNexerProject: false,
-  },
-  {
-    id: "MyNutritionPlan",
-    imgSrc: "/MyNutritionPlan.png",
-    href: "https://my-nutrition-plan.vercel.app/",
-    github: "https://github.com/CatAvadani/my-nutrition-plan",
-    techStack: "React, TypeScript, Styled Components, Edamam API",
     isNexerProject: false,
   },
 ];

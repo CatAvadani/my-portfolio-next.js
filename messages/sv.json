@@ -49,6 +49,10 @@
       "heading": "Digital Travel Journal",
       "subheading": "En interaktiv app för reseentusiaster som kombinerar karta, API-integrationer och anpassningsbara vykort. Utsågs till 'Bästa slutprojektet' på Medieinstitutet för teknisk innovation och WCAG-standarder för tillgänglighet."
     },
+    "Ako & Co": {
+      "heading": "Ako & Co",
+      "subheading": "En modern e-handelswebbplats för ett fiktivt modevarumärke. Appen inkluderar produktbläddring, avancerad filtrering, kundvagnsfunktionalitet, autentisering med NextAuth och integrerade betalningar via PayPal och Stripe. Byggd med en fullstack-lösning med PostgreSQL och Prisma, inklusive adminverktyg för orderhantering, användarprofiler och automatiserade e-postkvitton via Resend."
+    },
     "NexerEmail": {
       "heading": "Nexer Email",
       "subheading": "Ett professionellt projekt utvecklat på Nexer Group för att skapa och hantera responsiva e-postkampanjer. Byggt från grunden med fokus på kompatibilitet och tillgänglighet.",
@@ -74,10 +78,6 @@
     "TVMaze": {
       "heading": "TV MaZe",
       "subheading": "En mobilapplikation utvecklad med React Native som låter användare söka efter TV-serier, se detaljerad information och hantera favoriter. Fokus på prestanda och användarupplevelse i mobil kontext."
-    },
-    "MyNutritionPlan": {
-      "heading": "My Nutrition Plan",
-      "subheading": "En webbapplikation för att utforska och spara recept med sök- och filtreringsfunktionalitet. Visar upp färdigheter i API-integration och responsiv design."
     },
     "modal": {
       "title": "Frontendutvecklare Praktik",
