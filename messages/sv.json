@@ -271,22 +271,21 @@
     ],
     "skills": [
       "React",
-      "Next.js",
-      "TypeScript",
-      "JavaScript",
       "HTML",
+      "Next.js",
       "CSS/SCSS",
-      "PostgreSQL",
-      "MongoDB",
-      "Git/GitHub",
-      "Azure",
-      "Figma",
-      "UX & Tillgänglighet",
-      "WCAG",
+      "TypeScript",
       "Tailwind CSS",
+      "JavaScript",
       "Framer Motion",
       "React Native",
-      "Android/Kotlin"
+      "Figma",
+      "PostgreSQL",
+      "UX & Tillgänglighet",
+      "MongoDB",
+      "WCAG",
+      "Git/GitHub",
+      "Azure DevOps"
     ],
     "education": [
       {
