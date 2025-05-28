@@ -123,5 +123,160 @@
     "placeholderMessage": "Tell me about your project...",
     "success": "Email sent successfully!",
     "submit": "Send Message"
+  },
+
+  "CV": {
+    "title": "Interactive CV",
+    "subtitle": "A comprehensive overview of my journey as a full stack developer",
+    "backToPortfolio": "Back to Portfolio",
+    "downloadPDF": "Download PDF",
+    "getInTouch": "Get in Touch",
+    "viewPortfolio": "View Portfolio",
+    "interestedText": "Interested in working together?",
+    "sections": {
+      "about": {
+        "title": "About Me",
+        "content": "As a full stack developer, I combine technical expertise with business understanding to create digital solutions that make a real difference. With a strong foundation in React, Next.js, TypeScript, and PostgreSQL, I have successfully delivered everything from email marketing platforms to e-commerce solutions.\n\nMy journey from customer service to technical development has given me valuable insight into how technology impacts end users. I'm passionate about building solutions that not only work technically, but genuinely improve people's daily lives."
+      },
+      "experience": {
+        "title": "Work Experience"
+      },
+      "projects": {
+        "title": "Featured Projects"
+      },
+      "skills": {
+        "title": "Technical Skills"
+      },
+      "education": {
+        "title": "Education"
+      }
+    },
+    "experiences": [
+      {
+        "title": "Frontend Developer",
+        "company": "Nexer Group AB, Gothenburg",
+        "date": "Sept 2024 - April 2025",
+        "description": "Developed and improved functionality in email marketing platforms and health apps using React, Next.js, TypeScript, and Angular. Worked with Azure environments, implemented real-time synchronization, and solved complex email compatibility issues across different clients.",
+        "isInternship": true,
+        "skills": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Angular",
+          "Azure",
+          "Cosmos DB"
+        ]
+      },
+      {
+        "title": "Android Developer",
+        "company": "Stendahls, Gothenburg",
+        "date": "Oct 2022 - Dec 2022",
+        "description": "Quickly mastered Android development fundamentals with Jetpack Compose, Room Database, and Kotlin. Created functional application components and continuously explored new technologies to maximize development efficiency.",
+        "isInternship": true,
+        "skills": ["Android", "Kotlin", "Jetpack Compose", "Room Database"]
+      },
+      {
+        "title": "Operations & Customer Relations Specialist",
+        "company": "Casino Cosmopol, Gothenburg",
+        "date": "Oct 2018 - June 2024",
+        "description": "Led high-stakes casino operations in a fast-paced environment, handling financial transactions and customer disputes with accuracy and discretion. Developed marketing strategies and collaborated with security teams.",
+        "isInternship": false,
+        "skills": [
+          "Customer Relations",
+          "Operations",
+          "Problem Solving",
+          "Team Collaboration"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Digital Travel Journal",
+        "description": "Interactive web app for travel enthusiasts with map integrations and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet.",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Firebase",
+          "Mapbox API",
+          "WCAG 2.1"
+        ],
+        "isNexerProject": false
+      },
+      {
+        "title": "Ako&Co E-commerce",
+        "description": "Modern e-commerce platform with authentication, shopping cart, payment integration, and admin dashboard.",
+        "technologies": [
+          "Next.js 15",
+          "React 19",
+          "PostgreSQL",
+          "Prisma",
+          "Stripe",
+          "PayPal"
+        ],
+        "isNexerProject": false
+      },
+      {
+        "title": "Nexer Email Platform",
+        "description": "Professional email builder platform focusing on cross-client compatibility and accessibility.",
+        "technologies": ["Next.js", "TypeScript", "Azure", "Cypress"],
+        "isNexerProject": true
+      }
+    ],
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS/SCSS",
+      "PostgreSQL",
+      "MongoDB",
+      "Git/GitHub",
+      "Azure",
+      "Figma",
+      "UX",
+      "Accessibility",
+      "WCAG",
+      "Tailwind CSS",
+      "Framer Motion",
+      "React Native",
+      "Android/Kotlin"
+    ],
+    "education": [
+      {
+        "title": "Frontend Developer | YH",
+        "school": "Medieinstitutet, Gothenburg",
+        "date": "08-2023 - 04-2025"
+      },
+      {
+        "title": "UX & Accessibility | YH",
+        "school": "Medieinstitutet, Gothenburg",
+        "date": "03-2025 - 05-2025"
+      }
+    ],
+    "contact": {
+      "email": "catalinaavadani@gmail.com",
+      "phone": "+46 076 096 8621",
+      "location": "Gothenburg, Sweden"
+    },
+    "labels": {
+      "internship": "Internship",
+      "liveDemo": "Live Demo",
+      "sourceCode": "Source Code",
+      "nexerProject": "Nexer Group Project - Click for details",
+      "clickForDetails": "Click for details"
+    },
+    "nexerModal": {
+      "title": "Nexer Email Platform",
+      "description": "A professional email marketing platform developed at Nexer Group, focusing on creating and managing responsive email campaigns with cross-client compatibility.",
+      "keyFeatures": "Key Features:",
+      "features": [
+        "Cross-client email template compatibility (Gmail, Outlook, etc.)",
+        "Real-time email preview and testing",
+        "Responsive design optimization",
+        "Accessibility compliance (WCAG standards)",
+        "Integration with backend services via Azure"
+      ]
+    }
   }
 }

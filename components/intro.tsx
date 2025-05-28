@@ -80,8 +80,7 @@ export default function Intro() {
               <div className="flex sm:flex-row gap-2 sm:gap-4 justify-center sm:justify-start">
                 <Link
                   href="#contact"
-                  className="group bg-violet-950/70 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none 
-                  hover:bg-violet-950/85 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70"
+                  className="group bg-gradient-to-r from-blue-300 to-violet-900 hover:from-blue-400 hover:to-violet-800 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70"
                   onClick={() => {
                     setActiveSection("contact");
                     setTimeOfLastClick(Date.now());
@@ -107,6 +106,7 @@ export default function Intro() {
                   className=" bg-white/50 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20 dark:bg-white/10 dark:text-white/60"
                   href="https://www.linkedin.com/in/catalinaava09/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaLinkedinIn size={20} />
                 </a>
@@ -115,6 +115,7 @@ export default function Intro() {
                   className=" bg-white/50 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20  dark:bg-white/10 dark:text-white/60"
                   href="https://github.com/CatAvadani"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaGithub size={20} />
                 </a>
