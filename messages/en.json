@@ -148,7 +148,7 @@
     "sections": {
       "about": {
         "title": "About Me",
-        "content": "As a full stack developer, I combine technical expertise with business understanding to create digital solutions that make a real difference. With a strong foundation in React, Next.js, TypeScript, and PostgreSQL, I have successfully delivered everything from email marketing platforms to e-commerce solutions.\n\nMy journey from customer service to technical development has given me valuable insight into how technology impacts end users. I'm passionate about building solutions that not only work technically, but genuinely improve people's daily lives."
+        "content": "As a frontend developer, I combine technical expertise with business understanding to create digital solutions that make a real difference. With a strong foundation in React, Next.js, TypeScript, and PostgreSQL, I have successfully delivered everything from email marketing platforms to e-commerce solutions.\n\nMy journey from customer service to technical development has given me valuable insight into how technology impacts end users. I'm passionate about building solutions that not only work technically, but genuinely improve people's daily lives."
       },
       "experience": {
         "title": "Work Experience"
