@@ -82,7 +82,7 @@ export default function Intro() {
               <div className="flex sm:flex-row gap-2 sm:gap-4 justify-center sm:justify-start">
                 <Link
                   href="#contact"
-                  className="group bg-violet-950/70 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none 
+                  className="group bg-violet-950/70 text-white text-sm sm:text-lg px-4 sm:px-7 py-1 sm:py-3 flex items-center justify-center gap-2 rounded-full outline-none 
                   hover:bg-violet-950/85 active:scale-105 transition duration-300 cursor-pointer dark:bg-gray-800/70"
                   onClick={() => {
                     setActiveSection("contact");
@@ -95,7 +95,7 @@ export default function Intro() {
 
                 <div className="relative">
                   <button
-                    className="group bg-white/50 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20 dark:bg-white/10 dark:text-white/60"
+                    className="group bg-white/50 text-sm sm:text-lg px-4 sm:px-7 py-1 sm:py-3 flex items-center justify-center gap-2 rounded-full outline-none active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20 dark:bg-white/10 dark:text-white/60"
                     onClick={() => setShowCVDropdown(!showCVDropdown)}
                     onBlur={() =>
                       setTimeout(() => setShowCVDropdown(false), 200)

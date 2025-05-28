@@ -495,17 +495,17 @@ export default function InteractiveCV() {
       {/* Footer */}
       <div className="text-center py-8 text-gray-600">
         <p className="mb-4">{t("interestedText")}</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href={`mailto:${contact.email}`}
-            className="px-8 py-3 bg-gradient-to-r from-blue-300 to-violet-900 hover:from-blue-400 hover:to-violet-800 text-white rounded-full font-medium transition-colors duration-300 flex items-center justify-center gap-2 shadow-sm"
+            className=" w-48 text-sm sm:text-md px-4 sm:px-8 py-3 bg-gradient-to-r from-blue-300 to-violet-900 hover:from-blue-400 hover:to-violet-800 text-white rounded-full font-medium transition-colors duration-300 flex items-center justify-center gap-2 shadow-sm"
           >
             <HiMail />
             {t("getInTouch")}
           </a>
           <Link
             href="/"
-            className="px-8 py-3 bg-white border-2 border-blue-600/10 text-blue-600 hover:bg-blue-600/10 rounded-full font-medium transition-colors duration-300"
+            className=" w-48 text-sm sm:text-md px-4 sm:px-8 py-3 bg-white border-2 border-blue-600/10 text-blue-600 hover:bg-blue-600/10 rounded-full font-medium transition-colors duration-300"
           >
             {t("viewPortfolio")}
           </Link>

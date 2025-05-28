@@ -83,8 +83,8 @@ function TimelineItem({
       viewport={{ once: true }}
       className="mb-12 last:mb-0"
     >
-      <div className="flex items-start px-4 sm:px-10 mx-auto max-w-5xl">
-        <div className="relative mr-4 sm:mr-6 lg:mr-12 flex flex-col items-center">
+      <div className="flex items-start px-2 sm:px-10 mx-auto max-w-5xl">
+        <div className="relative mr-2 sm:mr-6 lg:mr-12 flex flex-col items-center">
           <div
             className={`absolute w-[1px] ${getLineHeight()} ${
               theme === "light"
@@ -132,7 +132,7 @@ function TimelineItem({
               bg-white/70 shadow-sm dark:bg-gray-800 border border-gray-100 dark:border-gray-700
             `}
           >
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-lg dark:text-gray-300 leading-relaxed">
               {item.description}
             </p>
             {item.skills && (
