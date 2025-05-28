@@ -252,6 +252,8 @@ export default function InteractiveCV() {
     description: string;
     technologies: string[];
     isNexerProject: boolean;
+    liveUrl?: string;
+    githubUrl?: string;
   }>;
 
   const skills = t.raw("skills") as string[];
@@ -266,10 +268,15 @@ export default function InteractiveCV() {
     location: string;
   };
 
-  const languages = [
-    { language: "English", level: "Fluent" },
-    { language: "Swedish", level: "Good Knowledge" },
-  ];
+  const languages = t.raw("languages") as Array<{
+    language: string;
+    level: string;
+  }>;
+
+  const highlights = t.raw("highlights") as Array<{
+    title: string;
+    desc: string;
+  }>;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-blue-50 to-purple-50 -mt-36">
@@ -324,7 +331,7 @@ export default function InteractiveCV() {
           <div className="relative z-10">
             <h1 className="text-5xl font-light mb-3">Catalina Avadani</h1>
             <p className="text-xl font-light opacity-90 mb-5">
-              Frontend Developer | React, Next.js, TypeScript, PostgreSQL
+              {t("jobTitle")}
             </p>
 
             <div className="flex flex-wrap justify-center gap-8 mt-5">
@@ -395,7 +402,7 @@ export default function InteractiveCV() {
             {/* Languages */}
             <div className="mb-10">
               <h2 className="text-xl font-semibold text-blue-600 mb-5 uppercase tracking-wider relative">
-                Languages
+                {t("sections.languages.title")}
                 <span className="absolute -bottom-1 left-0 w-12 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded"></span>
               </h2>
               <div>
@@ -439,27 +446,10 @@ export default function InteractiveCV() {
 
               <div className="mt-6 p-5 bg-gradient-to-r from-blue-50 to-violet-50 rounded-xl border border-blue-200/10">
                 <h4 className="text-blue-600 font-semibold mb-3">
-                  What I Bring:
+                  {t("whatIBring")}
                 </h4>
                 <ul className="space-y-2">
-                  {[
-                    {
-                      title: "Technical Versatility",
-                      desc: "Experienced in both frontend and backend development, with hands-on experience in Azure environments, databases, and modern JavaScript frameworks",
-                    },
-                    {
-                      title: "Problem-Solving Mindset",
-                      desc: "Proven ability to solve complex compatibility issues and optimize user experiences",
-                    },
-                    {
-                      title: "Quality Focus",
-                      desc: "Strong commitment to WCAG standards, code reviews, and best practices for accessible web development",
-                    },
-                    {
-                      title: "Business Understanding",
-                      desc: "Unique background in customer relations provides valuable insight into user needs and business-critical systems",
-                    },
-                  ].map((item, index) => (
+                  {highlights.map((item, index) => (
                     <li key={index} className="relative pl-5 text-gray-800">
                       <span className="absolute left-0 top-2 text-blue-600 font-bold">
                         ▸

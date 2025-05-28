@@ -2,9 +2,14 @@
   "Home": {
     "greeting": "Hi, I'm Catalina.",
     "title": "Front End Developer",
-    "description": "I used to think frontend was about making things look good. Then I learned it’s about making things feel right. Now, I craft  interfaces that listen and adapt to users, stories that stick, and code that welcomes everyone in.",
+    "description": "I used to think frontend was about making things look good. Then I learned it's about making things feel right. Now, I craft  interfaces that listen and adapt to users, stories that stick, and code that welcomes everyone in.",
     "getInTouch": "Get in touch",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "viewCV": "View My CV",
+    "interactiveCV": "Interactive CV",
+    "interactiveCVDesc": "Explore my journey online",
+    "downloadPDF": "Download PDF",
+    "downloadPDFDesc": "Traditional format"
   },
   "Navigation": {
     "home": "Home",
@@ -23,7 +28,6 @@
     "description": "Let me take you through my journey of transformation — from navigating the seas to navigating the web.",
     "text": "While my journey may have started on cruise ships, today I'm embarking on new adventures in web development — where each project is an opportunity to create something meaningful and impactful."
   },
-
   "Journey": {
     "cards": [
       {
@@ -48,11 +52,15 @@
     "title": "Projects",
     "DigitalTravelJournal": {
       "heading": "Digital Travel Journal",
-      "subheading": "An interactive app for travel enthusiasts that combines map, API integrations, and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet for its technical innovation and WCAG accessibility standards implementation."
+      "subheading": "An interactive app for travel enthusiasts that combines map, API integrations, and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet for its technical innovation and WCAG accessibility standards implementation.",
+      "liveUrl": "https://your-travel-journal-url.com",
+      "githubUrl": "https://github.com/CatAvadani/digital-travel-journal"
     },
     "Ako & Co": {
       "heading": "Ako & Co",
-      "subheading": "A modern e-commerce website for a fictional fashion brand. The app includes product browsing, advanced filtering, cart functionality, authentication with NextAuth, and integrated PayPal and Stripe payments. Built with a full-stack setup using PostgreSQL and Prisma, and includes admin tools for order management, user profiles, and automated email receipts via Resend."
+      "subheading": "A modern e-commerce website for a fictional fashion brand. The app includes product browsing, advanced filtering, cart functionality, authentication with NextAuth, and integrated PayPal and Stripe payments. Built with a full-stack setup using PostgreSQL and Prisma, and includes admin tools for order management, user profiles, and automated email receipts via Resend.",
+      "liveUrl": "https://your-ako-co-url.com",
+      "githubUrl": "https://github.com/CatAvadani/ako-co"
     },
     "NexerEmail": {
       "heading": "Nexer Email",
@@ -78,7 +86,9 @@
     },
     "TVMaze": {
       "heading": "TV MaZe",
-      "subheading": "A mobile application developed with React Native that allows users to search for TV shows, view detailed information, and manage favorites. Focuses on performance and user experience in a mobile context."
+      "subheading": "A mobile application developed with React Native that allows users to search for TV shows, view detailed information, and manage favorites. Focuses on performance and user experience in a mobile context.",
+      "liveUrl": "https://your-tvmaze-url.com",
+      "githubUrl": "https://github.com/CatAvadani/tv-maze"
     },
     "modal": {
       "title": "Frontend Developer Internship",
@@ -124,15 +134,17 @@
     "success": "Email sent successfully!",
     "submit": "Send Message"
   },
-
   "CV": {
     "title": "Interactive CV",
     "subtitle": "A comprehensive overview of my journey as a full stack developer",
+    "jobTitle": "Frontend Developer | React, Next.js, TypeScript, PostgreSQL",
     "backToPortfolio": "Back to Portfolio",
     "downloadPDF": "Download PDF",
     "getInTouch": "Get in Touch",
     "viewPortfolio": "View Portfolio",
     "interestedText": "Interested in working together?",
+    "whatIBring": "What I Bring:",
+    "languagesTitle": "Languages",
     "sections": {
       "about": {
         "title": "About Me",
@@ -149,8 +161,39 @@
       },
       "education": {
         "title": "Education"
+      },
+      "languages": {
+        "title": "Languages"
       }
     },
+    "highlights": [
+      {
+        "title": "Technical Versatility",
+        "desc": "Experienced in both frontend and backend development, with hands-on experience in Azure environments, databases, and modern JavaScript frameworks"
+      },
+      {
+        "title": "Problem-Solving Mindset",
+        "desc": "Proven ability to solve complex compatibility issues and optimize user experiences"
+      },
+      {
+        "title": "Quality Focus",
+        "desc": "Strong commitment to WCAG standards, code reviews, and best practices for accessible web development"
+      },
+      {
+        "title": "Business Understanding",
+        "desc": "Unique background in customer relations provides valuable insight into user needs and business-critical systems"
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "level": "Fluent"
+      },
+      {
+        "language": "Swedish",
+        "level": "Good Knowledge"
+      }
+    ],
     "experiences": [
       {
         "title": "Frontend Developer",
@@ -200,6 +243,8 @@
           "Mapbox API",
           "WCAG 2.1"
         ],
+        "liveUrl": "https://your-travel-journal-url.com",
+        "githubUrl": "https://github.com/CatAvadani/digital-travel-journal",
         "isNexerProject": false
       },
       {
@@ -213,6 +258,8 @@
           "Stripe",
           "PayPal"
         ],
+        "liveUrl": "https://your-ako-co-url.com",
+        "githubUrl": "https://github.com/CatAvadani/ako-co",
         "isNexerProject": false
       },
       {
@@ -234,8 +281,7 @@
       "Git/GitHub",
       "Azure",
       "Figma",
-      "UX",
-      "Accessibility",
+      "UX & Accessibility",
       "WCAG",
       "Tailwind CSS",
       "Framer Motion",
@@ -258,13 +304,6 @@
       "email": "catalinaavadani@gmail.com",
       "phone": "+46 076 096 8621",
       "location": "Gothenburg, Sweden"
-    },
-    "labels": {
-      "internship": "Internship",
-      "liveDemo": "Live Demo",
-      "sourceCode": "Source Code",
-      "nexerProject": "Nexer Group Project - Click for details",
-      "clickForDetails": "Click for details"
     },
     "nexerModal": {
       "title": "Nexer Email Platform",
