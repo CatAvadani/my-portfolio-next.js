@@ -4,7 +4,12 @@
     "title": "Frontendutvecklare",
     "description": "Jag brukade tro att frontend handlade om att få saker att se bra ut. Sen insåg jag att det handlar om att få det att kännas rätt. Nu skapar jag gränssnitt som lyssnar och anpassar sig till användaren, berättelser som fastnar och kod som välkomnar alla.",
     "getInTouch": "Kontakta mig",
-    "downloadCV": "Ladda ner CV"
+    "downloadCV": "Ladda ner CV",
+    "viewCV": "Visa mitt CV",
+    "interactiveCV": "Interaktivt CV",
+    "interactiveCVDesc": "Utforska min resa online",
+    "downloadPDF": "Ladda ner PDF",
+    "downloadPDFDesc": "Traditionellt format"
   },
   "Navigation": {
     "home": "Hem",
@@ -47,11 +52,15 @@
     "title": "Projekt",
     "DigitalTravelJournal": {
       "heading": "Digital Travel Journal",
-      "subheading": "En interaktiv app för reseentusiaster som kombinerar karta, API-integrationer och anpassningsbara vykort. Utsågs till 'Bästa slutprojektet' på Medieinstitutet för teknisk innovation och WCAG-standarder för tillgänglighet."
+      "subheading": "En interaktiv app för reseentusiaster som kombinerar karta, API-integrationer och anpassningsbara vykort. Utsågs till 'Bästa slutprojektet' på Medieinstitutet för teknisk innovation och WCAG-standarder för tillgänglighet.",
+      "liveUrl": "https://your-travel-journal-url.com",
+      "githubUrl": "https://github.com/CatAvadani/digital-travel-journal"
     },
     "Ako & Co": {
       "heading": "Ako & Co",
-      "subheading": "En modern e-handelswebbplats för ett fiktivt modevarumärke. Appen inkluderar produktbläddring, avancerad filtrering, kundvagnsfunktionalitet, autentisering med NextAuth och integrerade betalningar via PayPal och Stripe. Byggd med en fullstack-lösning med PostgreSQL och Prisma, inklusive adminverktyg för orderhantering, användarprofiler och automatiserade e-postkvitton via Resend."
+      "subheading": "En modern e-handelswebbplats för ett fiktivt modevarumärke. Appen inkluderar produktbläddring, avancerad filtrering, kundvagnsfunktionalitet, autentisering med NextAuth och integrerade betalningar via PayPal och Stripe. Byggd med en fullstack-lösning med PostgreSQL och Prisma, inklusive adminverktyg för orderhantering, användarprofiler och automatiserade e-postkvitton via Resend.",
+      "liveUrl": "https://your-ako-co-url.com",
+      "githubUrl": "https://github.com/CatAvadani/ako-co"
     },
     "NexerEmail": {
       "heading": "Nexer Email",
@@ -77,7 +86,9 @@
     },
     "TVMaze": {
       "heading": "TV MaZe",
-      "subheading": "En mobilapplikation utvecklad med React Native som låter användare söka efter TV-serier, se detaljerad information och hantera favoriter. Fokus på prestanda och användarupplevelse i mobil kontext."
+      "subheading": "En mobilapplikation utvecklad med React Native som låter användare söka efter TV-serier, se detaljerad information och hantera favoriter. Fokus på prestanda och användarupplevelse i mobil kontext.",
+      "liveUrl": "https://your-tvmaze-url.com",
+      "githubUrl": "https://github.com/CatAvadani/tv-maze"
     },
     "modal": {
       "title": "Frontendutvecklare Praktik",
@@ -91,7 +102,6 @@
   "Skills": {
     "title": "Mina färdigheter"
   },
-
   "Experience": {
     "title": "Min erfarenhet",
     "entries": [
@@ -123,5 +133,189 @@
     "placeholderMessage": "Berätta om ditt projekt...",
     "success": "E-postmeddelandet skickades!",
     "submit": "Skicka meddelande"
+  },
+  "CV": {
+    "title": "Interaktivt CV",
+    "subtitle": "En omfattande översikt av min resa som fullstack-utvecklare",
+    "jobTitle": "Frontendutvecklare | React, Next.js, TypeScript, PostgreSQL",
+    "backToPortfolio": "Tillbaka till Portfolio",
+    "downloadPDF": "Ladda ner PDF",
+    "getInTouch": "Kontakta mig",
+    "viewPortfolio": "Visa Portfolio",
+    "interestedText": "Intresserad av att samarbeta?",
+    "whatIBring": "Vad jag bidrar med:",
+    "languagesTitle": "Språk",
+    "sections": {
+      "about": {
+        "title": "Om mig",
+        "content": "Som fullstack-utvecklare kombinerar jag teknisk expertis med affärsförståelse för att skapa digitala lösningar som verkligen gör skillnad. Med stark grund i React, Next.js, TypeScript och PostgreSQL har jag framgångsrikt levererat allt från e-postmarknadsföringsplattformar till e-handelslösningar.\n\nMin resa från kundservice till teknisk utveckling har gett mig värdefull insikt i hur teknik påverkar slutanvändare. Jag brinner för att bygga lösningar som inte bara fungerar tekniskt, utan som verkligen förbättrar människors vardag."
+      },
+      "experience": {
+        "title": "Arbetslivserfarenhet"
+      },
+      "projects": {
+        "title": "Utvalda Projekt"
+      },
+      "skills": {
+        "title": "Tekniska Färdigheter"
+      },
+      "education": {
+        "title": "Utbildning"
+      },
+      "languages": {
+        "title": "Språk"
+      }
+    },
+    "highlights": [
+      {
+        "title": "Teknisk Mångsidighet",
+        "desc": "Erfaren inom både frontend och backend-utveckling, med praktisk erfarenhet av Azure-miljöer, databaser och moderna JavaScript-ramverk"
+      },
+      {
+        "title": "Problemlösarmentalitet",
+        "desc": "Bevisad förmåga att lösa komplexa kompatibilitetsproblem och optimera användarupplevelser"
+      },
+      {
+        "title": "Kvalitetsfokus",
+        "desc": "Stark förankring i WCAG-standarder, kodgranskning och best practices för tillgänglig webbutveckling"
+      },
+      {
+        "title": "Affärsförståelse",
+        "desc": "Unik bakgrund inom kundrelationer ger värdefull insikt i användarbehov och affärskritiska system"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Engelska",
+        "level": "Flytande"
+      },
+      {
+        "language": "Svenska",
+        "level": "Goda kunskaper"
+      }
+    ],
+    "experiences": [
+      {
+        "title": "Frontendutvecklare",
+        "company": "Nexer Group AB, Göteborg",
+        "date": "Sep 2024 - April 2025",
+        "description": "Utvecklade och förbättrade funktionalitet i e-postmarknadsföringsplattformar och hälsoappar med React, Next.js, TypeScript och Angular. Arbetade med Azure-miljöer, implementerade realtidssynkronisering och löste komplexa e-postkompatibilitetsproblem mellan olika klienter.",
+        "isInternship": true,
+        "skills": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Angular",
+          "Azure",
+          "Cosmos DB"
+        ]
+      },
+      {
+        "title": "Androidutvecklare",
+        "company": "Stendahls, Göteborg",
+        "date": "Okt 2022 - Dec 2022",
+        "description": "Tillägnade mig snabbt grunderna i Android-utveckling med Jetpack Compose, Room Database och Kotlin. Skapade funktionella applikationskomponenter och utforskade kontinuerligt nya teknologier för att maximera utvecklingseffektiviteten.",
+        "isInternship": true,
+        "skills": ["Android", "Kotlin", "Jetpack Compose", "Room Database"]
+      },
+      {
+        "title": "Specialist Operatör & Kundrelationer",
+        "company": "Casino Cosmopol, Göteborg",
+        "date": "Okt 2018 - Juni 2024",
+        "description": "Ledde höginsatskasinooperationer i en snabbtempo miljö, hanterade finansiella transaktioner och kundtvister med noggrannhet och diskretion. Utvecklade marknadsföringsstrategier och samarbetade med säkerhetsteam.",
+        "isInternship": false,
+        "skills": [
+          "Kundrelationer",
+          "Operationer",
+          "Problemlösning",
+          "Teamsamarbete"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Digital Resejournal",
+        "description": "Interaktiv webbapp för reseentusiaster med kartintegration och anpassningsbara vykort. Belönad med 'Bästa Slutprojekt' på Medieinstitutet.",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Firebase",
+          "Mapbox API",
+          "WCAG 2.1"
+        ],
+        "liveUrl": "https://digital-travel-journal-wnb8.vercel.app/",
+        "githubUrl": "https://github.com/CatAvadani/digital-travel-journal",
+        "isNexerProject": false
+      },
+      {
+        "title": "Ako&Co E-handel",
+        "description": "Modern e-handelsplattform med autentisering, kundvagn, betalningsintegration och admin-dashboard.",
+        "technologies": [
+          "Next.js 15",
+          "React 19",
+          "PostgreSQL",
+          "Prisma",
+          "Stripe",
+          "PayPal"
+        ],
+        "liveUrl": "https://akostore-drab.vercel.app",
+        "githubUrl": "https://github.com/CatAvadani/akostore",
+        "isNexerProject": false
+      },
+      {
+        "title": "Nexer E-postplattform",
+        "description": "Professionell e-postbyggarplattform med fokus på kompatibilitet mellan klienter och tillgänglighet.",
+        "technologies": ["Next.js", "TypeScript", "Azure", "Cypress"],
+        "isNexerProject": true
+      }
+    ],
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS/SCSS",
+      "PostgreSQL",
+      "MongoDB",
+      "Git/GitHub",
+      "Azure",
+      "Figma",
+      "UX & Tillgänglighet",
+      "WCAG",
+      "Tailwind CSS",
+      "Framer Motion",
+      "React Native",
+      "Android/Kotlin"
+    ],
+    "education": [
+      {
+        "title": "Frontendutvecklare | YH",
+        "school": "Medieinstitutet, Göteborg",
+        "date": "08-2023 - 04-2025"
+      },
+      {
+        "title": "UX & Tillgänglighet | YH",
+        "school": "Medieinstitutet, Göteborg",
+        "date": "03-2025 - 05-2025"
+      }
+    ],
+    "contact": {
+      "email": "catalinaavadani@gmail.com",
+      "phone": "+46 076 096 8621",
+      "location": "Göteborg, Sverige"
+    },
+    "nexerModal": {
+      "title": "Nexer E-postplattform",
+      "description": "En professionell e-postmarknadsföringsplattform utvecklad på Nexer Group, med fokus på att skapa och hantera responsiva e-postkampanjer med kompatibilitet mellan klienter.",
+      "keyFeatures": "Huvudfunktioner:",
+      "features": [
+        "Kompatibilitet för e-postmallar mellan klienter (Gmail, Outlook, etc.)",
+        "Realtids e-postförhandsvisning och testning",
+        "Responsiv designoptimering",
+        "Tillgänglighetsefterlevnad (WCAG-standarder)",
+        "Integration med backend-tjänster via Azure"
+      ]
+    }
   }
 }

@@ -6,15 +6,17 @@ import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiDownload } from "react-icons/hi";
+import { HiDownload, HiEye } from "react-icons/hi";
 
 export default function Intro() {
   const { ref } = useSectionInView("home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const t = useTranslations("Home");
   const locale = useLocale();
+  const [showCVDropdown, setShowCVDropdown] = useState(false);
 
   const cvUrl =
     locale === "en"
@@ -91,14 +93,59 @@ export default function Intro() {
                   <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
 
-                <a
-                  className="group bg-white/50 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none   active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20  dark:bg-white/10 dark:text-white/60"
-                  href={cvUrl}
-                  download
-                >
-                  {t("downloadCV")}
-                  <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-                </a>
+                <div className="relative">
+                  <button
+                    className="group bg-white/50 px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20 dark:bg-white/10 dark:text-white/60"
+                    onClick={() => setShowCVDropdown(!showCVDropdown)}
+                    onBlur={() =>
+                      setTimeout(() => setShowCVDropdown(false), 200)
+                    }
+                  >
+                    {t("viewCV")}
+                    <HiEye className="opacity-60 " />
+                  </button>
+
+                  {/* Dropdown menu */}
+                  {showCVDropdown && (
+                    <div className="absolute top-full left-0 mt-2 bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden z-50 min-w-[220px]">
+                      <Link
+                        href={`/${locale}/cv`}
+                        className="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                        onClick={() => setShowCVDropdown(false)}
+                      >
+                        <div className="flex items-center gap-3">
+                          <HiEye className="text-violet-600 flex-shrink-0" />
+                          <div>
+                            <p className="font-medium text-gray-900 dark:text-white">
+                              {t("interactiveCV")}
+                            </p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">
+                              {t("interactiveCVDesc")}
+                            </p>
+                          </div>
+                        </div>
+                      </Link>
+
+                      <a
+                        href={cvUrl}
+                        download
+                        className="block px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors border-t border-gray-200 dark:border-gray-700"
+                      >
+                        <div className="flex items-center gap-3">
+                          <HiDownload className="text-violet-600 flex-shrink-0" />
+                          <div>
+                            <p className="font-medium text-gray-900 dark:text-white">
+                              {t("downloadPDF")}
+                            </p>
+                            <p className="text-xs text-gray-500 dark:text-gray-400">
+                              {t("downloadPDFDesc")}
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Social links */}
@@ -107,6 +154,7 @@ export default function Intro() {
                   className=" bg-white/50 p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20 dark:bg-white/10 dark:text-white/60"
                   href="https://www.linkedin.com/in/catalinaava09/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaLinkedinIn size={20} />
                 </a>
@@ -115,6 +163,7 @@ export default function Intro() {
                   className=" bg-white/50 p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition duration-300 cursor-pointer border border-white/10 hover:border-white/20  dark:bg-white/10 dark:text-white/60"
                   href="https://github.com/CatAvadani"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaGithub size={20} />
                 </a>
