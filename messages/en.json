@@ -136,7 +136,7 @@
   },
   "CV": {
     "title": "Interactive CV",
-    "subtitle": "A comprehensive overview of my journey as a full stack developer",
+    "subtitle": "A comprehensive overview of my journey as a frontend developer",
     "jobTitle": "Frontend Developer | React, Next.js, TypeScript, PostgreSQL",
     "backToPortfolio": "Back to Portfolio",
     "downloadPDF": "Download PDF",
@@ -214,7 +214,7 @@
         "title": "Android Developer",
         "company": "Stendahls, Gothenburg",
         "date": "Oct 2022 - Dec 2022",
-        "description": "Quickly mastered Android development fundamentals with Jetpack Compose, Room Database, and Kotlin. Created functional application components and continuously explored new technologies to maximize development efficiency.",
+        "description": "Quickly assimilated the fundamentals of Android development using Jetpack Compose, Room Database, and Kotlin, effectively applying these skills to create functional application components within a short timeframe.",
         "isInternship": true,
         "skills": ["Android", "Kotlin", "Jetpack Compose", "Room Database"]
       },
