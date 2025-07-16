@@ -1,4 +1,4 @@
-import InteractiveCV from "@/components/interactiveCv";
+import InteractiveCV from '@/components/interactiveCv';
 
 export default function CVPage() {
   return <InteractiveCV />;
@@ -8,16 +8,19 @@ export default function CVPage() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>; // Changed: params is now a Promise
 }) {
+  // Changed: Await the params object
+  const { locale } = await params;
+
   return {
     title:
-      params.locale === "en"
-        ? "Interactive CV - Catalina Avadani"
-        : "Interaktivt CV - Catalina Avadani",
+      locale === 'en'
+        ? 'Interactive CV - Catalina Avadani'
+        : 'Interaktivt CV - Catalina Avadani',
     description:
-      params.locale === "en"
-        ? "Interactive CV showcasing my journey as a full stack developer"
-        : "Interaktivt CV som visar min resa som fullstack-utvecklare",
+      locale === 'en'
+        ? 'Interactive CV showcasing my journey as a full stack developer'
+        : 'Interaktivt CV som visar min resa som fullstack-utvecklare',
   };
 }
