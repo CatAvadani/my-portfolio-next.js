@@ -21,7 +21,7 @@ A modern, responsive portfolio website showcasing my journey as a frontend and f
 - **SEO Friendly** - Proper meta tags, structured data, and accessibility standards
 - **Type Safety** - Full TypeScript implementation for robust code quality
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 15 (App Router) with React 19
 - **Language**: TypeScript
@@ -32,7 +32,7 @@ A modern, responsive portfolio website showcasing my journey as a frontend and f
 - **Deployment**: Vercel with custom domain
 - **Performance**: Optimized with static generation and server-side rendering
 
-## 📱 Key Highlights
+## Key Highlights
 
 - **Fully Responsive** - Mobile-first design approach
 - **Accessibility** - WCAG standards implementation
@@ -60,7 +60,7 @@ npm run build
 npm start
 ```
 
-## 📧 Contact
+## Contact
 
 - **Website**: [catalinaavadani.com](https://catalinaavadani.com)
 - **Email**: catalinaavadani@gmail.com
