@@ -14,13 +14,13 @@ import './globals.css';
 const dm_sans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Catalina Avadani | Front-end Developer Portfolio',
+  title: 'Catalina Avadani | Frontend Developer',
   description:
     'Catalina Avadani is a front-end developer based in Gothenburg. Explore projects, skills, and experience in web development, React, Next.js, and more.',
   openGraph: {
-    title: 'Catalina Avadani | Front-end Developer Portfolio',
+    title: 'Catalina Avadani | Frontend Developer',
     description:
-      'Explore Catalina’s work as a front-end developer specializing in React, Next.js, and accessibility.',
+      'Explore Catalina’s work as a frontend developer specializing in React, Next.js, and accessibility.',
     url: 'https://catalinaavadani.com',
     siteName: 'Catalina Avadani Portfolio',
   },
