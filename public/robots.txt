@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://catalinaavadani.com
+
+# Sitemaps
+Sitemap: https://catalinaavadani.com/sitemap.xml
