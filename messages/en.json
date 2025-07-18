@@ -50,6 +50,12 @@
   },
   "Projects": {
     "title": "Projects",
+    "FridgePal": {
+      "heading": "FridgePal",
+      "subheading": "A mobile app that helps users track fridge items, identify food with AI, and reduce food waste. Includes camera-based scanning, OpenAI-driven recognition, user authentication, and automatic freshness tracking. Awarded 1st place at Clean Code Hackathon 2025 – now further developed as a solo project.",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/CatAvadani/FridgePal "
+    },
     "DigitalTravelJournal": {
       "heading": "Digital Travel Journal",
       "subheading": "An interactive app for travel enthusiasts that combines map, API integrations, and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet for its technical innovation and WCAG accessibility standards implementation.",
@@ -105,6 +111,13 @@
   "Experience": {
     "title": "My Experience",
     "entries": [
+      {
+        "title": "Freelance Fullstack Developer – Frontend Focused",
+        "company": "Self-employed",
+        "date": "April 2025 – Present",
+        "description": "Independently developed FridgePal, a React Native inventory app (awarded 1st place at Clean Code Hackathon 2025). Built a WCAG-compliant healthcare website for a private client using React, TypeScript, and Vite, focusing on accessibility and real-world business needs. Collaborated with backend developers to optimize API integrations, and managed all phases from wireframes to deployment. Focused on best practices: cross-platform compatibility, performance, and maintainable code.",
+        "isInternship": false
+      },
       {
         "title": "Frontend Developer - Internship",
         "location": "Nexer Group, Gothenburg",
@@ -196,6 +209,25 @@
     ],
     "experiences": [
       {
+        "title": "Freelance Fullstack Developer – Frontend Focused",
+        "company": "Self-employed",
+        "date": "April 2025 – Present",
+        "description": "Independently developed FridgePal, a React Native inventory app (awarded 1st place at Clean Code Hackathon 2025). Built a WCAG-compliant healthcare website for a private client using React, TypeScript, and Vite, focusing on accessibility and real-world business needs. Collaborated with backend developers to optimize API integrations, and managed all phases from wireframes to deployment. Focused on best practices: cross-platform compatibility, performance, and maintainable code.",
+        "isInternship": false,
+        "skills": [
+          "React",
+          "React Native",
+          "TypeScript",
+          "Vite",
+          "Supabase",
+          "OpenAI Vision",
+          "Accessibility (WCAG)",
+          "API Integration",
+          "UI/UX",
+          "Project Management"
+        ]
+      },
+      {
         "title": "Frontend Developer",
         "company": "Nexer Group AB, Gothenburg",
         "date": "Sept 2024 - April 2025",
@@ -233,6 +265,20 @@
       }
     ],
     "projects": [
+      {
+        "title": "FridgePal",
+        "description": "Mobile app that helps users track fridge items, identify food with AI, and reduce food waste. Includes camera-based scanning, OpenAI-driven recognition, user authentication, and automatic freshness tracking. Awarded 1st place at Clean Code Hackathon 2025 – now further developed as a solo project.",
+        "technologies": [
+          "React Native",
+          "TypeScript",
+          "OpenAI Vision",
+          "Supabase",
+          "WCAG 2.1"
+        ],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/CatAvadani/FridgePal ",
+        "isNexerProject": false
+      },
       {
         "title": "Digital Travel Journal",
         "description": "Interactive web app for travel enthusiasts with map integrations and customizable postcards. Awarded 'Best Final Project' at Medieinstitutet.",
