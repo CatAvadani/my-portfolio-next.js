@@ -50,6 +50,12 @@
   },
   "Projects": {
     "title": "Projekt",
+    "FridgePal": {
+      "heading": "FridgePal",
+      "subheading": "Mobilapp som hjälper användare att hålla koll på kylvaror, identifiera livsmedel med AI och minska matsvinn. Inkluderar kamerabaserad skanning, OpenAI-drivet igenkänning, användarautentisering och automatisk hållbarhetsspårning. Vann första pris på Clean Code Hackathon 2025 – nu vidareutvecklad som soloprojekt.",
+      "liveUrl": "",
+      "githubUrl": "https://github.com/CatAvadani/FridgePal"
+    },
     "DigitalTravelJournal": {
       "heading": "Digital Travel Journal",
       "subheading": "En interaktiv app för reseentusiaster som kombinerar karta, API-integrationer och anpassningsbara vykort. Utsågs till 'Bästa slutprojektet' på Medieinstitutet för teknisk innovation och WCAG-standarder för tillgänglighet.",
@@ -105,6 +111,13 @@
   "Experience": {
     "title": "Min erfarenhet",
     "entries": [
+      {
+        "title": "Frilansande Fullstackutvecklare – Frontendfokus",
+        "company": "Egenföretagare",
+        "date": "April 2025 – pågående",
+        "description": "Utvecklat FridgePal, en React Native-inventarieapp (vann första pris på Clean Code Hackathon 2025). Byggt en WCAG-anpassad webbplats för vårdgivare med React, TypeScript och Vite, med fokus på tillgänglighet och faktiska affärsbehov. Samarbetat med backendutvecklare för att optimera API-integrationer, och drivit projekt från wireframes till produktion. Extra fokus på best practices: plattformsoberoende, prestanda och underhållbar kod.",
+        "isInternship": false
+      },
       {
         "title": "Frontendutvecklare - Praktik",
         "location": "Nexer Group, Göteborg",
@@ -196,6 +209,13 @@
     ],
     "experiences": [
       {
+        "title": "Frilansande Fullstackutvecklare – Frontendfokus",
+        "company": "Egenföretagare",
+        "date": "April 2025 – pågående",
+        "description": "Utvecklat FridgePal, en React Native-inventarieapp (vann första pris på Clean Code Hackathon 2025). Byggt en WCAG-anpassad webbplats för vårdgivare med React, TypeScript och Vite, med fokus på tillgänglighet och faktiska affärsbehov. Samarbetat med backendutvecklare för att optimera API-integrationer, och drivit projekt från wireframes till produktion. Extra fokus på best practices: plattformsoberoende, prestanda och underhållbar kod.",
+        "isInternship": false
+      },
+      {
         "title": "Frontendutvecklare",
         "company": "Nexer Group AB, Göteborg",
         "date": "Sep 2024 - April 2025",
@@ -233,6 +253,20 @@
       }
     ],
     "projects": [
+      {
+        "title": "FridgePal",
+        "description": "Mobilapp som hjälper användare att hålla koll på kylvaror, identifiera livsmedel med AI och minska matsvinn. Inkluderar kamerabaserad skanning, OpenAI-drivet igenkänning, användarautentisering och automatisk hållbarhetsspårning. Vann första pris på Clean Code Hackathon 2025 – nu vidareutvecklad som soloprojekt.",
+        "technologies": [
+          "React Native",
+          "TypeScript",
+          "OpenAI API",
+          "Firebase",
+          "WCAG 2.1"
+        ],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/CatAvadani/FridgePal",
+        "isNexerProject": false
+      },
       {
         "title": "Digital Resejournal",
         "description": "Interaktiv webbapp för reseentusiaster med kartintegration och anpassningsbara vykort. Belönad med 'Bästa Slutprojekt' på Medieinstitutet.",
