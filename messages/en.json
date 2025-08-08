@@ -2,7 +2,7 @@
   "Home": {
     "greeting": "Hi, I'm Catalina.",
     "title": "Front End Developer",
-    "description": "I used to think frontend was about making things look good. Then I learned it's about making things feel right. Now, I craft  interfaces that listen and adapt to users, stories that stick, and code that welcomes everyone in.",
+    "description": "I create intuitive digital experiences that users love. Specializing in React ecosystem and accessibility, I build applications that combine technical excellence with thoughtful design.",
     "getInTouch": "Get in touch",
     "downloadCV": "Download CV",
     "viewCV": "View My CV",
@@ -23,31 +23,33 @@
     "exploreMyStory": "EXPLORE MY STORY",
     "readMoreAboutMe": "READ MORE ABOUT ME"
   },
+
   "About": {
     "title": "About me",
-    "description": "Let me take you through my journey of transformation — from navigating the seas to navigating the web.",
-    "text": "While my journey may have started on cruise ships, today I'm embarking on new adventures in web development — where each project is an opportunity to create something meaningful and impactful."
+    "description": "I'm a Frontend Developer who combines technical expertise with strong design sensibility to create exceptional user experiences.",
+    "text": "With a focus on accessibility and modern web technologies, I build applications that are both technically sophisticated and intuitively usable. Every project is an opportunity to solve real problems while creating beautiful, functional experiences."
   },
   "Journey": {
     "cards": [
       {
-        "title": "The Journey Begins",
-        "content": "Life often takes us on unexpected journeys. My path from being a casino dealer and supervisor on cruise ships to becoming a Front-End developer was anything but conventional."
+        "title": "Technical Excellence",
+        "content": "With expertise in React ecosystem and modern JavaScript, I build scalable web applications that prioritize performance and user experience. My focus on clean, maintainable code ensures solutions that grow with business needs."
       },
       {
-        "title": "The Transition",
-        "content": "Driven by a deep-seated curiosity for technology and a desire for change, I enrolled in an Android development course. This first step into mobile app development opened my eyes to the possibilities in tech."
+        "title": "Accessibility Champion",
+        "content": "I specialize in creating inclusive digital experiences through WCAG compliance and accessible design patterns. Every application I build works for users of all abilities, ensuring no one is left behind."
       },
       {
-        "title": "The Discovery",
-        "content": "While Android development was fulfilling, I found my true passion in Front-End development. Learning HTML, CSS, and JavaScript revealed a perfect blend of creativity and technical challenge."
+        "title": "Award-Winning Innovation",
+        "content": "My technical capabilities are validated through real achievements - from winning first place at Clean Code Hackathon 2025 with an AI-powered mobile app, to receiving the Best Thesis Project award for innovative web applications."
       },
       {
-        "title": "Present Course",
-        "content": "Today, I'm crafting digital experiences where creativity meets code. Each project is an opportunity to combine my people skills from hospitality with technical expertise."
+        "title": "Current Focus",
+        "content": "Today, I develop custom solutions for businesses, combining modern technology with user-centered design. Each project is an opportunity to deliver measurable value while creating exceptional digital experiences."
       }
     ]
   },
+
   "Projects": {
     "title": "Projects",
     "FridgePal": {
@@ -97,12 +99,12 @@
       "githubUrl": "https://github.com/CatAvadani/tv-maze"
     },
     "modal": {
-      "title": "Frontend Developer Internship",
+      "title": "Frontend Developer",
       "projectOverview": "Project Overview",
       "technologies": "Technologies",
       "myContribution": "My Contribution",
       "close": "Close",
-      "confidentialNotice": "This project was completed during my internship at Nexer Group. Due to confidentiality agreements, source code and detailed screenshots cannot be shared publicly. I'm happy to discuss the technical details further in an interview setting."
+      "confidentialNotice": "This project was completed during my time at Nexer Group. Due to confidentiality agreements, source code and detailed screenshots cannot be shared publicly. I'm happy to discuss the technical details further in an interview setting."
     }
   },
   "Skills": {
@@ -119,13 +121,13 @@
         "isInternship": false
       },
       {
-        "title": "Frontend Developer - Internship",
+        "title": "Frontend Developer",
         "location": "Nexer Group, Gothenburg",
         "description": "At Nexer, I contributed to two key projects: Nexer Email, an email builder platform and Boost App, a cross-platform fitness tracker. I built accessible and responsive UIs using Next.js, React Native, Angular, TypeScript, Zustand, and Tailwind CSS. My work included implementing dynamic layouts, syncing data across frontend and backend, optimizing loading performance, and enhancing user experience. I also developed features for sending and previewing test emails with Nodemailer, built logic for layout restrictions, and wrote Cypress end-to-end tests to ensure stability. Throughout, I collaborated in an agile team and worked actively with Git and Azure DevOps.",
         "date": "Sept 2024 - April 2025"
       },
       {
-        "title": "Android Developer - Internship",
+        "title": "Android Developer",
         "location": "Stendahls, Gothenburg",
         "description": "Designed and implemented Android app features using Kotlin, Jetpack Compose, and built data management solutions using Room Database. Followed MVVM architecture and implemented API integrations to connect mobile clients with backend services. Collaborated in an agile environment, participated in code reviews and optimized application performance through efficient memory management.",
         "date": "Oct 2022 - Dec 2022"
