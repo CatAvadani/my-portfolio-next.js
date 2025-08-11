@@ -29,7 +29,7 @@ export default function About() {
       >
         <div className='text-center'>
           <SectionHeading>{t('title')}</SectionHeading>
-          <p className='mt-4 text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto'>
+          <p className='mt-4 text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto'>
             {t('description')}
           </p>
         </div>
@@ -100,61 +100,76 @@ export default function About() {
                     }}
                   />
 
-                  {/* Sunburst corner accent */}
-                  <div className='absolute top-0 right-0 w-12 h-12 overflow-hidden opacity-30 group-hover:opacity-50 transition-opacity duration-300'>
-                    <svg className='w-full h-full' viewBox='0 0 48 48'>
+                  {/* Subtle sunburst covering the whole card */}
+                  <div className='absolute -top-12 -right-12 w-72 h-72 overflow-hidden opacity-15 group-hover:opacity-25 transition-opacity duration-300'>
+                    <svg className='w-full h-full' viewBox='0 0 250 250'>
                       <defs>
                         <linearGradient
                           id={`cornerSunburst-${index}`}
-                          x1='0%'
+                          x1='100%'
                           y1='0%'
-                          x2='100%'
+                          x2='0%'
                           y2='100%'
                         >
                           <stop
                             offset='0%'
                             stopColor='#a855f7'
-                            stopOpacity='0.6'
+                            stopOpacity='0.5'
                           />
                           <stop
-                            offset='50%'
+                            offset='30%'
                             stopColor='#d946ef'
                             stopOpacity='0.4'
                           />
                           <stop
-                            offset='80%'
+                            offset='60%'
                             stopColor='#ec4899'
                             stopOpacity='0.3'
                           />
                           <stop
+                            offset='80%'
+                            stopColor='#fbbf24'
+                            stopOpacity='0.15'
+                          />
+                          <stop
                             offset='100%'
-                            stopColor='#f8fafc'
-                            stopOpacity='0.1'
+                            stopColor='#fef3c7'
+                            stopOpacity='0'
                           />
                         </linearGradient>
                       </defs>
-                      {/* Sunburst rays from top-right corner */}
-                      {Array.from({ length: 6 }, (_, i) => {
-                        const angle = i * 15; // 90 degrees / 6 rays
-                        const x1 = 48;
-                        const y1 = 0;
-                        const x2 = 48 - 35 * Math.cos((angle * Math.PI) / 180);
-                        const y2 = 35 * Math.sin((angle * Math.PI) / 180);
-                        const x3 =
-                          48 - 35 * Math.cos(((angle + 12) * Math.PI) / 180);
-                        const y3 =
-                          35 * Math.sin(((angle + 12) * Math.PI) / 180);
+                      {/* Large subtle rays covering the whole card */}
+                      {Array.from({ length: 25 }, (_, i) => {
+                        const angle = i * 3.6; // 90 degrees / 25 rays = 3.6 degrees each
+                        const rayWidth = 2.8; // Thin rays with gaps
+                        const rayLength = 230; // Very long rays to cover whole card
+
+                        // Convert to radians
+                        const startAngle = (angle * Math.PI) / 180;
+                        const endAngle = ((angle + rayWidth) * Math.PI) / 180;
+
+                        // Calculate points (rounded to prevent hydration issues)
+                        const x1 = 250,
+                          y1 = 0; // Corner
+                        const x2 = Math.round(
+                          250 - rayLength * Math.cos(startAngle)
+                        );
+                        const y2 = Math.round(rayLength * Math.sin(startAngle));
+                        const x3 = Math.round(
+                          250 - rayLength * Math.cos(endAngle)
+                        );
+                        const y3 = Math.round(rayLength * Math.sin(endAngle));
 
                         return (
                           <motion.path
                             key={i}
                             d={`M ${x1} ${y1} L ${x2} ${y2} L ${x3} ${y3} Z`}
                             fill={`url(#cornerSunburst-${index})`}
-                            initial={{ opacity: 0, scale: 0.5 }}
+                            initial={{ opacity: 0, scale: 0.3 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{
-                              delay: 0.8 + index * 0.1 + i * 0.03,
-                              duration: 0.3,
+                              delay: 0.8 + index * 0.1 + i * 0.02,
+                              duration: 0.4,
                               ease: 'easeOut',
                             }}
                           />
