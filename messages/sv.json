@@ -2,7 +2,7 @@
   "Home": {
     "greeting": "Hej, jag heter Catalina.",
     "title": "Frontendutvecklare",
-    "description": "Jag brukade tro att frontend handlade om att få saker att se bra ut. Sen insåg jag att det handlar om att få det att kännas rätt. Nu skapar jag gränssnitt som lyssnar och anpassar sig till användaren, berättelser som fastnar och kod som välkomnar alla.",
+    "description": "Jag skapar intuitiva digitala upplevelser som användare älskar. Specialiserad på React-ekosystemet och tillgänglighet, bygger jag applikationer som kombinerar teknisk excellens med genomtänkt design.",
     "getInTouch": "Kontakta mig",
     "downloadCV": "Ladda ner CV",
     "viewCV": "Visa mitt CV",
@@ -25,26 +25,26 @@
   },
   "About": {
     "title": "Om mig",
-    "description": "Låt mig ta dig med på min resa av förändring – från att navigera på haven till att navigera på webben.",
-    "text": "Även om min resa började på kryssningsfartyg, ger jag mig idag ut på nya äventyr inom webbutveckling – där varje projekt är en möjlighet att skapa något meningsfullt och med verklig påverkan."
+    "description": "Jag är en Frontend Utvecklare som kombinerar teknisk expertis med stark designkänsla för att skapa exceptionella användarupplevelser.",
+    "text": "Med fokus på tillgänglighet och moderna webbteknologier bygger jag applikationer som är både tekniskt sofistikerade och intuitivt användbara. Varje projekt är en möjlighet att lösa verkliga problem samtidigt som jag skapar vackra, funktionella upplevelser."
   },
   "Journey": {
     "cards": [
       {
-        "title": "Resan Börjar",
-        "content": "Livet tar oss ofta på oväntade resor. Min väg från att vara casinodealer och arbetsledare på kryssningsfartyg till att bli frontendutvecklare var allt annat än konventionell."
+        "title": "Teknisk Excellens",
+        "content": "Med expertis inom React-ekosystemet och modern JavaScript bygger jag skalbara webbapplikationer som prioriterar prestanda och användarupplevelse. Mitt fokus på ren, underhållbar kod säkerställer lösningar som växer med företagets behov."
       },
       {
-        "title": "Övergången",
-        "content": "Drivkraften bakom min förändring var en stark nyfikenhet på teknik och en längtan efter något nytt. Jag anmälde mig till en kurs i Androidutveckling – mitt första steg in i appvärlden som öppnade mina ögon för teknikens möjligheter."
+        "title": "Tillgänglighetsspecialist",
+        "content": "Jag specialiserar mig på att skapa inkluderande digitala upplevelser genom WCAG-efterlevnad och tillgängliga designmönster. Alla applikationer jag bygger fungerar för användare med alla förmågor, vilket säkerställer att ingen lämnas utanför."
       },
       {
-        "title": "Upptäckten",
-        "content": "Även om Androidutveckling var givande, fann jag min verkliga passion inom frontend. Att lära mig HTML, CSS och JavaScript visade sig vara den perfekta kombinationen av kreativitet och teknisk utmaning."
+        "title": "Prisbelönt Innovation",
+        "content": "Mina tekniska förmågor valideras genom verkliga prestationer - från att vinna första plats på Clean Code Hackathon 2025 med en AI-driven mobilapp, till att få Best Thesis Project-utmärkelsen för innovativa webbapplikationer."
       },
       {
-        "title": "Dagens Riktning",
-        "content": "Idag skapar jag digitala upplevelser där kreativitet möter kod. Varje projekt är en chans att kombinera mina människokunskaper från hotellbranschen med teknisk expertis."
+        "title": "Nuvarande Fokus",
+        "content": "Idag utvecklar jag skräddarsydda lösningar för företag, där jag kombinerar modern teknik med användarcentrerad design. Varje projekt är en möjlighet att leverera mätbart värde samtidigt som jag skapar exceptionella digitala upplevelser."
       }
     ]
   },
@@ -97,12 +97,12 @@
       "githubUrl": "https://github.com/CatAvadani/tv-maze"
     },
     "modal": {
-      "title": "Frontendutvecklare Praktik",
+      "title": "Frontendutvecklare",
       "projectOverview": "Projektöversikt",
       "technologies": "Tekniker",
       "myContribution": "Mitt bidrag",
       "close": "Stäng",
-      "confidentialNotice": "Detta projekt genomfördes under min praktik på Nexer Group. På grund av sekretessavtal kan källkod och detaljerade skärmdumpar inte delas offentligt. Jag diskuterar gärna tekniska detaljer vidare i en intervjusituation."
+      "confidentialNotice": "Detta projekt genomfördes under min tid på Nexer Group. På grund av sekretessavtal kan källkod och detaljerade skärmdumpar inte delas offentligt. Jag diskuterar gärna tekniska detaljer vidare i en intervjusituation."
     }
   },
   "Skills": {
@@ -119,13 +119,13 @@
         "isInternship": false
       },
       {
-        "title": "Frontendutvecklare - Praktik",
+        "title": "Frontendutvecklare",
         "location": "Nexer Group, Göteborg",
         "description": "På Nexer bidrog jag till två nyckelprojekt: Nexer Email, en plattform för e-postmallar, och Boost App, en plattformsoberoende träningsapp. Jag byggde tillgängliga och responsiva användargränssnitt med Next.js, React Native, Angular, TypeScript, Zustand och Tailwind CSS. Jag implementerade dynamiska layouter, synkroniserade data mellan frontend och backend, optimerade laddningsprestanda och förbättrade användarupplevelsen. Jag utvecklade även funktioner för att skicka och förhandsgranska testmail med Nodemailer, byggde logik för layoutbegränsningar och skrev end-to-end-tester med Cypress. Jag arbetade i ett agilt team med Git och Azure DevOps.",
         "date": "Sept 2024 - April 2025"
       },
       {
-        "title": "Androidutvecklare - Praktik",
+        "title": "Androidutvecklare",
         "location": "Stendahls, Göteborg",
         "description": "Designade och implementerade funktioner i Android-appar med Kotlin, Jetpack Compose och hanterade data med Room Database. Följde MVVM-arkitektur och implementerade API-integrationer för att koppla klienten till backend. Samarbetade i ett agilt team, deltog i kodgranskningar och optimerade appens prestanda.",
         "date": "Okt 2022 - Dec 2022"

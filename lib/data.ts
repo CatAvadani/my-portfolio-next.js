@@ -32,7 +32,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Front End Developer - Internship',
+    title: 'Front End Developer',
     location: 'Nexer Group, Gothenburg',
     description:
       'At Nexer, I contributed to two key projects: Nexer Email, an email builder platform and Boost App, a cross-platform fitness tracker. I built accessible and responsive UIs using Next.js, React Native, Angular, TypeScript, Zustand, and Tailwind CSS. My work included implementing dynamic layouts, syncing data across frontend and backend, optimizing loading performance, and enhancing user experience. I also developed features for sending and previewing test emails with Nodemailer, built logic for layout restrictions, and wrote Cypress end-to-end tests to ensure stability. Throughout, I collaborated in an agile team and worked actively with Git and Azure DevOps.',
@@ -41,7 +41,7 @@ export const experiencesData = [
   },
 
   {
-    title: 'Android Developer - Internship',
+    title: 'Android Developer',
     location: 'Stendahls, Gothenburg',
     description:
       'Designed and implemented Android app features using Kotlin, Jetpack Compose, and built data management solutions using Room Database. Followed MVVM architecture and implemented API integrations to connect mobile clients with backend services. Collaborated in an agile environment, participated in code reviews and optimized application performance through efficient memory management.',
