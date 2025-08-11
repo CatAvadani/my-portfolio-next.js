@@ -26,8 +26,8 @@
 
   "About": {
     "title": "About me",
-    "description": "I'm a Frontend Developer who combines technical expertise with strong design sensibility to create exceptional user experiences.",
-    "text": "With a focus on accessibility and modern web technologies, I build applications that are both technically sophisticated and intuitively usable. Every project is an opportunity to solve real problems while creating beautiful, functional experiences."
+    "description": "I'm a Frontend Developer who specializes in creating exceptional user experiences through modern web technologies and accessible design.",
+    "text": "With a focus on React ecosystem and accessibility standards, I build applications that are both technically sophisticated and intuitively usable. Every project is an opportunity to solve real problems while creating beautiful, functional experiences."
   },
   "Journey": {
     "cards": [
@@ -36,7 +36,7 @@
         "content": "With expertise in React ecosystem and modern JavaScript, I build scalable web applications that prioritize performance and user experience. My focus on clean, maintainable code ensures solutions that grow with business needs."
       },
       {
-        "title": "Accessibility Champion",
+        "title": "Accessibility Specialist",
         "content": "I specialize in creating inclusive digital experiences through WCAG compliance and accessible design patterns. Every application I build works for users of all abilities, ensuring no one is left behind."
       },
       {
