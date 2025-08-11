@@ -1,12 +1,12 @@
-"use client";
-import { projectsData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { useTranslations } from "next-intl";
-import React, { useRef, useState } from "react";
-import { FiArrowRight, FiExternalLink, FiGithub } from "react-icons/fi";
-import ProjectModal from "./projectModal";
-import SectionHeading from "./section-heading";
+'use client';
+import { projectsData } from '@/lib/data';
+import { useSectionInView } from '@/lib/hooks';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import React, { useRef, useState } from 'react';
+import { FiArrowRight, FiExternalLink, FiGithub } from 'react-icons/fi';
+import ProjectModal from './projectModal';
+import SectionHeading from './section-heading';
 
 interface MouseEventWithClient
   extends React.MouseEvent<HTMLAnchorElement | HTMLDivElement> {
@@ -27,9 +27,9 @@ interface LinkProps {
 }
 
 export const Projects = () => {
-  const { ref } = useSectionInView("projects", 0.5);
+  const { ref } = useSectionInView('projects', 0.5);
   const [activeProject, setActiveProject] = useState<any | null>(null);
-  const t = useTranslations("Projects");
+  const t = useTranslations('Projects');
 
   const handleProjectClick = (e: React.MouseEvent, project: any) => {
     if (project.isNexerProject) {
@@ -38,15 +38,15 @@ export const Projects = () => {
     } else if (
       !e.defaultPrevented &&
       project.href &&
-      !project.techStack.includes("React Native")
+      !project.techStack.includes('React Native')
     ) {
-      window.open(project.href, "_blank", "noopener,noreferrer");
+      window.open(project.href, '_blank', 'noopener,noreferrer');
     } else if (
       !e.defaultPrevented &&
       project.github &&
-      project.techStack.includes("React Native")
+      project.techStack.includes('React Native')
     ) {
-      window.open(project.github, "_blank", "noopener,noreferrer");
+      window.open(project.github, '_blank', 'noopener,noreferrer');
     }
   };
 
@@ -56,14 +56,14 @@ export const Projects = () => {
 
   return (
     <section
-      id="projects"
+      id='projects'
       ref={ref}
-      className="p-4 md:p-8 w-full max-w-7xl scroll-mt-28 mb-28"
+      className='p-4 md:p-8 w-full max-w-7xl scroll-mt-28 mb-28'
     >
-      <div className="mb-20">
-        <SectionHeading>{t("title") || "Projects"}</SectionHeading>
+      <div className='mb-20 flex justify-center'>
+        <SectionHeading>{t('title') || 'Projects'}</SectionHeading>
       </div>
-      <div className="mx-auto">
+      <div className='mx-auto'>
         {projectsData.map((project, index) => {
           const translation = t.raw(project.id) as {
             heading: string;
@@ -100,7 +100,7 @@ export const Projects = () => {
 
 const TechChip = ({ tech }: { tech: string }) => {
   return (
-    <span className="inline-block rounded-full px-3 py-1 bg-purple-100/50 shadow-sm text-gray-500 dark:bg-gray-800 dark:text-purple-100 text-sm">
+    <span className='inline-block rounded-full px-3 py-1 bg-purple-100/50 shadow-sm text-gray-500 dark:bg-gray-800 dark:text-purple-100 text-sm'>
       {tech}
     </span>
   );
@@ -124,8 +124,8 @@ const Link = ({
   const mouseXSpring = useSpring(x);
   const mouseYSpring = useSpring(y);
 
-  const top = useTransform(mouseYSpring, [0.5, -0.5], ["40%", "60%"]);
-  const left = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
+  const top = useTransform(mouseYSpring, [0.5, -0.5], ['40%', '60%']);
+  const left = useTransform(mouseXSpring, [0.5, -0.5], ['60%', '70%']);
 
   const handleMouseMove = (e: MouseEventWithClient) => {
     if (!ref.current) return;
@@ -144,13 +144,13 @@ const Link = ({
     y.set(yPct);
   };
 
-  const technologies = techStack.split(", ");
+  const technologies = techStack.split(', ');
 
   // Handle clicks for live demo links in non-Nexer projects
   const handleDemoClick = (e: React.MouseEvent) => {
     e.preventDefault(); // This prevents the card click handler from firing
     if (!isNexerProject && href) {
-      window.open(href, "_blank", "noopener,noreferrer");
+      window.open(href, '_blank', 'noopener,noreferrer');
     }
   };
 
@@ -158,7 +158,7 @@ const Link = ({
   const handleGithubClick = (e: React.MouseEvent) => {
     e.preventDefault(); // This prevents the card click handler from firing
     if (github) {
-      window.open(github, "_blank", "noopener,noreferrer");
+      window.open(github, '_blank', 'noopener,noreferrer');
     }
   };
 
@@ -166,9 +166,9 @@ const Link = ({
     <motion.div
       ref={ref as React.Ref<HTMLDivElement>}
       onMouseMove={handleMouseMove}
-      initial="initial"
-      whileHover="whileHover"
-      className="group relative flex items-center justify-between lg:gap-32 border-b border-gray-200 py-4 transition-colors duration-500 hover:border-gray-400 md:py-8 cursor-pointer"
+      initial='initial'
+      whileHover='whileHover'
+      className='group relative flex items-center justify-between lg:gap-32 border-b border-gray-200 py-4 transition-colors duration-500 hover:border-gray-400 md:py-8 cursor-pointer'
       onClick={onClick}
     >
       <div>
@@ -178,32 +178,32 @@ const Link = ({
             whileHover: { x: -16 },
           }}
           transition={{
-            type: "spring",
+            type: 'spring',
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-xl sm:text-2xl font-bold text-gray-500 transition-colors duration-500 group-hover:text-gray-600 md:text-4xl"
+          className='relative z-10 block text-xl sm:text-2xl font-bold text-gray-500 transition-colors duration-500 group-hover:text-gray-600 md:text-4xl'
         >
-          {heading.split("").map((l, i) => (
+          {heading.split('').map((l, i) => (
             <motion.span
               variants={{
                 initial: { x: 0 },
                 whileHover: { x: 16 },
               }}
-              transition={{ type: "spring" }}
-              className="inline-block"
+              transition={{ type: 'spring' }}
+              className='inline-block'
               key={i}
             >
               {l}
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-sm sm:text-base text-gray-500 transition-colors duration-500 group-hover:text-gray-600 max-w-[70%] sm:max-w-[60%]">
+        <span className='relative z-10 mt-2 block text-sm sm:text-base text-gray-500 transition-colors duration-500 group-hover:text-gray-600 max-w-[70%] sm:max-w-[60%]'>
           {subheading}
         </span>
 
         {/* Tech Stack Chips */}
-        <div className="relative z-10 mt-4 flex flex-wrap gap-2">
+        <div className='relative z-10 mt-4 flex flex-wrap gap-2'>
           {technologies.map((tech, index) => (
             <TechChip key={index} tech={tech} />
           ))}
@@ -211,38 +211,38 @@ const Link = ({
 
         {/* Project Links */}
         {!isNexerProject ? (
-          <div className="relative z-10 mt-4 flex space-x-3">
-            {!techStack.includes("React Native") && href && href !== "" && (
+          <div className='relative z-10 mt-4 flex space-x-3'>
+            {!techStack.includes('React Native') && href && href !== '' && (
               <button
                 onClick={handleDemoClick}
-                className="flex items-center gap-1 text-sm text-purple-600 hover:text-purple-800 dark:text-purple-300 dark:hover:text-purple-200 transition-colors"
+                className='flex items-center gap-1 text-sm text-purple-600 hover:text-purple-800 dark:text-purple-300 dark:hover:text-purple-200 transition-colors'
                 aria-label={`Visit live demo for ${heading}`}
               >
-                <FiExternalLink className="text-lg" />
+                <FiExternalLink className='text-lg' />
                 <span>Live Demo</span>
               </button>
             )}
             {github && (
               <button
                 onClick={handleGithubClick}
-                className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300 transition-colors border border-gray-200 dark:border-gray-700 rounded-full px-2 py-1"
+                className='flex items-center gap-1 text-sm text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300 transition-colors border border-gray-200 dark:border-gray-700 rounded-full px-2 py-1'
                 aria-label={`View source code for ${heading} on GitHub`}
               >
-                <FiGithub className="text-lg" />
+                <FiGithub className='text-lg' />
                 <span>Source Code</span>
               </button>
             )}
-            {techStack.includes("React Native") && (
-              <div className="flex items-center gap-1 text-sm text-purple-600 dark:text-gray-400">
-                <span className="italic">Mobile app</span>
+            {techStack.includes('React Native') && (
+              <div className='flex items-center gap-1 text-sm text-purple-600 dark:text-gray-400'>
+                <span className='italic'>Mobile app</span>
               </div>
             )}
           </div>
         ) : (
-          <div className="relative z-10 mt-4 flex space-x-3">
-            <span className="text-sm text-purple-600 dark:text-gray-400">
-              Nexer Group Project -{" "}
-              <span className="italic text-gray-600">Click for details</span>
+          <div className='relative z-10 mt-4 flex space-x-3'>
+            <span className='text-sm text-purple-600 dark:text-gray-400'>
+              Nexer Group Project -{' '}
+              <span className='italic text-gray-600'>Click for details</span>
             </span>
           </div>
         )}
@@ -252,34 +252,34 @@ const Link = ({
         style={{
           top,
           left,
-          translateX: "-50%",
-          translateY: "-50%",
+          translateX: '-50%',
+          translateY: '-50%',
         }}
         variants={{
-          initial: { scale: 0, rotate: "-12.5deg" },
-          whileHover: { scale: 1, rotate: "12.5deg" },
+          initial: { scale: 0, rotate: '-12.5deg' },
+          whileHover: { scale: 1, rotate: '12.5deg' },
         }}
-        transition={{ type: "spring" }}
+        transition={{ type: 'spring' }}
         src={imgSrc}
-        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-52 md:w-96"
+        className='absolute z-0 h-24 w-32 rounded-lg object-cover md:h-52 md:w-96'
         alt={`Image representing a link for ${heading}`}
       />
 
       <motion.div
         variants={{
           initial: {
-            x: "25%",
+            x: '25%',
             opacity: 0,
           },
           whileHover: {
-            x: "0%",
+            x: '0%',
             opacity: 1,
           },
         }}
-        transition={{ type: "spring" }}
-        className="relative z-10 p-4"
+        transition={{ type: 'spring' }}
+        className='relative z-10 p-4'
       >
-        <FiArrowRight className="text-3xl text-gray-500" />
+        <FiArrowRight className='text-3xl text-gray-500' />
       </motion.div>
     </motion.div>
   );

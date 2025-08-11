@@ -24,7 +24,9 @@ export default function Experience() {
 
   return (
     <section id='experience' ref={ref} className='scroll-mt-28 mb-28 sm:mb-40'>
-      <SectionHeading>{t('title')}</SectionHeading>
+      <div className='flex justify-center'>
+        <SectionHeading>{t('title')}</SectionHeading>
+      </div>
       <div ref={containerRef} className='relative mt-12 max-w-7xl mx-auto'>
         {translations.map((translation, index) => (
           <TimelineItem
