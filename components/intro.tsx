@@ -40,8 +40,8 @@ export default function Intro() {
 
   const cvUrl =
     locale === 'en'
-      ? '/cvPdf/Catalina_Avadani_CV_EN.pdf'
-      : '/cvPdf/Catalina_Avadani_CV_SV.pdf';
+      ? '/cvPdf/Catalina_Avadani_Frontend_Developer_CV_EN.pdf'
+      : '/cvPdf/Catalina_Avadani_Frontendutvecklare_CV_SV.pdf';
 
   return (
     <section
