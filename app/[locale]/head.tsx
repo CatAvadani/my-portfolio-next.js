@@ -7,6 +7,11 @@ export default function Head() {
   return (
     <>
       <title>Catalina Avadani | Frontend Developer</title>
+      {/* Convert Experiences A/B Testing */}
+      <Script
+        src='//cdn-4.convertexperiments.com/v1/js/10017264-10017602.js?environment=production'
+        strategy='beforeInteractive'
+      />
       <meta
         name='description'
         content="I'm Catalina, a frontend developer passionate about React, Next.js, and accessibility. I craft interactive, user-focused web apps with a love for design and continuous growth."
@@ -59,11 +64,6 @@ export default function Head() {
             }
           `,
         }}
-      />
-      {/* Convert Experiences A/B Testing */}
-      <Script
-        src='//cdn-4.convertexperiments.com/v1/js/10017264-10017602.js?environment=production'
-        strategy='beforeInteractive'
       />
     </>
   );
