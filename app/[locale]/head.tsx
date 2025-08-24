@@ -1,6 +1,3 @@
-// If using Next.js app directory, add this to app/[locale]/head.tsx (or inside your main layout if using old pages directory)
-// Replace '/images/catalina.jpg' with your image path or an external link
-
 import Script from 'next/script';
 
 export default function Head() {

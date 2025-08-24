@@ -29,6 +29,18 @@ export default function Intro() {
   const imageY = useTransform(scrollYProgress, [0, 1], ['0%', '15%']);
   const auroraY = useTransform(scrollYProgress, [0, 1], ['0%', '25%']);
 
+  const trackCTAClick = (buttonText: string) => {
+    // Track in Google Analytics
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'cta_button_click', {
+        button_text: buttonText,
+        button_location: 'hero_section',
+        event_category: 'CTA',
+        event_label: buttonText,
+      });
+    }
+  };
+
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     setPrefersReducedMotion(mediaQuery.matches);
@@ -179,6 +191,7 @@ export default function Intro() {
                       onClick={() => {
                         setActiveSection('contact');
                         setTimeOfLastClick(Date.now());
+                        trackCTAClick(t('getInTouch'));
                       }}
                     >
                       <motion.div className='absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500' />
