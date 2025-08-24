@@ -43,6 +43,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className='!scroll-smooth'>
+      <head>
+        <script
+          src='//cdn-4.convertexperiments.com/v1/js/10017264-10017602.js?environment=production'
+          async
+        />
+      </head>
       <body
         className={`${dm_sans.className} bg-slate-50 text-gray-950 relative  pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark: text-opacity-90 `}
       >
